@@ -1,69 +1,221 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Hubert (Sathaporn) Hu</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<!-- The top bar will be implemented only when the page has become long enough -->
-	<!--<div id="top_bar">
-		<span class="top_bar_span">About Me</span>
-		<span class="top_bar_span">Contact</span>
-		<span class="top_bar_span">Positions/Volunteer</span>
-		<span class="top_bar_span">Projects</span>
-		<span class="top_bar_span">Sites</span>
-	</div>-->
-	<div id="name">Hubert (Sathaporn) Hu</div>
-	<div class="decor" style="background-image:url('img/head.png')"></div>
-	<h2 class="section">Sites: <a href="http://github.com/husathap" class="bottom_link">GitHub Repo</a> | 
-		<a href="https://www.linkedin.com/profile/view?id=226672700" class="bottom_link">LinkedIn</a> | 
-		<a href="http://individual.utoronto.ca/husathap" class="bottom_link">UofT</a> | 
-		<a href="https://www.facebook.com/hu.hubert" class="bottom_link">Facebook</a> | 
-		<a href="http://hubertth.wordpress.com/" class="bottom_link">Wordpress</a></h2>
-	<div class="section_content">
-	<p>I am currently an undergraduate student at
-	University of Toronto studying in Specialist in Computer Science, Major in Cognitive Science and
-	Minor in French as A Second Language. During the summer, I has also been an intern at Jet Asia Airways.
-	In the company, I have worked as an IT support and an implementer of Office 365 system at the company.</p>
-	
-	<p>As a programmer, I have knowledge in a vast array of languages. I have knowledge
-	from .NET Languages like C# and Visual Basic to web language like JavaScript, HTML and SQL. I can also programme
-	in more difficult language such as C/C++ and less popular language such as Scheme. Additionally, I have backgrounds
-	in human-computer interaction as well as machine learning.</p>
-	
-	<p>Not only I am well-versed in programming language, I am also good at human languages
-	as well. I can communicate in Thai, English, French, Mandarin and Japanese in various degrees of fluency. I also
-	have a proven experience working in an airlines where multilingual skills are required.</p></div>
-	
-	<h2 class="section">Contact</h2>
-	<div class="section_content"><strong>Email:</strong> hu.hubert at live.ca<br/><br/>Full contact details will be made available on resumes.</div>
-	
-	<h2 class="section">Positions (Professional)</h2>
-	<div class="section_content">
-		<strong>Sep - Dec 2014:</strong> University of Toronto, Research Assistant<br/>
-		<strong>Jun - Aug 2014:</strong> Jet Asia Airways, IT Intern<br/>
-		<strong>Sep - Dec 2014:</strong> University of Toronto, Teaching Assistant
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hubert (Sathaporn) Hu</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-menubuilder">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="#myself">About myself</a>
+					</li>
+					<li><a href="#myproj">My projects</a>
+					</li>
+					<li><a href="#myexp">My experience</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="https://www.linkedin.com/profile/view?id=226672700">LinkedIn</a>
+					</li>
+					<li>
+						<a href="http://github.com/husathap">GitHub</a>
+					</li>
+					<li>
+						<a href="http://hubertth.wordpress.com">WordPress</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	
-	<h2 class="section">Positions (Volunteer)</h2>
-	<div class="section_content">
-		<strong>Jun 2014 - Now:</strong> Representative for Cognitive Science and Computer Science course unions at University of Toronto<br/>
-		<strong>Sep 2012 - Jun 2014:</strong> Administrator for Cognitive Science course union<br/>
-		<strong>Sep 2011 - Apr 2014:</strong> Member of Japan-Canada Student Association
+	<a name="myself"></a>
+	
+	<div class="jumbotron">
+		<div id="name_hero" class="container">
+			<h1>Hubert (Sathaporn) Hu</h1>
+			<h3>Software and Web Developer</h3>
+			<h4>Machine Learning, Natural Language Processing, and Human-Computer Interaction</h4>
+		</div>
 	</div>
 	
-	<h2 class="section">Projects</h2>
-	<div class="section_content">
-		<strong>Jul - Aug 2014:</strong> <a href="http://taglab.utoronto.ca/projects/tangra/">Tangra</a><br/>
-		<strong>Jul - Aug 2014:</strong> <a href="http://husathap.github.io/OFACAA">Of Fish & Chips: Alpha Atlantis</a><br/>
-		<strong>Jun - Aug 2014:</strong> Office 365 implementation for Jet Asia Airways<br/>
-		<strong>Jul 2014:</strong> <a href="https://github.com/husathap/squid">Squid.py</a><br/>
-		<strong>Jan - Apr 2014:</strong> <a href="https://github.com/husathap/yingge">Yingge</a><br/>
-		<strong>Sep - Dec 2013:</strong> Group Project for Human-Computer Interaction Class<br/>
-		<strong>Mar - Sep 2013:</strong> Of Fish & Chips <a href="http://individual.utoronto.ca/husathap/ofac.html">I</a> and <a href="http://individual.utoronto.ca/husathap/ofac2.html">II</a><br/>
-		<strong><a href="http://individual.utoronto.ca/husathap">Visit UofT site for strictly academic projects</a></strong>
+	<div class="container">
+		<h1 id="header_myself">About myself</h1>
+		<p>Hello, I am currently an undergraduate student at University of Toronto and will finish my class before May 2015. I am also 
+		a research assistant at TAGLab working on certain projects that would help with gathering experiment data online and help
+		isolated seniors with their loved ones.</p>
+		
+		<p>My main area of focus in computer science is machine learning, natural language processing and human-computer interaction. However, I also dabble in
+		other areas such as web development and software development. Apart from computer science, I am also doing cognitive science
+		as my second major to complement my knowledge in AI. Since I am also passionate about learning new programming languages, I also have knowledges
+		from low-level language such C to a very high level one such as C#. You should look into my resume to learn more about my programming prowess.</p>
+
+		<p>As a person who is interested in foreign languages, I also have attempted to master various languages with various level of fluency.
+		I know languages like Thai, Mandarin, and Japanese (And of course, English). I also have a French minor as well, bonjour tout le monde!</p>
 	</div>
-	<h2 class="section">Hubert (Sathaporn) Hu, Copyrighted</h2>
 	
-</body>
+	<a name="myproj"><hr class="divider"/></a>
+	
+	<div class="container">
+		<h1 id="header_myproj">My projects </h1>
+		
+			<div class="container">
+				<h2>Programming projects</h2>
+				<div class="row">
+					<div class="col-sm-2 proj">
+						<img src="tangra_icon.png" class="icon"/>
+						<h5>Role: Developer</a><h5>
+						<h5><a href="http://taglab.utoronto.ca/projects/tangra/">Tangra</a><h5>
+					</div>
+					<div class="col-sm-2 proj">
+						<img src="intouch_icon.png" class="icon"/>
+						<h5>Role: Tester</a><h5>
+						<h5><a href="http://taglab.utoronto.ca/projects/technologies-combat-isolation/">InTouch</a><h5>
+					</div>
+					<div class="col-sm-2 proj">
+						<img src="inuvik_icon.png" class="icon"/>
+						<h5>Role: Developer</a><h5>
+						<h5><a href="https://github.com/husathap/Inuvik">Inuvik</a></h5>
+					</div>
+					<div class="col-sm-2 proj">
+						<img src="ofacaa_icon.png" class="icon"/>
+						<h5>Role: Developer</a><h5>
+						<h5>Of Fish & Chips: Alpha Atlantis<br/>
+								<a href="http://husathap.github.io/OFACAA/">Play the Game<br/>
+								<a href="https://github.com/husathap/OFACAA">Source Code</a>
+							</ul>
+						<h5>
+					</div>
+					<div class="col-sm-2 proj">
+						<img src="null_icon.png" class="icon"/>
+						<h5>Role: Developer</a><h5>
+						<h5><a href="https://github.com/husathap/squid">Squid.py</a></h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2 proj">
+						<img src="null_icon.png" class="icon"/>
+						<h5>Role: Developer</a><h5>
+						<h5><a href="https://github.com/husathap/Yingge">Yingge</a></h5>
+					</div>
+					<div class="col-sm-2 proj">
+						<img src="cdfcheck_icon.png" class="icon"/>
+						<h5>Role: Developer</a><h5>
+						<h5><a href="https://github.com/husathap/CDFCheck">CDFCheck</a></h5>
+					</div>
+					<div class="col-sm-2 proj">
+						<img src="youbot_icon.png" class="icon"/>
+						<h5>Role: Developer</a><h5>
+						<h5><a href="https://github.com/husathap/youbot">Youbot</a></h5>
+					</div>
+					<div class="col-sm-2 proj">
+						<img src="null_icon.png" class="icon"/>
+						<h5>Role: Developer</a><h5>
+						<h5>Of Fish & Chips II<br/>
+							<a href="https://github.com/husathap/Charlotte">Source Code</a>
+						<h5>
+					</div>
+					<div class="col-sm-2 proj">
+						<img src="null_icon.png" class="icon"/>
+						<h5>Role: Developer</a><h5>
+						<h5>Of Fish & Chips I<br/>
+							<a href="https://github.com/husathap/miquelon">Source Code</a>
+						<h5>
+					</div>
+				</div>
+			<h2>Other projects</h2>
+			<div class="row">
+				<div class="col-sm-3 proj_large">
+					<h3>Research on Rapid Serial Visual Presentation </h3>
+					<h4>January 2015 - Present</h4>
+					<h5>Supervised by Dr. Olivier St-Cyr</h5>
+					<p>Currently performing a research to see whether Rapid Serial Visual Presentation can improve performance in certain tasks or not.</p>
+					<p>This project is done as an assignment for a course.</p>
+				</div>
+				<div class="col-sm-3 proj_large">
+					<h3>Papers in Cognitive Science</h3>
+					<h4>January 2014 - April 2014</h4>
+					<h5>Supervised by Dr. John Vervaeke</h5>
+					<p>Written interdisciplinary papers in the topics of cognitive science.</p>
+					<p>This project is done for an independent studies course.</p>
+				</div>
+				<div class="col-sm-3 proj_large">
+					<h3>Prototype for Glucose Monitoring Mobile App</h3>
+					<h4>September 2013 - December 2013</h4>
+					<h5>Supervised by Dr. Olivier St-Cyr</h5>
+					<p>In a group of 4, created a prototype design for a mobile app that would help measure and monitor glucose of diabetic people.
+					Assumed that a glucose measuring add-on existed and could be attached to the mobile device.</p>
+					<p>This project is done as an assignment for a course.</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<a name="myexp"><hr class="divider"/></a>
+	
+	<div class="container">
+		<h1 id="header_myexp">My experience</h1>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5 exp">
+					<h3>Research Assistant</h3>
+					<h4>University of Toronto, September 2014 - Present</h4>
+					<p>Improving on Tangra, a project created by Velian Pandeliev as part of his Master's thesis. Testing
+					InTouch, a mobile app that is designed for seniors in isolation to communicate with their loved ones.</p>
+				</div>
+				<div class="col-sm-5 exp">
+					<h3>Online Tutor</h3>
+					<h4>InstaEDU, September 2014 - February 2015</h4>
+					<p>Tutored students online on the topic of computer science. Languages of instruction were Python, C, C++ and Java.</p>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-sm-5 exp">
+					<h3>IT Intern</h3>
+					<h4>Jet Asia Airways, June 2014 - August 2015</h4>
+					<p>Migrated emails from an Exchange server to Office 365. Created SharePoint sites. Performed other IT administrative tasks as required.</p>
+				</div>
+				<div class="col-sm-5 exp">
+					<h3>Teaching Assistant</h3>
+					<h4>University of Toronto, September 2013 - December 2013</h4>
+					<p>Advised students in the first year introductory computer science course. Invigilated the midterm examination. Marked the last assignment and the final exam.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="copyright">
+		All rights reserved by Hubert (Sathaporn) Hu
+	</div>
+	
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
