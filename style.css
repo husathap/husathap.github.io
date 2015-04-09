@@ -1,139 +1,35 @@
 body {
-	background-image:url("bg.png");
-	background-size: cover;
-    background-repeat: no-repeat;
-}
-
-h5 {
-	font-weight:bold;
+	background-image:url('background.png');
+	background-repeat:no-repeat;
+    background-size: cover;
+    margin-top:50px;
 }
 
 .jumbotron {
-	background-color: #3F647F !important;
-	color: #ffffff;
-	margin:0;
-	background-image:url("jumbotron.jpg");
-	background-size: cover;
-    background-repeat: no-repeat;
-	padding-top:100px;
+    border-radius:0px !important;
+    background-image:url('jumbotron.jpg');
+    background-color:transparent;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding:2em;
+    border-bottom: 1px white solid;	
 }
 
-#name_hero {
-	background-color: #3F647F !important;
-	margin:0;
-	color: #ffffff;
+.jumbotron span {
+    background-color:white;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.7);
 }
 
-.divider {
-	width:60%;
-	border-width:3px;
-	border-color:#3F647F;
-}
-
-#header_myself {
-	color: #3F647F;
-}
-
-#header_myskills {
-	color: #7F3F3F;
-}
-
-.skill {
-	border-radius: 8px;
-	background-color: #ffffff;
-	margin:5px;
-}
-
-.prog {
-	border-radius: 8px;
-	background-color: ;
-	margin:5px;
-	text-align:center;
-}
-
-#header_myproj {
-	color: #7F743F;
+.content {
+    background-color: rgba(255,255,255,0.5);
+    padding: 20px;
+    padding-left: 40px;
+    font-size:large;
+    margin-bottom:20px;
+    border: 1px white solid;
 }
 
 .proj {
-	border-radius: 8px;
-	background-color: #ffffff;
-	margin:5px;
-	text-align:center;
-}
-
-.proj_large {
-	border-radius: 8px;
-	background-color: #ffffff;
-	margin:5px;
-	text-align:left;
-}
-
-.icon {
-	margin:3px;
-}
-
-#header_myexp {
-	color: #3F7F47;
-}
-
-.exp {
-	border-radius: 8px;
-	background-color: #ffffff;
-	margin:5px;
-}
-
-.copyright {
-	background-color: #3F647F;
-	color: #ffffff;
-	text-align:center;
-	font-weight:bold;
-	font-size:large;
-	margin-top:10px;
-	margin-bottom:0px;
-}
-
-#custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(152, 227, 212, 1);
-}
-#custom-bootstrap-menu.navbar-default {
-    font-size: 21px;
-    background-color: rgba(63, 100, 127, 1);
-    border-width: 0px;
-    border-radius: 0px;
-	margin-bottom:0;
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	z-index:99999;
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(248, 248, 248, 0);
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(255, 216, 0, 1);
-    background-color: rgba(248, 248, 248, 0);
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(63, 100, 127, 1);
-    background-color: rgba(255, 255, 255, 1);
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #ffffff;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #ffffff;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #ffffff;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #3f647f;
+    text-align:center;
 }
