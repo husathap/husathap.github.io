@@ -3,293 +3,254 @@
 <head>
     <title>Hubert (Sathaporn) Hu</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="style_nav.css" />
-
-
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
-                    <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                </button>
+    <div class="container mainbox">
+        <h1>Hubert (Sathaporn) Hu</h1>
+
+        <h4>
+            Student Research Trainee at University of Toronto<br />
+            Future Graduate Student at University of Calgary
+        </h4>
+
+        <div class="row" style="margin-bottom:10px">
+            <div class="col-sm-3">
+                <a href="#" class="mainlink" data-toggle="modal" data-target="#aboutMeModal">
+                    <h1><span class="glyphicon glyphicon-user"></span></h1>
+                    <h2>About Me</h2>
+                </a>
             </div>
-            <div class="collapse navbar-collapse navbar-menubuilder">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#" class="scroll-link" data-id="about">About</a>
-                    </li>
-                    <li>
-                        <a href="#" class="scroll-link" data-id="experience">Experience</a>
-                    </li>
-                    <li>
-                        <a href="#" class="scroll-link" data-id="projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#" class="scroll-link" data-id="external">External Links</a>
-                    </li>
-                </ul>
+            <div class="col-sm-3">
+                <a href="#" class="mainlink" data-toggle="modal" data-target="#educationModal">
+                    <h1><span class="glyphicon glyphicon-education"></span></h1>
+                    <h2>Education</h2>
+                </a>
             </div>
-    </div>
-
-    <!-- Title -->
-    <div class="jumbotron">
-        <h1 class="container"><span>Hubert (Sathaporn) Hu</span></h1>
-    </div>
-
-    <!-- About -->
-    <div id="about" class="page-section">
-        <div class="container content">
-            <h1>About</h1>
-            <p>
-                Hello, I am currently an undergraduate student at University of Toronto and will finish my class before May 2015. I am also
-                a research assistant at TAGLab working on certain projects that would help with gathering experiment data online and help
-                isolated seniors with their loved ones.
-            </p>
-
-            <p>
-                My main area of focus in computer science is machine learning, natural language processing and human-computer interaction. However, I also dabble in
-                other areas such as web development and software development. Apart from computer science, I am also doing cognitive science
-                as my second major to complement my knowledge in AI. Since I am also passionate about learning new programming languages, I also have knowledges
-                from low-level language such C to a very high level one such as C#. You should look into my resume to learn more about my programming prowess.
-            </p>
-
-            <p>
-                As a person who is interested in foreign languages, I also have attempted to master various languages with various level of fluency.
-                I know languages like Thai, Mandarin, and Japanese (And of course, English). I also have a French minor as well, bonjour tout le monde!
-            </p>
+            <div class="col-sm-3">
+                <a href="#" class="mainlink" data-toggle="modal" data-target="#workModal">
+                    <h1><span class="glyphicon glyphicon-briefcase"></span></h1>
+                    <h2>Work</h2>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#" class="mainlink" data-toggle="modal" data-target="#projectModal">
+                    <h1><span class="fa fa-desktop"></span></h1>
+                    <h2>Projects</h2>
+                </a>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom:10px">
+            <div class="col-sm-3 col-sm-offset-3">
+                <a class="mainlink" href="http://hubertth.wordpress.com/">
+                    <h1><span class="fa fa-wordpress"></span></h1>
+                    <h2>Blog</h2>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#" class="mainlink" data-toggle="modal" data-target="#contactModal">
+                    <h1><span class="glyphicon glyphicon-envelope"></span></h1>
+                    <h2>Contact</h2>
+                </a>
+            </div>
         </div>
     </div>
 
-    <!-- Education -->
-    <div id="experience" class="page-section">
-        <div class="container content">
-            <h1>Experience<br/><small>Education</small></h1>
-            <div class="row">
-                <div class="col-sm-6">
-                    <!-- University of Montreal -->
-                    <div class="row">
-                        <h3 class="col-sm-12">University of Montreal</h3>
-                        <div class="col-sm-12">
-                            <h4><strong>MSc in Computer Science</strong></h4>
-                            <p>
-                                <strong>Year:</strong> 2015 - 2016
-                            </p>
-                            <p>
-                                Currently, I have just been accepted to University of Montreal's program. I will
-                                begin my Master's degree in the upcoming September.
-                            </p>
-                        </div>
-                    </div>
+    <!-- Modals -->
+    <div class="modal fade" id="aboutMeModal" tabindex="-1" role="dialog" aria-labelledby="aboutMeModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:teal; color:white">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title">About Me</h2>
                 </div>
-                <div class="col-sm-6">
-                    <!-- University of Toronto -->
-                    <div class="row" >
-                        <h3 class="col-sm-12">University of Toronto</h3>
-                        <div class="col-sm-12">
-                            <h4><strong>BSc in Computer Science, Cognitive Science and French</strong></h4>
-                            <p>
-                                <strong>Year:</strong> 2011 - 2015
-                            </p>
-                            <p>
-                                <strong>Independent Project Supervisors:</strong> Prof. Ronald Baecker, Dr. John Vervaeke, Velian Pandeliev
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h1><small>Professional</small></h1>
+                <div class="modal-body">
+                    <p>Hello, I am currently a Student Research Trainee at <a href="http://taglab.ca">TAGLab</a> at University of Toronto. My
+                    current works involving tesing and develping mobile apps for senior. The lab is supervised by Prof. Ronald Baecker. I
+                    will be joining University of Calgary's Masters program in computer science.</p>
 
-            <div class="row">
-                <div class="col-sm-6 exp">
-                    <h3>Information Technology Intern</h3>
-                    <h4><strong>Jet Asia Airways</strong></h4>
-                    <h4><strong>Duration</strong>: June 2014 - August 2014</h4>
-                    <p>Migrated emails from an Exchange server to Office 365. Created SharePoint sites. Performed other IT administrative tasks as required.</p>
+                    <p>I am a computer scientist and my area of specialty is Human-Computer Interaction. However, I also have some formal
+                    background in machine learning and computational linguistics. Addition to this, I have some skills in web and mobile
+                    development.</p>
+
+                    <p>I have just graduated from University of Toronto with a Bachelor of Science. I have a specialist in computer science,
+                    a major in cognitive science and a minor French (Bonjour, tout le monde !). I have done projects under the excellent
+                    supervision of Dr. John Vervaeke, Prof. Ronald Baecker and Velian Pandeliev.</p>
                 </div>
-                <div class="col-sm-6 exp">
-                    <h3>Teaching Assistant</h3>
-                    <h4><strong>University of Toronto</strong></h4>
-                    <h4><strong>Duration</strong>: September 2013 - December 2013</h4>
-                    <p>Advised students in the first year introductory computer science course. Invigilated the midterm examination. Marked the last assignment and the final exam.</p>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="projects" class="page-section">
-        <div class="container content">
-            <h1>Projects <br /> <small>Development</small></h1>
-
-            <div class="container-fluid">
-                <div class="row" style="margin-bottom:10px">
-                    <div class="col-sm-2 proj">
-                        <img src="chitose_icon.png" class="icon" />
-                        <div>
-                            <a href="http://husathap.github.io/chitose/" />Chitose</a>
-                        </div>
-                        <div>
-                            Role: Developer
-                        </div>
-                    </div>
-                    <div class="col-sm-2 proj">
-                        <img src="tangra_icon.png" class="icon" />
-                        <div>
-                            <a href="http://taglab.utoronto.ca/projects/tangra/">Tangra</a>
-                        </div>
-                        <div>
-                            Role: Developer
-                        </div>
-                    </div>
-                    <div class="col-sm-2 proj">
-                        <img src="intouch_icon.png" class="icon" />
-                        <div>
-                            <a href="http://taglab.utoronto.ca/projects/technologies-combat-isolation/">InTouch</a>
-                        </div>
-                        <div>
-                            Role: Tester
-                        </div>
-                    </div>
-                    <div class="col-sm-2 proj">
-                        <img src="inuvik_icon.png" class="icon" />
-                        <div>
-                            <a href="https://github.com/husathap/Inuvik">Inuvik</a>
-                        </div>
-                        <div>
-                            Role: Developer
-                        </div>
-                    </div>
-                    <div class="col-sm-2 proj">
-                        <img src="ofacaa_icon.png" class="icon" />
-                        <div><a href="http://husathap.github.io/OFACAA/">Of Fish &amp; Chips: Alpha Atlantis</a></div>
-                        <div>
-                            Role: Developer
-                        </div>
-                    </div>
-                    <div class="col-sm-2 proj">
-                        <img src="null_icon.png" class="icon" />
-                        <div><a href="https://github.com/husathap/squid">Squid.py</a></div>
-                        <div>
-                            Role: Developer
-                        </div>
-                    </div>
+    <div class="modal fade" id="educationModal" tabindex="-1" role="dialog" aria-labelledby="educationModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:red; color:white">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title">Education</h2>
                 </div>
-                <div class="row">
-                    <div class="col-sm-2 proj">
-                        <img src="null_icon.png" class="icon" />
-                        <div><a href="https://github.com/husathap/Yingge">Yingge</a></div>
-                        <div>
-                            Role: Developer
-                        </div>
-                    </div>
+                <div class="modal-body">
+                    <h4>MSc in Computer Science, University of Calgary</h4>
+                    <dl>
+                        <dt>Year: 2015 - 2017 [Expected]</dt>
+                        <dt>Supervisor: Dr. Wesley Willett [Expected]</dt>
+                        <dd><p>The program will start in September.</p></dd>
+                    </dl>
 
-                    <div class="col-sm-2 proj">
-                        <img src="cdfcheck_icon.png" class="icon" />
-                        <div><a href="https://github.com/husathap/CDFCheck">CDFCheck</a></div>
-                        <div>
-                            Role: Developer
-                        </div>
-                    </div>
-
-                    <div class="col-sm-2 proj">
-                        <img src="youbot_icon.png" class="icon" />
-                        <div><a href="https://github.com/husathap/youbot">Youbot</a></div>
-                        <div>
-                            Role: Developer
-                        </div>
-                    </div>
-
-                    <div class="col-sm-2 proj">
-                        <img src="null_icon.png" class="icon" />
-                        <div><a href="https://github.com/husathap/Charlotte">Of Fish &amp; Chips II</a></div>
-                        <div>
-                            Role: Developer
-                        </div>
-                    </div>
-
-                    <div class="col-sm-2 proj">
-                        <img src="null_icon.png" class="icon" />
-                        <div><a href="https://github.com/husathap/miquelon">Of Fish &amp; Chips I</a></div>
-                        <div>
-                            Role: Developer
-                        </div>
-                    </div>
+                    <h4>BSc in CompSci, CogSci and French, University of Toronto</h4>
+                    <dl>
+                        <dt>Year: 2011 - 2015</dt>
+                        <dd><p>The program is computer science specialist, cognitive science major and French minor.
+                            During the course of the study, I have been supervised by Dr. John Vervaeke for
+                            a project in cognitive science and Prof. Ronald Baecker and Velian Pandeliev for
+                            a project in computer science.</p></dd>
+                    </dl>
                 </div>
-
-            </div>
-            <h1><small>Academic</small></h1>
-
-            
-        </div>
-    </div>
-
-    
-
-    <div id="external" class="page-section">
-        <div class="container content">
-            <h1>External Links</h1>
-            <div class="col-sm-2 proj">
-                <img src="GitHub-Mark-64px.png" class="icon" />
-                <div><a href="https://github.com/husathap/">GitHub Repo</a></div>
-            </div>
-            <div class="col-sm-2 proj">
-                <img src="wordpress.png" class="icon" />
-                <div><a href="http://hubertth.wordpress.com">Wordpress</a></div>
-            </div>
-            <div class="col-sm-2 proj">
-                <img src="linkedin.png" class="icon" />
-                <div><a href="https://www.linkedin.com/pub/hubert-sathaporn-hu/63/ab4/3b8">LinkedIn</a></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <h5 style="text-align:center; color:white">Copyrighted by Hubert (Sathaporn) Hu. Containing code from Ali Jafarian.</h5>
+    <div class="modal fade" id="workModal" tabindex="-1" role="dialog" aria-labelledby="workModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#954535 ; color:white">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title">Work</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>Student Research Trainee, <a href="http://taglab.ca">TAGLab</a></h4>
+                    <dl>
+                        <dt>Date: May, 2015 - September, 2015 [Expected]</dt>
+                        <dt>Location: Toronto</dt>
+                        <dd><p>Evaluating and developing mobile apps for seniors.</p></dd>
+                    </dl>
+
+                    <h4>Research Assistant/Software Evaluator, <a href="http://taglab.ca">TAGLab</a></h4>
+                    <dl>
+                        <dt>Date: September, 2014 - May, 2015</dt>
+                        <dt>Location: Toronto</dt>
+                        <dd><p>Evaluated a mobile app for seniors and developed a web framework for social scientists.</p></dd>
+                    </dl>
+
+                    <h4>Information Technology Intern, <a href="http://www.flyjetasia.com/">Jet Asia Airways</a></h4>
+                    <dl>
+                        <dt>Date: June, 2014 - August, 2015</dt>
+                        <dt>Location: Bangkok</dt>
+                        <dd><p>Migrated email accounts. Developed for Office 365. Performed other IT administrative tasks.</p></dd>
+                    </dl>
+
+                    <h4>Teaching Assistant, <a href="http://www.utoronto.ca">University of Toronto</a></h4>
+                    <dl>
+                        <dt>Date: September, 2013 - December, 2013</dt>
+                        <dt>Location: Toronto</dt>
+                        <dd><p>Assisted students, invigilated a midterm evaluation and marked assignments.</p></dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            // navigation click actions
-            $('.scroll-link').on('click', function (event) {
-                event.preventDefault();
-                var sectionID = $(this).attr("data-id");
-                scrollToID('#' + sectionID, 750);
-            });
-            // scroll to top action
-            $('.scroll-top').on('click', function (event) {
-                event.preventDefault();
-                $('html, body').animate({ scrollTop: 0 }, 'slow');
-            });
-            // mobile nav toggle
-            $('#nav-toggle').on('click', function (event) {
-                event.preventDefault();
-                $('#main-nav').toggleClass("open");
-            });
-        });
-        // scroll function
-        function scrollToID(id, speed) {
-            var offSet = 50;
-            var targetOffset = $(id).offset().top - offSet;
-            var mainNav = $('#main-nav');
-            $('html,body').animate({ scrollTop: targetOffset }, speed);
-            if (mainNav.hasClass("open")) {
-                mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-                mainNav.removeClass("open");
-            }
-        }
-        if (typeof console === "undefined") {
-            console = {
-                log: function () { }
-            };
-        }
-    </script>
+    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:darkslategrey; color:white">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title">Projects</h2>
+                </div>
+                <div class="modal-body">
+                    <p>During my careers, I have been involved in many projects. Some of them are personal while some of them are for works.
+                    All of the projects here are list chronologically.</p>
+                    <ul>
+                        <li>
+                            <strong><a href="http://taglab.utoronto.ca/projects/listening-talking-ebooks/">ALLT:</a></strong> An app for assisted reading.
+                        </li>
+                        <li>
+                            <strong><a href="http://taglab.utoronto.ca/projects/technologies-combat-isolation/">InTouch:</a></strong> An app for senior communication.
+                        </li>
+                        <li>
+                            <strong><a href="http://taglab.utoronto.ca/projects/tangra/">Tangra:</a></strong> A web framework for social scientists.
+                        </li>
+                        <li>
+                            <strong><a href="http://husathap.github.io/chitose/">Chitose:</a></strong> A quick hack for Twilio. A mobile LISP-like language compiler.
+                        </li>
+                        <li>
+                            <strong><a href="https://github.com/husathap/inuvik">Inuvik:</a></strong> An adventure game engine written in Ruby.
+                        </li>
+                        <li>
+                            <strong><a href="http://husathap.github.io/OFACAA/">OFAC Alpha Atlantis:</a></strong> A silly web game created with CreateJS.
+                        </li>
+                        <li>
+                            <strong><a href="https://github.com/husathap/squid">Squid.py:</a></strong> An experimental quick and dirty LISP macro preprocessors.
+                        </li>
+                        <li>
+                            <strong><a href="https://github.com/husathap/Yingge">Yingge:</a></strong> An experimental adventure game engine demonstrating the ability of 
+                            using C++ precessor to create a new scripting language.
+                        </li>
+                        <li>
+                            <strong><a href="https://github.com/husathap/Yingge">Yingge:</a></strong> An experimental adventure game engine demonstrating the ability of
+                            using C++ precessor to create a new scripting language.
+                        </li>
+                        <li>
+                            <strong><a href="https://github.com/husathap/CDFCheck">CDFCheck:</a></strong> A Windows Phone app for checking whether a computer is available or not
+                            at University of Toronto's computer science labs.
+                        </li>
+                        <li>
+                            <strong><a href="https://github.com/husathap/youbot">Youbot:</a></strong> ELIZA met Windows Phone.
+                        </li>
+                        <li>
+                            <strong><a href="https://github.com/husathap/Charlotte">OFAC II:</a></strong> Yet another silly C# game. Unfortunately, the game is too outdated to be played,
+                            so only the source code is available.
+                        </li>
+                        <li>
+                            <strong><a href="https://github.com/husathap/miquelon">OFAC:</a></strong> A silly C# game. Unfortunately, the game is too outdated to be played,
+                            so only the source code is available.
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#007BA7; color:white">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title">Contact</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Due to the fact that I don't like to give out too much personal information online, I can only provide you
+                    with so much. Other information is available upon request.</p>
+                    <ul>
+                        <li>
+                            <strong>Email (Personal):</strong> hu.hubert [at] live.ca
+                            <strong>Email (TAGLab):</strong> hubert [at] taglab.ca
+                            <strong>LinkedIn:</strong> <a href="https://ca.linkedin.com/pub/hubert-sathaporn-hu/63/ab4/3b8">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
