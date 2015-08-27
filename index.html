@@ -16,27 +16,51 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4" id="name_box">
-                <h2>Hubert (Sathaporn) Hu</h2>
-                <p>A research trainee at University of Toronto, an incoming graduate student at University of Calgary.</p>
-                <p><strong>Email:</strong> hu.hubert [at] live.ca</p>
-                <p>
-                    <strong>Social Media:</strong><br/>
-                    <a href="https://twitter.com/hubert_s_hu"><span class="fa fa-twitter" style="font-size:x-large"></span></a>
-                    <a href="https://ca.linkedin.com/pub/hubert-sathaporn-hu/63/ab4/3b8"><span class="fa fa-linkedin-square" style="font-size:x-large"></span></a>
-                </p>
+            <div class="col-sm-4">
+                <div class="row left_box">
+                    <div class="col-sm-12">
+                        <h2>Hubert (Sathaporn) Hu</h2>
+                        <p>A research trainee at University of Toronto, an incoming graduate student at University of Calgary.</p>
+                    </div>
+                </div>
+                <div class="row left_box">
+                    <div class="col-sm-12">
+                        <h3>Email</h3>
+                        <strong>Personal:</strong> hu.hubert [at] live.ca<br/>
+                        <strong>Academic:</strong> sathaporn.hu [at] ucalgary.ca
+                    </div>
+                </div>
+                <div class="row left_box">
+                    <div class="col-sm-12">
+                        <h3>
+                            Social Media |
+                            <a class="left_box_link" href="https://ca.linkedin.com/pub/hubert-sathaporn-hu/63/ab4/3b8"><span class="fa fa-linkedin-square" style="font-size:xx-large"></span></a>
+                            <a class="left_box_link" href="https://twitter.com/hubert_s_hu"><span class="fa fa-twitter" style="font-size:xx-large"></span></a>
+                            <a class="left_box_link" href="https://www.pinterest.com/huhubert/"><span class="fa fa-pinterest" style="font-size:xx-large"></span></a>
+                        </h3>
+                        <h3>Github | <a class="left_box_link" href="https://github.com/husathap"><span class="fa fa-github" style="font-size:xx-large"></span></a></h3>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-8">
-                <nav class="navbar">
-                    <div>
-                        <ul class="nav nav-pills" style="font-size:large; border-radius:0px !important">
-                            <li><a href="#" id="about_me_link">About Me</a></li>
-                            <li><a href="#" id="work_link">Work</a></li>
-                            <li><a href="#" id="education_link">Education</a></li>
-                            <li><a href="#" id="project_link">Project</a></li>
-                        </ul>
+
+                <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+                                <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-menubuilder">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li id="about_me_link"><a href="#">About Me</a></li>
+                                <li id="work_link"><a href="#">Work</a></li>
+                                <li id="education_link"><a href="#">Education</a></li>
+                                <li id="project_link"><a href="#">Project</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </nav>
+                </div>
                 <div id="content">
                     <div id="about_me_div">
                         <p>
@@ -163,12 +187,12 @@
         }
 
         function highlight_pill(new_pill) {
-            $("#about_me_link").removeClass("selected");
-            $("#work_link").removeClass("selected");
-            $("#education_link").removeClass("selected");
-            $("#project_link").removeClass("selected");
+            $("#about_me_link").removeClass("active");
+            $("#work_link").removeClass("active");
+            $("#education_link").removeClass("active");
+            $("#project_link").removeClass("active");
 
-            new_pill.addClass("selected");
+            new_pill.addClass("active");
         }
 
         $(document).ready(function () {
