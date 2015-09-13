@@ -57,6 +57,7 @@
                                 <li id="work_link"><a href="#">Work</a></li>
                                 <li id="education_link"><a href="#">Education</a></li>
                                 <li id="project_link"><a href="#">Project</a></li>
+                                <li id="teaching_link"><a href="#">Teaching</a></li>
                             </ul>
                         </div>
                     </div>
@@ -126,7 +127,7 @@
                         <strong>From: September 2015</strong><br />
                         <strong>Supervisor: Prof. Wesley Willett</strong>
                         <p>
-                            The program will start in September 2015.
+                            I am currently working in the area of language and visualization.
                         </p>
                         <hr />
 
@@ -143,7 +144,7 @@
                     <div id="project_div">
                         <h3>InTouch</h3>
                         <strong>From: January 2015 - September 2015</strong><br />
-                        <strong>Website: Under construction</strong>
+                        <strong>Website: <a href="https://www.taglab.toronto.edu/index.php/projects/intouch-technologies-to-combat-social-isolation-and-loneliness/"><span class="glyphicon glyphicon-new-window"></span></a></strong>
                         <p>
                             InTouch is an iOS app designed for seniors and people in their circles of care. It allows seniors to communicate with
                             people in their circles. What makes this app special is that it has been designed with user-centric design philosophy.
@@ -154,7 +155,7 @@
 
                         <h3>ALLT</h3>
                         <strong>From: June 2015 - September 2015</strong><br />
-                        <strong>Website: Under construction</strong>
+                        <strong>Website: <a href="https://www.taglab.toronto.edu/index.php/projects/simple-project/"><span class="glyphicon glyphicon-new-window"></span></a></strong>
                         <p>
                             ALLT or Accessible Large-print Listening and Talking is an Android app that features various tools to facilitate eBooks
                             reading. One of its important features is the ability to make recording out from the reading. During the recording,
@@ -166,7 +167,7 @@
 
                         <h3>Tangra</h3>
                         <strong>From: September 2014 - June 2015</strong><br />
-                        <strong>Website: Under construction</strong>
+                        <strong>Website: <a href="https://www.taglab.toronto.edu/index.php/projects/tangra-defining-and-supporting-online-studies-and-randomized-controlled-trials/"><span class="glyphicon glyphicon-new-window"></span></a></strong>
                         <p>
                             Tangra is Velian Pendeliev's Master's degree thesis. It is a Django web portal that allows researchers to perform
                             social experiments outside the lab. My task is to upgrade the engine so that it can be later adapted into studies
@@ -176,6 +177,19 @@
 
                         <h3>Other Projects</h3>
                         <p>In my spare time, I also work on smaller projects. They are available on <a href="https://github.com/husathap/">Github</a>.</p>
+                    </div>
+
+                    <div id="teaching_div">
+                        <h2>Teaching as a teaching assistant:</h2>
+                        <h3>CPSC217: Introduction to Computer Science for Multidisciplinary Studies I</h3>
+                        <strong>Term: Fall 2015</strong><br />
+                        <strong>University: University of Calgary</strong><br/>
+                        <strong>Instructor: Ben Stephenson</strong><br />
+
+                        <h3>CSC148H: Introduction to Programming</h3>
+                        <strong>Term: Fall 2013</strong><br />
+                        <strong>University: University of Toronto</strong><br />
+                        <strong>Instructor: Paul Gries</strong>
                     </div>
                 </div>
            </div>
@@ -199,6 +213,7 @@
             $("#work_link").removeClass("active");
             $("#education_link").removeClass("active");
             $("#project_link").removeClass("active");
+            $("#teaching_link").removeClass("active");
 
             new_pill.addClass("active");
         }
@@ -208,6 +223,7 @@
             $("#work_div").hide(0);
             $("#education_div").hide(0);
             $("#project_div").hide(0);
+            $("#teaching_div").hide(0);
             
             highlight_pill($("#about_me_link"));
 
@@ -229,6 +245,11 @@
             $("#project_link").on("click", function () {
                 swap_div($("#project_div"));
                 highlight_pill($("#project_link"));
+            });
+
+            $("#teaching_link").on("click", function () {
+                swap_div($("#teaching_div"));
+                highlight_pill($("#teaching_link"));
             });
         });
     </script>
