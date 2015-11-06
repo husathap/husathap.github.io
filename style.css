@@ -53,21 +53,21 @@ body {
 }
 
 a {
-    color: white;
+    color: yellow;
     font-weight: bold;
     font-style: italic;
     text-decoration: none;
 }
 
 a:link {
-    color: white;
+    color: yellow;
     font-weight: bold;
     font-style: italic;
     text-decoration: none;
 }
 
 a:hover {
-    color: yellow;;
+    color: white;;
     font-weight: bold;
     font-style: italic;
     text-decoration: none;
