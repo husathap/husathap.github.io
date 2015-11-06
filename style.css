@@ -6,6 +6,7 @@ body {
     background-image: url('bg.jpg');
     background-position: cover;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .about_me {
