@@ -6,24 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h2 class="navigation"><a href="index.html">◄ Home</a> |
-      <div class="dropdown" style="display:inline-block">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">▼ LINKS</a>
-        <ul class="dropdown-menu">
-          <li><a href="education.html" class="large_link">EDUCATION</a></li>
-          <li><a href="teaching.html" class="large_link">TEACHING</a></li>
-          <li><a href="projects.html" class="large_link">PROJECTS</a></li>
-          <li><a href="employment.html" class="large_link">EMPLOYMENT</a>
-          <li><a href="contact.html" class="large_link">CONTACT</a>
-        </ul>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-    </h2>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="education.html"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> EDUCATION</a></li>
+          <li><a href="teaching.html"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span> TEACHING</a></li>
+          <li class="active"><a href="#"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> PROJECTS <span class="sr-only">(current)</span></a></li>
+          <li><a href="employment.html"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> EXPERIENCE</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
     <div class="container">
       <h1>Projects</h1>
+
+      <h3>D-Plot</h3>
+      <strong>From: January 2016 - April 2016</strong><br />
+      <p>
+        A novel method of displaying a bigram model. Implemented in Python, JavaScript and HTML.
+      </p>
+      <hr />
+
+      <h3>Visualization of Part-of-Speech Distribution</h3>
+      <strong>From: January 2016 - April 2016</strong><br />
+      <p>
+        A visualization of part-of-speech distribution in various corpora. Impelemented in Python, JavaScript and HTML. Used d3 library.
+      </p>
+      <hr />
+
       <h3>InTouch</h3>
       <strong>From: January 2015 - September 2015</strong><br />
       <strong>Website: <a href="https://www.taglab.toronto.edu/index.php/projects/intouch-technologies-to-combat-social-isolation-and-loneliness/"><span class="glyphicon glyphicon-new-window"></span></a></strong>

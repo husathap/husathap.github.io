@@ -5,72 +5,96 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-  <div style="background:white; color:#003153; width:100%; margin:0 !important; padding:0; top:0; left:0;">
+  <div class="aboutMe">
     <div class="container">
       <h1>Hubert (Sathaporn) Hu</h1>
-      <p>A graduate student at University of Calgary in computer science. Working in the area of Human-Computer Interaction and Computer-Assisted Language Learning. Working in iLab and under supervision of Professor Wesley Willett. Formerly a student at University of Toronto.</p>
-
-      <p class="quick_link_bar">QUICK LINKS: <a href="./teaching/f15_cpsc217.html" class="quick_link">CPSC207 T3</a> | <a href="https://github.com/husathap" class="quick_link">GitHub</a> | <a href="https://ca.linkedin.com/pub/hubert-sathaporn-hu/63/ab4/3b8" class="quick_link">LinkedIn</a> | <a href="https://twitter.com/hubert_s_hu" class="quick_link">Twitter</a></p>
+      <h3>MSc. in Computer Science at University of Calgary</h3>
     </div>
   </div>
 
-  <div class="container">
-    <div class="jumbotron about_me">
-      <!--<ul class="large_link_list">
-        <li><a href="education.html">EDUCATION</a></li>
-        <li><a href="teaching.html">TEACHING</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-        <li><a href="employment.html">EMPLOYMENT</a>
-        <li><a href="contact.html">CONTACT</a>
-      </ul>-->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
 
-      <div class="row">
-        <div class="col-md-2">
-          <a href="education.html">
-            <span class="glyphicon glyphicon-education" style="font-size:xx-large"></span><br/>
-            EDUCATION
-          </a>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
+          <li><a href="education.html"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> EDUCATION</a></li>
+          <li><a href="teaching.html"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span> TEACHING</a></li>
+          <li><a href="projects.html"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> PROJECTS</a></li>
+          <li><a href="employment.html"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> EXPERIENCE</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- Home Page Area -->
+  <div id="#home" class="container" aria-hidden="false">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="max-width:800px; max-height:315px">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="carousel1.png" alt="A campus jackrabbit">
         </div>
-        <div class="col-md-2">
-          <a href="teaching.html">
-            <span class="glyphicon glyphicon-apple" style="font-size:xx-large"></span><br/>
-            TEACHING
-          </a>
+        <div class="item">
+          <img src="carousel2.png" alt="D-plot, a tool for visualizing bigram models">
         </div>
-        <div class="col-md-2">
-          <a href="projects.html">
-            <span class="glyphicon glyphicon-blackboard" style="font-size:xx-large"></span><br/>
-            PROJECTS
-          </a>
-        </div>
-        <div class="col-md-2">
-          <a href="employment.html">
-            <span class="glyphicon glyphicon-briefcase" style="font-size:xx-large"></span><br/>
-            EMPLOYMENT
-          </a>
-        </div>
-        <div class="col-md-2">
-          <a href="contact.html">
-            <span class="glyphicon glyphicon-globe" style="font-size:xx-large"></span><br/>
-            CONTACT
-          </a>
+        <div class="item">
+          <img src="carousel3.png" alt="Another corpus visualization tool">
         </div>
       </div>
 
-      <div class="row">
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div> <!-- Carousel -->
 
+    <br/>
 
-        <div class="col-md-3">
-        </div>
-      </div>
-    </div>
-  </div>
+    <h1>About Hubert</h1>
+    <p>
+      Hubert (Sathaporn) Hu is a Master's degree student at University of Calgary.
+      He is working in iLab and he is supervised by Professor Wesley Willett. His
+      current Master's thesis involve making language learning simpler for everyone
+      and visualizing linguistics model such as bigram models and part-of-speech
+      distribution. Huber is previously a student at University of Toronto and
+      he has a BSc. which includes a specialist in computer science, a major in
+      cognitive science and a minor in French.
+    </p>
+
+    <p>Email: sathaporn dot hu at ucalgary dot ca</p>
+    <p style="font-size:xx-large">
+      <a href="https://ca.linkedin.com/in/hubert-sathaporn-hu-3b8ab463"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      <a href="https://github.com/husathap"><i class="fa fa-github-square" aria-hidden="true"></i></i></a>
+    </p>
 
 </body>
 </html>
