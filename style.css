@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #18A7B5;
+	background-color: #18A7B5 !important;
   color:white !important;
   background: url('bg.png') no-repeat center center fixed;
   background-position: cover;
