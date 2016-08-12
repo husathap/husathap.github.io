@@ -1,6 +1,6 @@
 body {
   background-color: lightblue;
-  background: url('background.jpg') no-repeat center center fixed;;
+  background: url('background2.jpg') no-repeat center center fixed;;
 }
 
 nav {
@@ -38,7 +38,10 @@ a:hover {
   background-color:white;
   box-shadow: 0px 0px 10px black;
   padding: 1em;
+  margin: auto;
   margin-top: 2em;
+  width:80%;
+  max-width: 1000px;
 }
 
 .project {
@@ -59,12 +62,37 @@ a:hover {
   margin-top:2em;
 }
 
+.customPill .active a {
+  border-radius: 0px !important;
+  background-color: red !important;
+  border: red 2px solid;
+}
+
+.customPill .active a:hover {
+  border-radius: 0px !important;
+  background-color: red !important;
+  border: red 2px solid;
+}
+
+.customPill a:hover {
+  border-radius: 0px !important;
+  background-color: white !important;
+  color: red;
+  border: red 2px solid;
+}
+
+.customPill a {
+  border-radius: 0px !important;
+  background-color: transparent !important;
+  color:red;
+  border: red 2px transparent;
+}
+
 @media (max-width: 600px) {
   #intro {
-    position:absolute;
-    right: 5%;
-    bottom: 5vh;
-    width: 90%;
+    left: 5%;
+    top: 100px;
+    width: 100%;
   }
 
   .designation {
@@ -75,9 +103,10 @@ a:hover {
 @media (min-width: 601px) {
   #intro {
     position:absolute;
-    right: 5%;
-    bottom: 10vh;
-    width: 50%;
+    left: 5%;
+    top: 100px;
+    width: 90%;
+    max-width: 600px;
   }
 
   .designation {

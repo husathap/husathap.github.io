@@ -53,16 +53,26 @@
 
     <div id="timelineIntro" class="content">
       <h1>Timeline</h1>
-      <p>(Almost) everything in my career, from my education to my projects have been consolidated into a single timeline. Blocks are colour-coded for your convenient.
+      <p>(Almost) everything in my career, from my education to my projects have been consolidated into a single timeline.
         Please note that the dates are approximate. If you want a more tradiational view, please go to CV.</p>
 
-      <p>To use the timeline: Click on a block to learn more about an activity in detail. Drag the timeline to move to the past or the future. Scroll to zoom in or out.</p>
+      <p>To use the timeline: Select one of the categories below that you want to view. Drag on timeline to move around. Scroll to zoom in or out. Click on a block to learn more.</p>
 
-      <p><strong>Legend:</strong> <span style="color:red">█ Education</span> &emsp; <span style="color:teal">█ Teaching</span> &emsp;
-        <span style="color:darkgrey">█ Project</span> &emsp; <span style="color:brown">█ Job</span> &emsp; <span style="color:orange">█ Volunteer</span></p>
+      <ul class="nav nav-pills customPill">
+        <li id="timelineCategoryEducation" class="timelineCategory active"><a href="#" onclick="categoryClick('visEducation', 'timelineCategoryEducation')">Education</a></li>
+        <li id="timelineCategoryTeaching" class="timelineCategory"><a href="#" onclick="categoryClick('visTeaching', 'timelineCategoryTeaching')">Teaching</a></li>
+        <li id="timelineCagetoryProject" class="timelineCategory"><a href="#" onclick="categoryClick('visProject', 'timelineCagetoryProject')">Project</a></li>
+        <li id="timelineCategoryJob" class="timelineCategory" ><a href="#" onclick="categoryClick('visJob', 'timelineCategoryJob')">Job</a></li>
+        <li id="timelineCategoryVolunteer" class="timelineCategory"><a href="#" onclick="categoryClick('visVolunteer', 'timelineCategoryVolunteer')">Volunteer</a></li>
+      </ul>
     </div>
 
-    <div id="vis" class="content"></div>
+    <!--<div id="vis" class="content"></div>-->
+    <div id="visEducation" class="content vis"></div>
+    <div id="visTeaching" class="content vis hidden"></div>
+    <div id="visProject" class="content vis hidden"></div>
+    <div id="visJob" class="content vis hidden"></div>
+    <div id="visVolunteer" class="content vis hidden"></div>
 
     <div id="timelineExplanation" class="content">
       <h3>Please select one of the activities above to see it in detail.</h3>
@@ -70,9 +80,16 @@
 
     <script>
       var today = moment().format('YYYY-MM-DD');
-      var container = document.getElementById('vis');
+
+      var containers = {};
+      containers['education'] = document.getElementById('visEducation');
+      containers['teaching'] = document.getElementById('visTeaching');
+      containers['project'] = document.getElementById('visProject');
+      containers['job'] = document.getElementById('visJob');
+      containers['volunteer'] = document.getElementById('visVolunteer');
+
       var explanation = document.getElementById('timelineExplanation');
-      var timeline;
+      var timelines = {};
 
       var data = [
         {name: "University of Toronto", className:"education", degree:"Bachelor of Science", program:"Specialist in Computer Science, Major in Cognitive Science, Minor in French", location:"Toronto, Canada", start: '2011-09-01', end: '2015-05-15'},
@@ -94,7 +111,7 @@
       ]
 
       function setupTimeline() {
-        var temp = [];
+        var temps = {};
 
         for (var i = 0; i < data.length; i++) {
 
@@ -105,14 +122,21 @@
           if ("end" in data[i])
             t["end"] = data[i].end;
 
-          temp.push(t);
+          // Create a new class in temp if nonexistent.
+          if (!(t.className in temps)) {
+            temps[t.className] = [];
+          }
+
+          temps[t.className].push(t);
         }
 
-        var items = new vis.DataSet(temp);
+        var classNameList = Object.keys(temps);
         var options = {min: '2010-01-01', max: '2020-01-01'};
-        timeline = new vis.Timeline(container, items, options);
 
-        timeline.on("select", function (properties) { explain(properties.items[0]) });
+        for (var i = 0; i < classNameList.length; i++) {
+          timelines[classNameList[i]] = new vis.Timeline(containers[classNameList[i]], temps[classNameList[i]], options);
+          timelines[classNameList[i]].on("select", function(properties) { explain(properties.items[0])});
+        }
       }
 
       function explain(i) {
@@ -126,23 +150,43 @@
           case "project":
             explanation.innerHTML = "<h2>" + data[i].name + "</h2><p><strong>Description:</strong> " + data[i].description + "</p>";
             if ("link" in data[i])
-              explanation.innerHTML += "<a href='" + data[i].link + "'><strong>Project's Website</strong></a>"
+              explanation.innerHTML += "<a target='_blank' href='" + data[i].link + "'><strong>Project's Website</strong></a>"
             break;
           case "job":
             explanation.innerHTML = "<h2>" + data[i].name + "</h2><p><strong>Company/Institute:</strong> " + data[i].company + "<br/><strong>Location: </strong>" + data[i].location + "<br/><strong>Description: </strong>" + data[i].description + "</p>";
             if ("link" in data[i])
-              explanation.innerHTML += "<a href='" + data[i].link + "'><strong>Comapny/Institute's Website</strong></a>"
+              explanation.innerHTML += "<a target='_blank' href='" + data[i].link + "'><strong>Comapny/Institute's Website</strong></a>"
             break;
           case "volunteer":
             explanation.innerHTML = "<h2>" + data[i].name + "</h2><p><strong>Organization:</strong> " + data[i].organization + "<br/><strong>Affiliation: </strong>" + data[i].affiliation + "<br/><strong>Description: </strong>" + data[i].description + "</p>";
             if ("link" in data[i])
-              explanation.innerHTML += "<a href='" + data[i].link + "'><strong>Organization's Website</strong></a>"
+              explanation.innerHTML += "<a target='_blank' href='" + data[i].link + "'><strong>Organization's Website</strong></a>"
             break;
           break;
         }
       }
-      
+
       setupTimeline();
+
+      function categoryClick(id, id2) {
+        var visCategories = document.getElementsByClassName("vis");
+
+        for (var i = 0; i < visCategories.length; i++) {
+          if (!visCategories[i].classList.contains("hidden")) {
+            visCategories[i].classList.add("hidden");
+          }
+        }
+
+        var timelineCategories = document.getElementsByClassName("timelineCategory");
+
+        for (var i = 0; i < timelineCategories.length; i++) {
+          if (timelineCategories[i].classList.contains("active"))
+            timelineCategories[i].classList.remove("active");
+        }
+
+        document.getElementById(id).classList.remove("hidden");
+        document.getElementById(id2).classList.add("active");
+      }
 
     </script>
   </body>
