@@ -46,19 +46,7 @@ body {
   margin-left:1em;
 }
 
-.links a {
-  color:white;
-  padding:5px;
-  border: white 1px solid;
-  text-decoration: none;
-}
 
-.links a:hover {
-  color:yellow;
-  padding:5px;
-  border: yellow 1px solid;
-  text-decoration: none;
-}
 
 #contact {
   background-color: black;
@@ -168,6 +156,21 @@ a.active {
     background-color: red;
     min-height:300px;
   }
+
+  .links a {
+    color:white;
+    padding:5px;
+    border: white 3px solid;
+    text-decoration: none;
+    display:inline-block;
+  }
+
+  .links a:hover {
+    color:yellow;
+    padding:5px;
+    border: yellow 3px solid;
+    text-decoration: none;
+  }
 }
 
 @media only screen and (min-width:1001px) {
@@ -183,6 +186,21 @@ a.active {
     background-color: red;
     height: 100vh;
     margin-left:400px;
+  }
+
+  .links a {
+    color:white;
+    padding:5px;
+    border: white 1px solid;
+    text-decoration: none;
+    display:inline-block;
+  }
+
+  .links a:hover {
+    color:yellow;
+    padding:5px;
+    border: yellow 1px solid;
+    text-decoration: none;
   }
 
 }
