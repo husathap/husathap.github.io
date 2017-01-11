@@ -2,7 +2,7 @@ body {
   margin:0px;
   padding:0px;
   color:white;
-  background-color:teal;
+  background-color:#1E90FF	;
 }
 
 #name {
@@ -153,7 +153,7 @@ a.active {
   }
 
   #timeline {
-    background-color: red;
+    background-color: #1E90FF	;
     min-height:300px;
   }
 
@@ -183,7 +183,7 @@ a.active {
   }
 
   #timeline {
-    background-color: teal;
+    background-color: #1E90FF	;
     height: 100vh;
     margin-left:400px;
   }
