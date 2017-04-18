@@ -45,7 +45,7 @@ function scholarship() {
   });
 
   return (<div>
-    <h1>Scholarships/Awards</h1>
+    <h1>Scholarships</h1>
     {eList}
   </div>);
 }
@@ -74,14 +74,14 @@ function project() {
         <div className="block head">{x.name}</div>
         <div>Description: {x.description}</div>
         {x.link &&
-          <a href={x.link}>Project''s Webiste</a>
+          <a href={x.link}>Project's Webiste</a>
         }
       </div>
     );
   });
 
   return (<div>
-    <h1>Project</h1>
+    <h1>Projects</h1>
     {eList}
   </div>);
 }
@@ -99,7 +99,7 @@ function job() {
   });
 
   return (<div>
-    <h1>Professional Experience</h1>
+    <h1>Jobs</h1>
     {eList}
   </div>);
 }

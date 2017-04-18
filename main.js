@@ -97,7 +97,7 @@ function scholarship() {
     React.createElement(
       "h1",
       null,
-      "Scholarships/Awards"
+      "Scholarships"
     ),
     eList
   );
@@ -161,7 +161,7 @@ function project() {
       x.link && React.createElement(
         "a",
         { href: x.link },
-        "Project''s Webiste"
+        "Project's Webiste"
       )
     );
   });
@@ -172,7 +172,7 @@ function project() {
     React.createElement(
       "h1",
       null,
-      "Project"
+      "Projects"
     ),
     eList
   );
@@ -220,7 +220,7 @@ function job() {
     React.createElement(
       "h1",
       null,
-      "Professional Experience"
+      "Jobs"
     ),
     eList
   );
