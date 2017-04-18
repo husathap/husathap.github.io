@@ -1,0 +1,206 @@
+body {
+  margin:0px;
+  padding:0px;
+  color:white;
+  background-color:#1E90FF	;
+}
+
+#name {
+  margin: 1em;
+}
+
+#description {
+  margin: 1em;
+}
+
+#title {
+  font-size:large;
+  color: gray;
+
+}
+
+.alt-name {
+  font-size: large;
+}
+
+.main-name {
+  font-size: xx-large;
+}
+
+.main-name > a {
+  text-decoration: none;
+  color:orange;
+}
+
+.main-name > a:hover {
+  text-decoration: none;
+  color:yellow;
+}
+
+.links {
+  font-size: large;
+  color: lime;
+}
+
+#bio > .links {
+  margin-left:1em;
+}
+
+
+
+#contact {
+  background-color: black;
+  margin:0px;
+  padding:0px;
+  position:fixed;
+  left:0px;
+  top:0px;
+  width:100%;
+  text-align: center;
+  display: none;
+}
+
+#close-form {
+  width:100%;
+  text-align:center;
+  border-top: white 1px solid;
+  cursor:pointer;
+}
+
+/* Timeline */
+
+.hidden {
+  display:none;
+}
+
+.active {
+  display:inline;;
+}
+
+a.active {
+  border: none;
+}
+
+.vis-item {
+  cursor:pointer;
+}
+
+.vis-item.education {
+  background-color:red;
+  color:white;
+}
+
+.vis-item.teaching {
+  background-color:teal;
+  color:white;
+}
+
+.vis-item.project {
+  background-color:darkgrey;
+  color:white;
+}
+
+.vis-item.job {
+  background-color:brown;
+  color:white;
+}
+
+.vis-item.volunteer {
+  background-color:orange;
+  color:white;
+}
+
+.vis {
+  width:80%;
+  margin:auto;
+  background-color: white;
+}
+
+#timelineIntro {
+  width:80%;
+  max-width: 1000px;
+  margin:auto;
+  padding:10px;
+}
+
+#timelineExplanation {
+  width:80%;
+  max-width: 1000px;
+  margin:auto;
+  margin-top:2em;
+  padding-bottom: 10px;
+}
+
+#timelineExplanation > a {
+  text-decoration: underline;
+  font-weight: bold;
+  color:white;
+}
+
+#timelineExplanation > a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color:yellow;
+}
+
+/*  MEDIA */
+
+@media only screen and (min-width:0px) and (max-width:1000px) {
+  #bio {
+    background-color: black;
+    padding:5px;
+    padding-bottom: 20px;
+  }
+
+  #timeline {
+    background-color: #1E90FF	;
+    min-height:300px;
+  }
+
+  .links a {
+    color:white;
+    padding:5px;
+    border: white 3px solid;
+    text-decoration: none;
+    display:inline-block;
+  }
+
+  .links a:hover {
+    color:yellow;
+    padding:5px;
+    border: yellow 3px solid;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width:1001px) {
+
+  #bio {
+    background-color: black;
+    height:100vh;
+    width:400px;
+    float:left;
+  }
+
+  #timeline {
+    background-color: #1E90FF	;
+    height: 100vh;
+    margin-left:400px;
+  }
+
+  .links a {
+    color:white;
+    padding:5px;
+    border: white 1px solid;
+    text-decoration: none;
+    display:inline-block;
+  }
+
+  .links a:hover {
+    color:yellow;
+    padding:5px;
+    border: yellow 1px solid;
+    text-decoration: none;
+  }
+
+}

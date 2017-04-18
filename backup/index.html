@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <title>Hubert Hu</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="vendor/vis.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="vendor/vis.min.js"></script>
+    <script src="vendor/moment.js"></script>
+  </head>
+
+  <body>
+    <div id="bio">
+      <div id="name">
+        <div class="main-name">
+          Hubert Hu <a href="https://github.com/husathap"><i class="fa fa-github-square"></i></a>
+          <a href="https://ca.linkedin.com/in/hubert-sathaporn-hu-3b8ab463"><i class="fa fa-linkedin-square"></i></a>
+        </div>
+        <div class="alt-name">สถาพร ฮู | 胡秀楷</div>
+      </div>
+
+      <div id="description">
+        <p id="title">MSc in Computer Science</p>
+        <p>I am currently a Master's degree student in computer science
+        at University of Calgary under the supervision of Professor Wesley Willett.
+        My main areas of interests are: human-computer interaction, virtual/augmented
+        reality, computer-assisted language learning. My secondary areas of interests
+        are computational linguistics and machine learning.</p>
+        <p>Email: sathaporn dot hu at ucalgary dot ca</p>
+      </div>
+
+      <div class="links">
+        <a href="CV.pdf">CV [PDF]</a>
+      </div>
+    </div>
+
+    <div id="timeline">
+      <div id="timelineIntro" class="content">
+        <h1>Timeline</h1>
+        <div class="links">
+          <a id="timelineCategoryEducation" class="timelineCategory active" href="#" onclick="categoryClick('visEducation', 'timelineCategoryEducation')">Education</a>
+          <a id="timelineCategoryTeaching" class="timelineCategory" href="#" onclick="categoryClick('visTeaching', 'timelineCategoryTeaching')">Teaching</a>
+          <a id="timelineCagetoryProject" class="timelineCategory" href="#" onclick="categoryClick('visProject', 'timelineCagetoryProject')">Project</a>
+          <a id="timelineCategoryJob" class="timelineCategory" href="#" onclick="categoryClick('visJob', 'timelineCategoryJob')">Job</a>
+          <a id="timelineCategoryVolunteer" class="timelineCategory" href="#" onclick="categoryClick('visVolunteer', 'timelineCategoryVolunteer')">Volunteer</a>
+        </div>
+      </div>
+
+      <!--<div id="vis" class="content"></div>-->
+      <div id="visEducation" class="content vis"></div>
+      <div id="visTeaching" class="content vis hidden"></div>
+      <div id="visProject" class="content vis hidden"></div>
+      <div id="visJob" class="content vis hidden"></div>
+      <div id="visVolunteer" class="content vis hidden"></div>
+
+      <div id="timelineExplanation" class="content">
+        <h3>Please select one of the activities above to see it in detail.</h3>
+      </div>
+    </div>
+
+    <script>
+    var today = moment().format('YYYY-MM-DD');
+
+    var containers = {};
+    containers['education'] = document.getElementById('visEducation');
+    containers['teaching'] = document.getElementById('visTeaching');
+    containers['project'] = document.getElementById('visProject');
+    containers['job'] = document.getElementById('visJob');
+    containers['volunteer'] = document.getElementById('visVolunteer');
+
+    var explanation = document.getElementById('timelineExplanation');
+    var timelines = {};
+
+    var data = [
+      {name: "University of Toronto", className:"education", degree:"Bachelor of Science", program:"Specialist in Computer Science, Major in Cognitive Science, Minor in French", location:"Toronto, Canada", start: '2011-09-01', end: '2015-05-15'},
+      {name: "University of Calgary", className:"education", degree:"Master of Science", program:"Computer Science", location:"Calgary, Canada", start: '2015-09-01', end: today},
+      {name: "TA for CPC148", className:"teaching", university:"University of Toronto", start: '2013-09-01', end: '2013-12-25', description:'Introduction to Programming'},
+      {name: "TA for CPSC207", className:"teaching", university:"University of Calgary", start: '2015-09-01', end: '2015-12-25', description:'Introduction to Computer Science for Multidisciplinary Studies I'},
+      {name: "TA for SENG513", className:"teaching", university:"University of Calgary", start: '2016-01-01', end: '2016-05-01', description: 'Web-based System'},
+      {name: "Tangra", className:"project", start: '2014-09-01', end: '2015-06-01', description: 'A Django web engine for social scientists. Designed to facilitate experiments over the Internet. Developed at University of Toronto.', link:'https://www.taglab.toronto.edu/index.php/projects/tangra-defining-and-supporting-online-studies-and-randomized-controlled-trials/'},
+      {name: "ALLT", className:"project", start: '2015-06-01', end: '2015-09-01', description: 'An Android eBook app developed for seniors. Developed at University of Toronto.', link:'https://www.taglab.toronto.edu/index.php/projects/simple-project/'},
+      {name: "InTouch", className:"project", start: '2015-01-01', end: '2015-09-01', description: 'An iOS communication app for serniors. Developed at University of Toronto.', link:'https://www.taglab.toronto.edu/index.php/projects/intouch-technologies-to-combat-social-isolation-and-loneliness/'},
+      {name: "Project Happiness", className:"project", start: '2015-09-01', end: '2015-12-25', description: 'A physical installation with digital components done at University of Calgary. Used Processing and Phidget sensors.'},
+      {name: "D-Plot", className:"project", start: '2016-01-01', end: '2016-05-01', description: 'A novel way to visualize bigram model generated from a corpus. Implemented in Python, HTML and JavaScript.'},
+      {name: "Part-of-Speech Visualization", className:"project", start: '2016-01-01', end: '2016-05-01', description: 'An interactive visaulization method for part-of-speech distribution inside a corpus. Developed in Python, HTML and JavaScript.'},
+      {name: "IT Intern", className:"job", start: '2014-06-15', end: '2014-08-05', company: 'Jet Asia Airways', location: 'Bangkok, Thailand', description: 'Maintained the company\'s IT infastructure.'},
+      {name: "Research Assistant", className:"job", start: '2014-09-01', end: '2015-09-01', company: 'TAGLab, University of Toronto', location: 'Toronto, Canada', description: 'Tested and developed software.', link: 'https://www.taglab.toronto.edu/'},
+      {name: "Language Exchange Participant", className:"volunteer", start: '2011-09-01', end: '2014-09-01', organization: 'Japan-Canada Student Association', affiliation: 'University of Toronto', description: 'Helped people learn English through language exchange.', link: 'https://jcsaonline.wordpress.com/'},
+      {name: "Administrator", className:"volunteer", start: '2012-09-01', end: '2015-09-04', organization: 'Cognitive Science and Artificial Intelligence Student Association', affiliation: 'University of Toronto', description: 'Designed a poster for a conference. Helped to draft a new constitution. Performed other tasks.'},
+      {name: "VP Finance", className:"volunteer", start: '2016-06-01', end: '2016-09-01', organization: 'Computer Science Graduate Society', affiliation: 'University of Calgary', description: 'Kept track of the organization\'s finance. Helped with reimbursement and researched course load at the university.', link: 'http://csgs.cpsc.ucalgary.ca'},
+      {name: "Research Intern", className:"job", start: '2016-09-01', end:'2016-12-23', company: 'Lenovo', location: 'Beijing, China', description: 'Researching in the area of natural language processing and virtual reality', link: 'http://www.lenovo.com'},
+      {name: "Caracas", className:"project", start: '2015-09-01', end:today, description: 'The Master\'s degree project. Caracas is a mobile app for learning a foreign language.'},
+      {name: "TA for SENG513", className:"teaching", university:"University of Calgary", start: '2017-01-01', end:today, description: 'Web-based System'}
+    ]
+
+    function setupTimeline() {
+      var temps = {};
+
+      for (var i = 0; i < data.length; i++) {
+
+        // Start a new block.
+        var t = {id: i, content:data[i].name, start:data[i].start, className:data[i].className};
+
+        // Then if there is end date, add it.
+        if ("end" in data[i])
+          t["end"] = data[i].end;
+
+        // Create a new class in temp if nonexistent.
+        if (!(t.className in temps)) {
+          temps[t.className] = [];
+        }
+
+        temps[t.className].push(t);
+      }
+
+      var classNameList = Object.keys(temps);
+      var options = {min: '2010-01-01', max: '2020-01-01'};
+
+      for (var i = 0; i < classNameList.length; i++) {
+        timelines[classNameList[i]] = new vis.Timeline(containers[classNameList[i]], temps[classNameList[i]], options);
+        timelines[classNameList[i]].on("select", function(properties) { explain(properties.items[0])});
+      }
+    }
+
+    function explain(i) {
+      switch(data[i].className) {
+        case "education":
+          explanation.innerHTML = "<h2>" + data[i].name + "</h2><p><strong>Degree:</strong> " + data[i].degree + "<br/><strong>Program:</strong> " + data[i].program + "</p>";
+          break;
+        case "teaching":
+          explanation.innerHTML = "<h2>" + data[i].name + "</h2><p><strong>Description:</strong> " + data[i].description + "<br/><strong>University:</strong> " + data[i].university + "</p>";
+          break;
+        case "project":
+          explanation.innerHTML = "<h2>" + data[i].name + "</h2><p><strong>Description:</strong> " + data[i].description + "</p>";
+          if ("link" in data[i])
+            explanation.innerHTML += "<a target='_blank' href='" + data[i].link + "'><strong>Project's Website</strong></a>"
+          break;
+        case "job":
+          explanation.innerHTML = "<h2>" + data[i].name + "</h2><p><strong>Company/Institute:</strong> " + data[i].company + "<br/><strong>Location: </strong>" + data[i].location + "<br/><strong>Description: </strong>" + data[i].description + "</p>";
+          if ("link" in data[i])
+            explanation.innerHTML += "<a target='_blank' href='" + data[i].link + "'><strong>Comapny/Institute's Website</strong></a>"
+          break;
+        case "volunteer":
+          explanation.innerHTML = "<h2>" + data[i].name + "</h2><p><strong>Organization:</strong> " + data[i].organization + "<br/><strong>Affiliation: </strong>" + data[i].affiliation + "<br/><strong>Description: </strong>" + data[i].description + "</p>";
+          if ("link" in data[i])
+            explanation.innerHTML += "<a target='_blank' href='" + data[i].link + "'><strong>Organization's Website</strong></a>"
+          break;
+        break;
+      }
+    }
+
+    setupTimeline();
+
+    function categoryClick(id, id2) {
+      var visCategories = document.getElementsByClassName("vis");
+
+      for (var i = 0; i < visCategories.length; i++) {
+        if (!visCategories[i].classList.contains("hidden")) {
+          visCategories[i].classList.add("hidden");
+        }
+      }
+
+      var timelineCategories = document.getElementsByClassName("timelineCategory");
+
+      for (var i = 0; i < timelineCategories.length; i++) {
+        if (timelineCategories[i].classList.contains("active"))
+          timelineCategories[i].classList.remove("active");
+      }
+
+      document.getElementById(id).classList.remove("hidden");
+      document.getElementById(id2).classList.add("active");
+    }
+
+    </script>
+  </body>
+</html>
