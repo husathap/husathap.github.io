@@ -1,89 +1,91 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hubert Hu</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Hubert Hu</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
 
-  <body>
-    <header>
-      <div id="header-content">
-        <div class="name">
-          <h1>Hubert Hu</h1>
-          <h2>สถาพร ฮู | 胡秀楷</h2>
+<body>
+  <header>
+    <div id="header-content">
+      <div class="name">
+        <h1>Hubert Hu</h1>
+        <h2>สถาพร ฮู | 胡秀楷</h2>
 
-        </div>
-
-        <div class="designation">
-          MSc. Candidate in Computer Science
-        </div>
-
-        <section id="about">
-          <p>
-            Hubert Hu is a graduate student at
-            University of Calgary. His areas of speciality are human-computer
-            interaction, natural language processing and machine learning. He is
-            a member of Interactions Lab and a member of Data Experience at
-            University of Calgary. He is also a former intern at Lenovo, Beijing.
-          </p>
-        </section>
-
-        <nav>
-            <a href="#" data="education">Education</a>
-            <a href="#" data="scholarship">Scholarships</a>
-            <a href="#" data="teaching">Teaching</a>
-            <a href="#" data="project">Projects</a>
-            <a href="#" data="job">Jobs</a>
-            <a href="#" data="volunteer">Volunteer</a>
-            <a href="#" data="contact">Contact</a>
-        </nav>
       </div>
-    </header>
 
-    <div id="main">
+      <div class="designation">
+        MSc. Candidate in Computer Science
+      </div>
 
-        <section id="education" class="content"></section>
-        <section id="scholarship" class="content"></section>
-        <section id="teaching" class="content"></section>
-        <section id="project" class="content"></section>
-        <section id="job" class="content"></section>
-        <section id="volunteer" class="content"></section>
+      <section id="about">
+        <p>
+          Hubert Hu is a graduate student at
+          University of Calgary. His areas of speciality are human-computer
+          interaction, natural language processing and machine learning. He is
+          a member of Interactions Lab and a member of Data Experience at
+          University of Calgary. He is also a former intern at Lenovo, Beijing.
+        </p>
+      </section>
 
-        <section id="contact" class="content">
-          <h1>
-            Contact
-          </h1>
-
-          <h3>Social Media</h3>
-          <ul>
-            <li><a href="https://www.linkedin.com/in/hubert-sathaporn-hu-3b8ab463/">
-              <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn
-            </a></li>
-            <li><a href="https://github.com/husathap">
-              <i class="fa fa-github" aria-hidden="true"></i> Github
-            </a></li>
-          </ul>
-
-          <h3>Email</h3>
-          <ul>
-            <li><span style="font-weight:bold">Academic:</span> sathaporn dot hu @ ucalgary dot ca</li>
-            <li><span style="font-weight:bold">Other:</span> hu dot hubert @ live dot ca</li>
-          </ul>
-
-        </section>
+      <nav>
+        <a href="#" data="academic">Academic</a>
+        <a href="#" data="project">Projects</a>
+        <a href="#" data="job">Jobs</a>
+        <a href="#" data="volunteer">Volunteer</a>
+        <a href="#" data="contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <div id="loading">
-    </div>
+  <div id="main">
+    <section id="academic" class="content">
+      <section id="education"></section>
+      <hr/>
+      <section id="scholarship"></section>
+      <hr/>
+      <section id="teaching"></section>
+    </section>
 
-    <script src="jquery-3.2.1.min.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script src="https://unpkg.com/react@15/dist/react.js"></script>
-    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
-    <script src="model.js"></script>
-    <script src="main.js"></script>
-  </body>
+    <section id="project" class="content"></section>
+    <section id="job" class="content"></section>
+    <section id="volunteer" class="content"></section>
+
+    <section id="contact" class="content">
+      <h1>
+        Contact
+      </h1>
+
+      <h3>Social Media</h3>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/hubert-sathaporn-hu-3b8ab463/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+        </a></li>
+        <li><a href="https://github.com/husathap">
+          <i class="fa fa-github" aria-hidden="true"></i> Github
+        </a></li>
+      </ul>
+
+      <h3>Email</h3>
+      <ul>
+        <li><span style="font-weight:bold">Academic:</span> sathaporn dot hu @ ucalgary dot ca</li>
+        <li><span style="font-weight:bold">Other:</span> hu dot hubert @ live dot ca</li>
+      </ul>
+
+    </section>
+  </div>
+
+  <div id="loading">
+  </div>
+
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://unpkg.com/react@15/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+  <script src="model.js"></script>
+  <script src="main.js"></script>
+</body>
 </html>

@@ -2,12 +2,18 @@
 
 $("nav > a").click(function () {
   var target = "#" + $(this).attr("data");
+  $("#academic-nav").hide();
   $(".content").not(target).slideUp(function () {
     $(target).slideDown();
   });
 });
 
+$("#academic-toggle").click(function() {
+  $("#academic-nav").toggle();
+})
+
 $(".content").hide();
+$("#academic-nav").hide();
 
 function education() {
   var eList = educationModel.map(function (x) {
