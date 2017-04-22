@@ -52,7 +52,7 @@ nav a {
   display:inline-flex;
   font-size: large;
   padding-right:0.25em;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 nav a:hover {
