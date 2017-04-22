@@ -7,14 +7,20 @@ $("nav > a").click(function () {
   });
 });
 
-
 $(".content").not("#home").hide();
 
 function education() {
-  var eList = educationModel.map(function (x) {
+  const eList = educationModel.map(function (x) {
+    const accent = {
+      "borderLeft": "0.5em " + x.color + " solid",
+      "paddingLeft": "0.5em",
+      "backgroundImage": "url(location_img/" + x.locationImg + ")",
+      "backgroundPosition": "centered"
+    };
+
     return React.createElement(
       "div",
-      { key: x.degree, className: "block" },
+      { key: x.degree, className: "block", style: accent },
       x.end && React.createElement(
         "div",
         { className: "block head" },
@@ -61,10 +67,16 @@ function education() {
 }
 
 function scholarship() {
-  var eList = scholarshipModel.map(function (x) {
+  const eList = scholarshipModel.map(function (x, i) {
+    const accent = {
+      "borderLeft": "0.5em teal solid",
+      "paddingLeft": "0.5em",
+      "backgroundColor": i % 2 == 0 ? "rgba(255, 255, 255, 0.2)" : "transparent"
+    };
+
     return React.createElement(
       "div",
-      { key: x.name, className: "block" },
+      { key: x.name, className: "block", style: accent },
       x.end && React.createElement(
         "div",
         { className: "block head" },
@@ -105,16 +117,44 @@ function scholarship() {
 }
 
 function teaching() {
-  var eList = teachingModel.map(function (x) {
+  const eList = teachingModel.map(function (x, i) {
+    const season = x.term.split(" ")[0].toLowerCase();
+
+    let color;
+
+    switch (season) {
+      case "fall":
+        color = "orange";
+        break;
+      case "winter":
+        color = "lightblue";
+        break;
+      case "summer":
+        color = "red";
+        break;
+    }
+
+    const accent = {
+      "borderLeft": "0.5em " + color + " solid",
+      "paddingLeft": "0.5em",
+      "backgroundColor": i % 2 == 0 ? "rgba(255, 255, 255, 0.2)" : "transparent"
+    };
+
     return React.createElement(
       "div",
-      { key: x.term, className: "block" },
+      { key: x.term, className: "block", style: accent },
       React.createElement(
         "div",
         { className: "block head" },
-        x.classCode,
-        ": ",
+        x.role,
+        " for ",
         x.className
+      ),
+      React.createElement(
+        "div",
+        null,
+        "Code: ",
+        x.classCode
       ),
       React.createElement(
         "div",
@@ -144,10 +184,17 @@ function teaching() {
 }
 
 function project() {
-  var eList = projectModel.map(function (x) {
+
+  const eList = projectModel.map(function (x, i) {
+    const accent = {
+      "borderLeft": "0.5em teal solid",
+      "paddingLeft": "0.5em",
+      "backgroundColor": i % 2 == 0 ? "rgba(255, 255, 255, 0.2)" : "transparent"
+    };
+
     return React.createElement(
       "div",
-      { key: x.name, className: "block" },
+      { key: x.name, className: "block", style: accent },
       React.createElement(
         "div",
         { className: "block head" },
@@ -180,10 +227,18 @@ function project() {
 }
 
 function job() {
-  var eList = jobModel.map(function (x) {
+
+  const eList = jobModel.map(function (x) {
+    const accent = {
+      "borderLeft": "0.5em " + x.color + " solid",
+      "paddingLeft": "0.5em",
+      "backgroundImage": "url(location_img/" + x.locationImg + ")",
+      "backgroundPosition": "centered"
+    };
+
     return React.createElement(
       "div",
-      { key: x.start, className: "block" },
+      { key: x.start, className: "block", style: accent },
       React.createElement(
         "div",
         { className: "block head" },
@@ -228,10 +283,16 @@ function job() {
 }
 
 function volunteer() {
-  var eList = volunteerModel.map(function (x) {
+  const eList = volunteerModel.map(function (x, i) {
+    const accent = {
+      "borderLeft": "0.5em teal solid",
+      "paddingLeft": "0.5em",
+      "backgroundColor": i % 2 == 0 ? "rgba(255, 255, 255, 0.2)" : "transparent"
+    };
+
     return React.createElement(
       "div",
-      { key: x.start, className: "block" },
+      { key: x.start, className: "block", style: accent },
       React.createElement(
         "div",
         { className: "block head" },
@@ -269,7 +330,7 @@ function volunteer() {
   );
 }
 
-var promises = [new Promise(function (resolve, reject) {
+let promises = [new Promise(function (resolve, reject) {
   ReactDOM.render(education(), document.getElementById('education'));resolve();
 }), new Promise(function (resolve, reject) {
   ReactDOM.render(scholarship(), document.getElementById('scholarship'));resolve();

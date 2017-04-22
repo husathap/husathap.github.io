@@ -1,7 +1,7 @@
 let educationModel = [
-  { name: "University of Calgary", degree: "Master of Science", program: "Computer Science", start: "2015-Sep", end: "Present"},
-  { name: "Dalhousie University", degree: "Visiting (MSc)", program: "NICE RADIANT", start: "2016-Aug"},
-  { name: "University of Toronto", degree: "Bachelor of Science", program: "Computer Science (Specialist), Cognitive Science (Major), French (Minor)", start: "2011-Sep", end: "2015-May"}
+  { name: "University of Calgary", degree: "Master of Science", program: "Computer Science", start: "2015-Sep", end: "Present", color: "red", locationImg: "ucalgary.jpg"},
+  { name: "Dalhousie University", degree: "Visiting (MSc)", program: "NICE RADIANT", start: "2016-Aug", color: "#FFD700", locationImg: "dalhousie.jpg"},
+  { name: "University of Toronto", degree: "Bachelor of Science", program: "Computer Science (Specialist), Cognitive Science (Major), French (Minor)", start: "2011-Sep", end: "2015-May", color: "#00204E", locationImg: "uoft.jpg"}
 ];
 
 let scholarshipModel = [
@@ -10,10 +10,10 @@ let scholarshipModel = [
 ];
 
 let teachingModel = [
-  { classCode: "SENG513", className: "Web-based System (Teaching Assistant)", term: "Winter 2017", university: "University of Calgary"},
-  { classCode: "SENG513", className: "Web-based System (Teaching Assistant)", term: "Winter 2016", university: "University of Calgary"},
-  { classCode: "CPSC217", className: "Introduction to Computer Science for Multidisciplinary Studies I (Teaching Assistant)", term: "Fall 2015", university: "University of Calgary"},
-  { classCode: "CSC108", className: "Introduction to Programming (Teaching Assistant)", term: "Fall 2013", university: "University of Toronto"},
+  { classCode: "SENG513", className: "Web-based System", term: "Winter 2017", university: "University of Calgary", role:"Teaching Assistant"},
+  { classCode: "SENG513", className: "Web-based System", term: "Winter 2016", university: "University of Calgary", role:"Teaching Assistant"},
+  { classCode: "CPSC217", className: "Introduction to Computer Science for Multidisciplinary Studies I", term: "Fall 2015", university: "University of Calgary", role:"Teaching Assistant"},
+  { classCode: "CSC108", className: "Introduction to Programming", term: "Fall 2013", university: "University of Toronto", role:"Teaching Assistant"},
 ];
 
 let projectModel = [
@@ -27,9 +27,9 @@ let projectModel = [
 ];
 
 let jobModel = [
-  { name: "Information Technology Intern", company: "Jet Asia Airways", location: "Bangkok, Thailand", description: "Maintained the IT structure. Implementing a new infrastructure", start: "Jun-2014", end: "Aug-2014"},
-  { name: "Research Assistant/Trainee", company: "TAGLab, University of Toronto", location: "Toronto, Canada", description: "Tested, developed software. Assisted with research", start: "Feb-2015", end: "Aug-2015"},
-  { name: "Research Intern", company: "Lenovo", location: "Beijing, China", description: "Analyzed online data. Conducted experiment with virtual reality.", start: "Sep-2016", end: "Dec-2016"}
+  { name: "Research Intern", company: "Lenovo", location: "Beijing, China", description: "Analyzed online data. Conducted experiment with virtual reality.", start: "Sep-2016", end: "Dec-2016", color: "red", locationImg: "beijing.jpg"},
+  { name: "Research Assistant/Trainee", company: "TAGLab, University of Toronto", location: "Toronto, Canada", description: "Tested, developed software. Assisted with research", start: "Feb-2015", end: "Aug-2015", color: "#00204E", locationImg: "toronto.jpg"},
+  { name: "Information Technology Intern", company: "Jet Asia Airways", location: "Bangkok, Thailand", description: "Maintained the IT structure. Implementing a new infrastructure", start: "Jun-2014", end: "Aug-2014", color: "white", locationImg: "bangkok.jpg"},
 ];
 
 let volunteerModel = [
