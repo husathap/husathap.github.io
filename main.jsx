@@ -44,7 +44,7 @@ function scholarship() {
     const accent = {
       "borderLeft": "0.5em teal solid",
       "paddingLeft": "0.5em",
-      "backgroundColor": (i % 2 == 0) ? "rgba(255, 255, 255, 0.2)" : "transparent"
+      "backgroundColor": (i % 2 == 0) ? "rgba(192, 255, 192, 0.2)" : "transparent"
     };
 
     return (
@@ -87,7 +87,7 @@ function teaching() {
     const accent = {
       "borderLeft": "0.5em " + color + " solid",
       "paddingLeft": "0.5em",
-      "backgroundColor": (i % 2 == 0) ? "rgba(255, 255, 255, 0.2)" : "transparent"
+      "backgroundColor": (i % 2 == 0) ? "rgba(192, 255, 192, 0.2)" : "transparent"
     };
 
     return (
@@ -112,7 +112,7 @@ function project() {
     const accent = {
       "borderLeft": "0.5em teal solid",
       "paddingLeft": "0.5em",
-      "backgroundColor": (i % 2 == 0) ? "rgba(255, 255, 255, 0.2)" : "transparent"
+      "backgroundColor": (i % 2 == 0) ? "rgba(192, 255, 192, 0.2)" : "transparent"
     };
 
     return (
@@ -164,7 +164,7 @@ function volunteer() {
     const accent = {
       "borderLeft": "0.5em teal solid",
       "paddingLeft": "0.5em",
-      "backgroundColor": (i % 2 == 0) ? "rgba(255, 255, 255, 0.2)" : "transparent"
+      "backgroundColor": (i % 2 == 0) ? "rgba(192, 255, 192, 0.2)" : "transparent"
     };
 
     return (
