@@ -14,9 +14,7 @@ function education() {
   const eList = educationModel.map(function(x) {
     const accent = {
       "borderLeft": "0.5em " + x.color + " solid",
-      "paddingLeft": "0.5em",
-      "backgroundImage": "url(location_img/" + x.locationImg + ")",
-      "backgroundPosition": "centered"
+      "paddingLeft": "0.5em"
     };
 
     return (
@@ -43,8 +41,7 @@ function scholarship() {
   const eList = scholarshipModel.map(function(x, i) {
     const accent = {
       "borderLeft": "0.5em teal solid",
-      "paddingLeft": "0.5em",
-      "backgroundColor": (i % 2 == 0) ? "rgba(192, 255, 192, 0.2)" : "transparent"
+      "paddingLeft": "0.5em"
     };
 
     return (
@@ -86,8 +83,7 @@ function teaching() {
 
     const accent = {
       "borderLeft": "0.5em " + color + " solid",
-      "paddingLeft": "0.5em",
-      "backgroundColor": (i % 2 == 0) ? "rgba(192, 255, 192, 0.2)" : "transparent"
+      "paddingLeft": "0.5em"
     };
 
     return (
@@ -111,8 +107,7 @@ function project() {
   const eList = projectModel.map(function(x, i) {
     const accent = {
       "borderLeft": "0.5em teal solid",
-      "paddingLeft": "0.5em",
-      "backgroundColor": (i % 2 == 0) ? "rgba(192, 255, 192, 0.2)" : "transparent"
+      "paddingLeft": "0.5em"
     };
 
     return (
@@ -137,9 +132,7 @@ function job() {
   const eList = jobModel.map(function(x) {
     const accent = {
       "borderLeft": "0.5em " + x.color + " solid",
-      "paddingLeft": "0.5em",
-      "backgroundImage": "url(location_img/" + x.locationImg + ")",
-      "backgroundPosition": "centered"
+      "paddingLeft": "0.5em"
     };
 
 
@@ -163,8 +156,7 @@ function volunteer() {
   const eList = volunteerModel.map(function(x, i) {
     const accent = {
       "borderLeft": "0.5em teal solid",
-      "paddingLeft": "0.5em",
-      "backgroundColor": (i % 2 == 0) ? "rgba(192, 255, 192, 0.2)" : "transparent"
+      "paddingLeft": "0.5em"
     };
 
     return (

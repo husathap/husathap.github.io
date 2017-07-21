@@ -10,12 +10,10 @@ $("nav > a").click(function () {
 $(".content").not("#home").hide();
 
 function education() {
-  const eList = educationModel.map(function (x) {
-    const accent = {
+  var eList = educationModel.map(function (x) {
+    var accent = {
       "borderLeft": "0.5em " + x.color + " solid",
-      "paddingLeft": "0.5em",
-      "backgroundImage": "url(location_img/" + x.locationImg + ")",
-      "backgroundPosition": "centered"
+      "paddingLeft": "0.5em"
     };
 
     return React.createElement(
@@ -67,11 +65,10 @@ function education() {
 }
 
 function scholarship() {
-  const eList = scholarshipModel.map(function (x, i) {
-    const accent = {
+  var eList = scholarshipModel.map(function (x, i) {
+    var accent = {
       "borderLeft": "0.5em teal solid",
-      "paddingLeft": "0.5em",
-      "backgroundColor": i % 2 == 0 ? "rgba(192, 255, 192, 0.2)" : "transparent"
+      "paddingLeft": "0.5em"
     };
 
     return React.createElement(
@@ -117,10 +114,10 @@ function scholarship() {
 }
 
 function teaching() {
-  const eList = teachingModel.map(function (x, i) {
-    const season = x.term.split(" ")[0].toLowerCase();
+  var eList = teachingModel.map(function (x, i) {
+    var season = x.term.split(" ")[0].toLowerCase();
 
-    let color;
+    var color = void 0;
 
     switch (season) {
       case "fall":
@@ -134,10 +131,9 @@ function teaching() {
         break;
     }
 
-    const accent = {
+    var accent = {
       "borderLeft": "0.5em " + color + " solid",
-      "paddingLeft": "0.5em",
-      "backgroundColor": i % 2 == 0 ? "rgba(192, 255, 192, 0.2)" : "transparent"
+      "paddingLeft": "0.5em"
     };
 
     return React.createElement(
@@ -185,11 +181,10 @@ function teaching() {
 
 function project() {
 
-  const eList = projectModel.map(function (x, i) {
-    const accent = {
+  var eList = projectModel.map(function (x, i) {
+    var accent = {
       "borderLeft": "0.5em teal solid",
-      "paddingLeft": "0.5em",
-      "backgroundColor": i % 2 == 0 ? "rgba(192, 255, 192, 0.2)" : "transparent"
+      "paddingLeft": "0.5em"
     };
 
     return React.createElement(
@@ -228,12 +223,10 @@ function project() {
 
 function job() {
 
-  const eList = jobModel.map(function (x) {
-    const accent = {
+  var eList = jobModel.map(function (x) {
+    var accent = {
       "borderLeft": "0.5em " + x.color + " solid",
-      "paddingLeft": "0.5em",
-      "backgroundImage": "url(location_img/" + x.locationImg + ")",
-      "backgroundPosition": "centered"
+      "paddingLeft": "0.5em"
     };
 
     return React.createElement(
@@ -283,11 +276,10 @@ function job() {
 }
 
 function volunteer() {
-  const eList = volunteerModel.map(function (x, i) {
-    const accent = {
+  var eList = volunteerModel.map(function (x, i) {
+    var accent = {
       "borderLeft": "0.5em teal solid",
-      "paddingLeft": "0.5em",
-      "backgroundColor": i % 2 == 0 ? "rgba(192, 255, 192, 0.2)" : "transparent"
+      "paddingLeft": "0.5em"
     };
 
     return React.createElement(
@@ -330,7 +322,7 @@ function volunteer() {
   );
 }
 
-let promises = [new Promise(function (resolve, reject) {
+var promises = [new Promise(function (resolve, reject) {
   ReactDOM.render(education(), document.getElementById('education'));resolve();
 }), new Promise(function (resolve, reject) {
   ReactDOM.render(scholarship(), document.getElementById('scholarship'));resolve();
