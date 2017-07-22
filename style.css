@@ -33,7 +33,7 @@ h1 {
 .name {
   padding-bottom: 1em;
   color:teal;
-  text-shadow: 0px 0px 1px black;
+  text-shadow: 0px 0px 1px teal;
 }
 
 .name > h1 {
