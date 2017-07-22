@@ -18,6 +18,7 @@ header {
   color:white;
   padding:1em;
   border-bottom: gray 1px solid;
+  box-shadow: 0px 0px 5px black;
 }
 
 #header-content {
@@ -25,9 +26,13 @@ header {
   max-width: 1000px;
 }
 
+h1 {
+  color:teal;
+}
+
 .name {
   padding-bottom: 1em;
-  color:yellow;
+  color:teal;
 }
 
 .name > h1 {
@@ -45,23 +50,26 @@ header {
 .designation {
   font-style: italic;
   margin-bottom:0.5em;
+  color:teal;
 }
 
 nav {
   padding:none;
   margin:none;
+  
 }
 
 nav a {
-  color:cyan;
+  color:white;
   display:inline-flex;
-  font-size: large;
+  font-size: x-large;
   padding-right:0.25em;
-  text-decoration: underline;
+  text-decoration: none;
+  margin-right:1.5em;
 }
 
 nav a:hover {
-  color:orange;
+  color:cyan;
 }
 
 #academic-nav {
@@ -79,6 +87,7 @@ nav a:hover {
   margin-top:1em;
   padding:1em;
   border: 1px gray solid;
+  box-shadow: 0px 0px 5px black;
 }
 
 .block {
@@ -108,19 +117,4 @@ nav a:hover {
 
 hr {
   border: 1px solid teal;
-}
-
-@media (max-width: 720px) {
-	
-	.name > h2 {
-		display: none;
-	}
-	
-	.designation {
-		display: none;
-	}	
-	
-	html {
-		background: teal;
-	}
 }
