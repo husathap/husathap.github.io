@@ -94,7 +94,6 @@ nav a:hover {
 .block {
   padding-bottom:0.5em;
   padding-top:0.5em;
-  border-bottom: gray 1px solid;
 }
 
 .block.head {
