@@ -10,7 +10,7 @@ let scholarshipModel = [
 ];
 
 let teachingModel = [
-  { classCode: "CPSC233", className: "Introduction to Computer Science for Computer Science Majors I", term: "Fall 2017", university: "University of Calgary", role:"Teaching Assistant"},
+  { classCode: "CPSC203", className: "Introduction to Problem Solving using Application Software", term: "Fall 2017", university: "University of Calgary", role:"Teaching Assistant"},
   { classCode: "SENG513", className: "Web-based System", term: "Winter 2017", university: "University of Calgary", role:"Teaching Assistant"},
   { classCode: "SENG513", className: "Web-based System", term: "Winter 2016", university: "University of Calgary", role:"Teaching Assistant"},
   { classCode: "CPSC217", className: "Introduction to Computer Science for Multidisciplinary Studies I", term: "Fall 2015", university: "University of Calgary", role:"Teaching Assistant"},
