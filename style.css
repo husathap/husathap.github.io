@@ -101,6 +101,20 @@ footer {
 	outline:none !important;
 }
 
-.btn.active {
+#navExp {
+	background-color:white;
+}
+
+.exp {
+	background-color:rgb(250,250,250);
+	color:black;
+}
+
+.exp:hover {
+	text-decoration:underline;
+	color:black;
+}
+
+.exp.active {
 	background-color:orange;
 }
