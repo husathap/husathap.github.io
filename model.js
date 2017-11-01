@@ -1,7 +1,7 @@
 let educationModel = [
-  { name: "University of Calgary", degree: "Master of Science", program: "Computer Science", start: "2015-Sep", end: "Present", color: "red", locationImg: "ucalgary.jpg"},
+  { university: "University of Calgary", degree: "Master of Science", program: "Computer Science", start: "2015-Sep", end: "Present", color: "red", locationImg: "ucalgary.jpg"},
   //{ name: "Dalhousie University", degree: "Visiting (MSc)", program: "NICE RADIANT", start: "2016-Aug", color: "#FFD700", locationImg: "dalhousie.jpg"}, 
-  { name: "University of Toronto", degree: "Bachelor of Science", program: "Computer Science (Specialist), Cognitive Science (Major), French (Minor)", start: "2011-Sep", end: "2015-May", color: "#00204E", locationImg: "uoft.jpg"}
+  { university: "University of Toronto", degree: "Bachelor of Science", program: "Computer Science (Specialist), Cognitive Science (Major), French (Minor)", start: "Sep-2011", end: "May-2015", color: "#00204E", locationImg: "uoft.jpg"}
 ];
 
 let scholarshipModel = [
@@ -18,8 +18,8 @@ let teachingModel = [
 ];
 
 let projectModel = [
-  { name: "Caracas", description: "YouTube video player for language learning"},
-  { name: "D-Plot", description: "Bigram visualization tool"},
+  { name: "Kalgan", description: "YouTube video player for language learning"},
+  { name: "D-Plot", description: "Bigram visualization tool", link:"https://github.com/husathap/DPlot"},
   { name: "Project Happiness", description: "Digital physical installation"},
   { name: "Part-of-Speech Visualization", description: "A HTML-based part-of-speech visualization"},
   { name: "InTouch", description: "Mobile communcations app for senior", link: "http://taglab.utoronto.ca/index.php/projects/intouch-connections-technologies-to-combat-social-isolation-and-loneliness/"},
@@ -27,15 +27,15 @@ let projectModel = [
   { name: "Tangra", description: "Web portal for online experiment", link: "http://www.taglab.toronto.edu/index.php/projects/tangra-defining-and-supporting-online-studies-and-randomized-controlled-trials/"},
 ];
 
-let jobModel = [
-  { name: "Research Intern", company: "Lenovo", location: "Beijing, China", description: "Analyzed online data. Conducted experiment with virtual reality.", start: "Sep-2016", end: "Dec-2016", color: "red", locationImg: "beijing.jpg"},
-  { name: "Research Assistant/Trainee", company: "TAGLab, University of Toronto", location: "Toronto, Canada", description: "Tested, developed software. Assisted with research", start: "Feb-2015", end: "Aug-2015", color: "#00204E", locationImg: "toronto.jpg"},
-  { name: "Information Technology Intern", company: "Jet Asia Airways", location: "Bangkok, Thailand", description: "Maintained the IT structure. Implementing a new infrastructure", start: "Jun-2014", end: "Aug-2014", color: "white", locationImg: "bangkok.jpg"},
+let privateModel = [
+  { role: "Research Intern", company: "Lenovo", location: "Beijing, China", description: "Analyzed online data. Conducted experiment with virtual reality.", start: "Sep-2016", end: "Dec-2016", color: "red", locationImg: "beijing.jpg"},
+  //{ name: "Research Assistant/Trainee", company: "TAGLab, University of Toronto", location: "Toronto, Canada", description: "Tested, developed software. Assisted with research", start: "Feb-2015", end: "Aug-2015", color: "#00204E", locationImg: "toronto.jpg"},
+  { role: "Information Technology Intern", company: "Jet Asia Airways", location: "Bangkok, Thailand", description: "Maintained the IT structure. Implementing a new infrastructure", start: "Jun-2014", end: "Aug-2014", color: "white", locationImg: "bangkok.jpg"},
 ];
 
 let volunteerModel = [
-  { name: "Vice President - Finance", organization: "Computer Science Graduate Society", affiliation: "University of Calgary", start: "May-2016", end: "Aug-2016"},
-  { name: "Fire Warden", organization: "Crowsnest Hall Residence", affiliation: "University of Calgary", start: "Sep-2015", end: "Dec-2015"},
-  { name: "Administrator", organization: "Cognitive Science and Artificial Intelligence Student Association", affiliation: "University of Toronto", start: "Sep-2012", end: "May-2015"},
-  { name: "Language Exchange Participant", organization: "Japan-Canada Student Association", affiliation: "University of Toronto", start: "Sep-2011", end: "May-2014"},
+  { role: "Vice President - Finance", organization: "Computer Science Graduate Society", affiliation: "University of Calgary", start: "Sep-2016", end: "Aug-2016"},
+  { role: "Fire Warden", organization: "Crowsnest Hall Residence", affiliation: "University of Calgary", start: "Sep-2015", end: "Dec-2015"},
+  { role: "Administrator", organization: "Cognitive Science and Artificial Intelligence Student Association", affiliation: "University of Toronto", start: "Sep-2012", end: "May-2015"},
+  { role: "Language Exchange Participant", organization: "Japan-Canada Student Association", affiliation: "University of Toronto", start: "Sep-2011", end: "May-2014"},
 ];
