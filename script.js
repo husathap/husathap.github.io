@@ -21,14 +21,10 @@ $("#exp-link").click(function() {
 $("#pro-link").click(function() { 
 	$('html, body').animate({scrollTop: ($('#pro-section').offset().top - $("#nav").height())}, 500);
 });
+$("#sco-link").click(function() { 
+	$('html, body').animate({scrollTop: ($('#sco-section').offset().top - $("#nav").height())}, 500);
+});
 
-
-/*$("#exp-link").click(function() {
-	$('html, body').animate({ scrollTop: ($('#exp-section').offset().top)
-	}, 500));
-$("#pro-link").click(function() {
-	$('html, body').animate({ scrollTop: ($('#pro-section').offset().top)
-	}, 500));*/
 
 for (const e in educationModel) {
 	let obj = educationModel[e];
@@ -53,7 +49,7 @@ for (const e in projectModel) {
 	}
 	
 	$("#pro-content").append(`
-		<div class="card card-pro col-lg-3">
+		<div class="card card-pro col-lg-3 mt-1 mr-1">
 			<div class="card-block">
 				<h2 class="card-title">{0}</h2>
 				<div class="card-text">
@@ -62,6 +58,23 @@ for (const e in projectModel) {
 			</div>
 			</div>`.format(head, obj.description))
 }
+
+for (const e in scholarshipModel) {
+	let obj = scholarshipModel[e];
+	let head = '<h2 class="card-title">{0}</h2>'.format(obj.name);
+	
+	$("#sco-content").append(`
+		<div class="card card-pro col-lg-12 mt-1">
+			<div class="card-block">
+				<h2 class="card-title">{0}</h2>
+				<div class="card-text">
+					<div><strong>Granted By:</strong> {1}</div>
+					<div><strong>Year:</strong> {2}</div>
+				</div>
+			</div>
+			</div>`.format(head, obj.grantor, obj.year))
+}
+
 
 
 $("#education").click(function() {

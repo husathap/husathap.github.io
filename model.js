@@ -1,12 +1,13 @@
 let educationModel = [
-  { university: "University of Calgary", degree: "Master of Science", program: "Computer Science", start: "2015-Sep", end: "Present", color: "red", locationImg: "ucalgary.jpg"},
+	{ university: "Dalhousie University", degree: "Doctor of Philosophy", program: "Computer Science", start: "2018-Jan", end: "Present", locationImg: "dalhousie.jpg"},
+  { university: "University of Calgary", degree: "Master of Science", program: "Computer Science", start: "2015-Sep", end: "2017-Dec", color: "red", locationImg: "ucalgary.jpg"},
   //{ name: "Dalhousie University", degree: "Visiting (MSc)", program: "NICE RADIANT", start: "2016-Aug", color: "#FFD700", locationImg: "dalhousie.jpg"}, 
   { university: "University of Toronto", degree: "Bachelor of Science", program: "Computer Science (Specialist), Cognitive Science (Major), French (Minor)", start: "Sep-2011", end: "May-2015", color: "#00204E", locationImg: "uoft.jpg"}
 ];
 
 let scholarshipModel = [
-  { name: "Transformative Talent Internship", grantor: "University of Calgary", start: "Sep-2016", end: "Dec-2016"},
-  { name: "NICE RADIANT", grantor: "Dalhousie University", start: "Aug-2016"}
+  { name: "Transformative Talent Internship", grantor: "University of Calgary", year: "2016"},
+  { name: "NICE RADIANT", grantor: "Dalhousie University", year: "2016"}
 ];
 
 let teachingModel = [
