@@ -1,109 +1,176 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Hubert Hu</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-	
-	
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="nav">
-	  <a class="navbar-brand" href="#">Hubert (Sathaporn) Hu</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon navbar-dark"></span>
-	  </button>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Hubert (Sathaporn) Hu</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	</head>
 
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-		  <li class="nav-item">
-			<a class="nav-link" id="home-link" href="#">Home</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" id="exp-link" href="#">Experience</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" id="pro-link" href="#">Projects</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" id="sco-link" href="#">Scholarships</a>
-		  </li>
-		</ul>
-	  </div>
-	</nav>
-	
-	<div class="jumbotron" id="home-section">
-	  <div class="container" >
-		<h1>Hubert (Sathaporn) Hu</h1>
-		<h2>TH: สถาพร ฮู | ZH: 胡秀楷</h2>
-		<p>I am currently a PhD student at Dalhousie University. I am a computer science student specialized in the area of Human-Computer Interaction, Computational Linguistics, Machine Learning and Computer-Assisted Language Learning.</p>
-		<h5>Contact: <a href="https://github.com/husathap">GitHub</a> | <a href="https://www.linkedin.com/in/hubert-sathaporn-hu-3b8ab463/">LinkedIn</a> | hu dot hu @ live dot ca</h5>
-		<h5>Curriculum Vitae: <a href="CV.pdf">CV</a></h5>
+	<body>
+		<header id="header">
+			Hubert (Sathaporn) Hu 
+			<span id="sub-arrow"><i class="fas fa-arrow-right"></i></span> 
+			<span id="sub-heading">Publication</span>
+			<a id="sub-close" href="#">
+				<i class="fas fa-times" style="font-size:x-large"></i>
+			</a>
+		</header>
 		
-		<p id="bg-source">Picture: Province House, Halifax, NS, Canada</p>
-	  </div>
-	</div>
-	
-	<div class="container" id="exp-section">
-		<h1>Experience</h1>
-		<ul class="nav" id="navExp">
-		  <li class="nav-item">
-			<a id="education" class="nav-link exp active" href="#/">Education</a>
-		  </li>
-		  <li class="nav-item">
-			<a id="teaching" class="nav-link exp" href="#/">Teaching</a>
-		  </li>
-		  <li class="nav-item">
-			<a id="private"  class="nav-link exp" href="#/">Private</a>
-		  </li>
-		  <li class="nav-item">
-			<a id="volunteer"  class="nav-link exp" href="#/">Volunteer</a>
-		  </li>
-		</ul>
-		
-		<div id="exp-content">
-		
+		<div id="section-content">
+			<section class="container">
+			</section>
 		</div>
+
+		<!-- The menu bar -->
 		
-	</div>
-	
-	<hr/>
-	
-	<div class="container" id="pro-section">
-		<h1>Projects</h1>
-		
-		<div class="container-fluid">
-			<div id="pro-content" class="row">
+		<div class="container" id="icons">
+			<div class="row row-icons">
+				<div class="col-lg section-card" id="card-bio">
+					<div class="card">
+						<div class="card-block">
+							<i class="fas fa-user card-icon"></i>
+							Bio
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg section-card" id="card-education">
+					<div class="card">
+						<div class="card-block">
+							<i class="fas fa-graduation-cap"></i>
+							Education
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg section-card" id="card-publication">
+					<div class="card">
+						<div class="card-block">
+							<i class="fas fa-flask"></i>
+							Publication
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-	
-	<hr/>
-	
-	<div class="container" id="sco-section">
-		<h1>Scholarships</h1>
-		
-		<div class="container-fluid">
-			<div id="sco-content" class="row">
+			
+			<!-- Second Row -->
+			
+			<div class="row row-icons">
+				<div class="col-lg section-card" id="card-teaching">
+					<div class="card">
+						<div class="card-block">
+							<i class="fas fa-book"></i>
+							Teaching
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg section-card" id="card-experience">
+					<div class="card">
+						<div class="card-block">
+							<i class="fab fa-black-tie"></i>
+							Experience
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg section-card" id="card-projects">
+					<div class="card">
+						<div class="card-block">
+							<i class="fas fa-briefcase"></i>
+							Projects
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-	
-	<footer>
-		Copyrighted by Hubert (Sathaporn) Hu
-	</footer>
+			
+			<hr id="main-hr"/>
+			
+			<!-- Third Row -->
+			<div class="row row-icons">
+				<div class="col-lg-4 col section-card secondary" id="card-contact">
+					<div class="card">
+						<div class="card-block">
+							<i class="fas fa-envelope"></i>
+							Contact Info
+						</div>
+					</div>
+				</div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<script src="model.js"></script>
-	<script src="script.js"></script>
-  </body>
+				<div class="col-lg-4 col section-card secondary" id="card-github">
+					<div class="card">
+						<div class="card-block">
+							<i class="fab fa-github"></i>
+							GitHub Page
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<!-- Hidden section -->
+		
+		<div class="hidden">
+			<section id="bio-data">
+				<h3>Alternate Names:<br>Thai: สถาพร ฮู (Sathaporn Hu) <br>Chinese: 胡秀楷 (Hu, Shiow-Kai) </h3>
+				<p>Hubert is a PhD at Dalhousie University, Halifax, Canada under the supervision of Prof. Derek Reilly. He was previously a Master's degree student 
+				at the University of Calgary under the supervision of Prof. Wesley Willett.
+				He specializes human-computer interaction. However, he also dabbles in computer-assisted language learning, machine learning,
+				and computational linguistics. As a new PhD student, he does not yet have a clear focus.</p>
+			</section>
+			
+			<section id="education-data">
+				<!-- To be filled by a script -->
+			</section>
+			
+			<section id="publication-data">
+				<h3>Sorted Chronologically</h3>
+				<!-- To be filled by a script -->
+			</section>
+			
+			<section id="teaching-data">
+				<!-- To be filled by a script -->
+			</section>
+			
+			<section id="experience-data">
+				<h2 style="text-align:center">Jobs</h2>
+				<section id="job-data">
+					<!-- To be filled by a script -->
+				</section>
+				<br/>
+				<h2 style="text-align:center">Volunteer</h2>
+				<section id="volunteer-data">
+					<!-- To be filled by a script -->
+				</section>
+			</section>
+			
+			<section id="projects-data">
+				<!-- To be filled by a script -->
+			</section>
+			
+			<section id="contact-data">
+				<p>
+					<strong>Workplace:</strong> GEM Lab, Dalhousie University, Halifax, Canada<br/>
+					<strong>Email (Academic):</strong> hs dot hu @ dal dot ca<br/>
+					<strong>Email (Personal):</strong> hu dot hubert @ live dot ca<br/>
+					<strong>LinkedIn: <a href="https://www.linkedin.com/in/hubert-sathaporn-hu-3b8ab463">Click Here</a></strong>
+				</p>
+			</section>
+		</div>
+		
+	
+		<!-- Scripts for the website -->
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script src="model.js"></script>
+		<script src="modelLoader.js"></script>
+		<script src="script.js"></script>
+	</body>
 </html>

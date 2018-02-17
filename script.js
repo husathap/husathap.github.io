@@ -1,167 +1,75 @@
+$("#section-content").hide();
+$("#sub-heading").hide();
+$("#sub-close").hide();
+$("#sub-arrow").hide();
 
-// Obtained from: https://journalofasoftwaredev.wordpress.com/2011/10/30/replicating-string-format-in-javascript/
-String.prototype.format = function()
-{
-   var content = this;
-   for (var i=0; i < arguments.length; i++)
-   {
-        var replacement = '{' + i + '}';
-        content = content.replace(replacement, arguments[i]);  
-   }
-   return content;
-};
-
-// Used code from: http://www.robertprice.co.uk/robblog/using-jquery-to-scroll-to-an-element/
-$("#home-link").click(function() { 
-	$('html, body').animate({scrollTop: ($('#home-section').offset().top - $("#nav").height())}, 500);
-});
-$("#exp-link").click(function() { 
-	$('html, body').animate({scrollTop: ($('#exp-section').offset().top - $("#nav").height())}, 500);
-}); 
-$("#pro-link").click(function() { 
-	$('html, body').animate({scrollTop: ($('#pro-section').offset().top - $("#nav").height())}, 500);
-});
-$("#sco-link").click(function() { 
-	$('html, body').animate({scrollTop: ($('#sco-section').offset().top - $("#nav").height())}, 500);
-});
-
-
-for (const e in educationModel) {
-	let obj = educationModel[e];
-	$("#exp-content").append(`
-		<div class="card card-exp">
-			<div class="card-block">
-				<h2 class="card-title">{0}, {1}</h2>
-				<div class="card-text">
-					<div><strong>Program:</strong> {2}</div>
-					<div><strong>Duration:</strong> {3} until {4}</div>
-				</div>
-			</div>
-			</div>`.format(obj.degree, obj.university, obj.program, obj.start, obj.end))
+function initializeSubHeader(text, content) {
+	$("#sub-arrow").show().fadeOut(0).fadeIn(300);
+	
+	var subHeading = $("#sub-heading");
+	subHeading.html(text);
+	subHeading.show().fadeOut(0).fadeIn(300);
+	
+	$("#sub-close").show().fadeOut(0).fadeIn(300);
+	
+	var section = $("#section-content");
+	section.css("top", 0);
+	section.offset({top:$("header").outerHeight(), left:0});
+	$("#section-content > section").html(content);
+	section.show().fadeOut(0).fadeIn(300);
+	$("#header").css("position", "fixed");
+	$("#header").css("width", "100%");
+	$("#icons").fadeOut(300);
 }
 
-for (const e in projectModel) {
-	let obj = projectModel[e];
-	let head = '<h2 class="card-title">{0}</h2>'.format(obj.name);
-	
-	if (obj.link) {
-		head = '<h2 class="card-title"><a href="{0}" target="_blank">{1}</a></h2>'.format(obj.link, obj.name);
-	}
-	
-	$("#pro-content").append(`
-		<div class="card card-pro col-lg-3 mt-1 mr-1">
-			<div class="card-block">
-				<h2 class="card-title">{0}</h2>
-				<div class="card-text">
-					<div><strong>Description:</strong> {1}</div>
-				</div>
-			</div>
-			</div>`.format(head, obj.description))
-}
-
-for (const e in scholarshipModel) {
-	let obj = scholarshipModel[e];
-	let head = '<h2 class="card-title">{0}</h2>'.format(obj.name);
-	
-	$("#sco-content").append(`
-		<div class="card card-pro col-lg-12 mt-1">
-			<div class="card-block">
-				<h2 class="card-title">{0}</h2>
-				<div class="card-text">
-					<div><strong>Granted By:</strong> {1}</div>
-					<div><strong>Year:</strong> {2}</div>
-				</div>
-			</div>
-			</div>`.format(head, obj.grantor, obj.year))
-}
-
-
-
-$("#education").click(function() {
-	$(".exp").removeClass("active");
-	$(this).addClass("active");
-	$("#exp-content").fadeOut(200, 
-		function() {
-			$("#exp-content").html("");
-			for (const e in educationModel) {
-				let obj = educationModel[e];
-				$("#exp-content").append(`
-		<div class="card card-exp">
-			<div class="card-block">
-				<h2 class="card-title">{0}, {1}</h2>
-				<div class="card-text">
-					<div><strong>Program:</strong> {2}</div>
-					<div><strong>Duration:</strong> {3} until {4}</div>
-				</div>
-			</div>
-		</div>`.format(obj.degree, obj.university, obj.program, obj.start, obj.end));
-			}
-		}).fadeIn(200);
+$("#sub-close").click(function() {
+	$("#section-content").fadeOut(300, function() { $(this).hide() });
+	$("#sub-arrow").fadeOut(300, function() { $(this).hide() });
+	$("#sub-heading").fadeOut(300, function() { $(this).html("").hide()});
+	$("#sub-close").fadeOut(300).hide(function() { $(this).hide() });
+	$("#header").css("position", "sticky");
+	$("#icons").fadeIn(300);
+	$(window).scrollTop(0);
 });
 
-$("#teaching").click(function() {
-	$(".exp").removeClass("active");
-	$(this).addClass("active");
-	$("#exp-content").fadeOut(200, 
-		function() {
-			$("#exp-content").html("");
-			for (const e in teachingModel) {
-				let obj = teachingModel[e];
-				$("#exp-content").append(`
-		<div class="card card-exp">
-			<div class="card-block">
-				<h2 class="card-title">{0} for {1}</h2>
-				<div class="card-text">
-					<div><strong>Course Name:</strong> {2}</div>
-					<div><strong>University:</strong> {3}</div>
-					<div><strong>Term:</strong> {4}</div>
-				</div>
-			</div>
-		</div>`.format(obj.role, obj.classCode, obj.className, obj.university, obj.term));
-			}
-		}).fadeIn(200);
+$("#card-bio").click(function() {
+	initializeSubHeader("Bio", $("#bio-data").html());
 });
 
-$("#private").click(function() {
-	$(".exp").removeClass("active");
-	$(this).addClass("active");
-	$("#exp-content").fadeOut(200, 
-		function() {
-			$("#exp-content").html("");
-			for (const e in privateModel) {
-				let obj = privateModel[e];
-				$("#exp-content").append(`
-		<div class="card card-exp">
-			<div class="card-block">
-				<h2 class="card-title">{0} at {1}</h2>
-				<div class="card-text">
-					<div><strong>Location:</strong> {2}</div>
-					<div><strong>Duration:</strong> {3} until {4}</div>
-				</div>
-			</div>
-		</div>`.format(obj.role, obj.company, obj.location, obj.start, obj.end));
-			}
-		}).fadeIn(200);
+$("#card-education").click(function() {
+	initializeSubHeader("Education", $("#education-data").html());
 });
 
-$("#volunteer").click(function() {
-	$(".exp").removeClass("active");
-	$(this).addClass("active");
-	$("#exp-content").fadeOut(200, 
-		function() {
-			$("#exp-content").html("");
-			for (const e in volunteerModel) {
-				let obj = volunteerModel[e];
-				$("#exp-content").append(`
-		<div class="card card-exp">
-			<div class="card-block">
-				<h2 class="card-title">{0} for {1}</h2>
-				<div class="card-text">
-					<div><strong>Organization's Affiliation:</strong> {2}</div>
-					<div><strong>Duration:</strong> {3} until {4}</div>
-				</div>
-			</div>
-		</div>`.format(obj.role, obj.organization, obj.affiliation, obj.start, obj.end));
-			}
-		}).fadeIn(200);
+$("#card-publication").click(function() {
+	initializeSubHeader("Publication", $("#publication-data").html());
+});
+
+$("#card-teaching").click(function() {
+	initializeSubHeader("Teaching", $("#teaching-data").html());
+});
+
+$("#card-experience").click(function() {
+	initializeSubHeader("Experience", $("#experience-data").html());
+});
+
+$("#card-projects").click(function() {
+	initializeSubHeader("Projects", $("#projects-data").html());
+});
+
+$("#card-contact").click(function() {
+	initializeSubHeader("Contact Info", $("#contact-data").html());
+});
+
+$("#card-github").click(function() {
+	window.location.href = "https://github.com/husathap";
+});
+
+$(window).resize(function() {
+	var section = $("#section-content");
+	section.offset({top:$("header").position().top + $("header").outerHeight(), left:0});
+});
+
+$(window).scroll(function() {
+	var section = $("#section-content");
+	section.offset({top:$("header").position().top + $("header").outerHeight(), left:0});
 });

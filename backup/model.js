@@ -10,10 +10,6 @@ let scholarshipModel = [
   { name: "NICE RADIANT", grantor: "Dalhousie University", year: "2016"}
 ];
 
-let publicationModel = [
-  { reference: "Hu, S., & Willett, W. J. (2018). Kalgan: Video Player for Casual Language Learning. Proceedings of the 2018 CHI Conference Extended Abstracts on Human Factors in Computing Systems.", forthcoming:true }
-]
-
 let teachingModel = [
   { classCode: "CSCI1101", className: "Computer Science II", term: "Winter 2018", university: "Dalhousie University", role:"Teaching Assistant"},	
   { classCode: "CPSC203", className: "Introduction to Problem Solving using Application Software", term: "Fall 2017", university: "University of Calgary", role:"Teaching Assistant"},
@@ -24,7 +20,6 @@ let teachingModel = [
 ];
 
 let projectModel = [
-  { name: "Mission-Relevant Information Management for Integrated Response", description: "A query and visualization system for maritime data."},
   { name: "Kalgan", description: "YouTube video player for language learning"},
   { name: "D-Plot", description: "Bigram visualization tool", link:"https://github.com/husathap/DPlot"},
   { name: "Project Happiness", description: "Digital physical installation"},
