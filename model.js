@@ -41,6 +41,7 @@ let privateModel = [
 ];
 
 let volunteerModel = [
+  { role: "Session Chair and Judge", organization: "Dalhousie Computer Science In-house Conference", affiliation: "Dalhousie University", start: "Jan 2018"},
   { role: "Vice President - Finance", organization: "Computer Science Graduate Society", affiliation: "University of Calgary", start: "Sep 2016", end: "Aug 2016"},
   { role: "Fire Warden", organization: "Crowsnest Hall Residence", affiliation: "University of Calgary", start: "Sep 2015", end: "Dec 2015"},
   { role: "Administrator", organization: "Cognitive Science and Artificial Intelligence Student Association", affiliation: "University of Toronto", start: "Sep 2012", end: "May 2015"},

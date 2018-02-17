@@ -56,12 +56,20 @@ for (const e in privateModel) {
 
 for (const e in volunteerModel) {
 	let obj = volunteerModel[e];
-	$("#volunteer-data").append(`
-		<h3>{0} for {1}</h3>
-		<div>
-			<div><strong>Organization's Affiliation:</strong> {2}</div>
-			<div><strong>Duration:</strong> {3} until {4}</div>
-		</div><hr/>`.format(obj.role, obj.organization, obj.affiliation, obj.start, obj.end));
+	if (obj.end)
+		$("#volunteer-data").append(`
+			<h3>{0} for {1}</h3>
+			<div>
+				<div><strong>Organization's Affiliation:</strong> {2}</div>
+				<div><strong>Duration:</strong> {3} until {4}</div>
+			</div><hr/>`.format(obj.role, obj.organization, obj.affiliation, obj.start, obj.end));
+	else
+		$("#volunteer-data").append(`
+			<h3>{0} for {1}</h3>
+			<div>
+				<div><strong>Organization's Affiliation:</strong> {2}</div>
+				<div><strong>During:</strong> {3}</div>
+			</div><hr/>`.format(obj.role, obj.organization, obj.affiliation, obj.start));
 }
 
 for (const e in projectModel) {

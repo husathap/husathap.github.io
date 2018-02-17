@@ -4,22 +4,29 @@ $("#sub-close").hide();
 $("#sub-arrow").hide();
 
 function initializeSubHeader(text, content) {
-	$("#sub-arrow").show().fadeOut(0).fadeIn(300);
 	
-	var subHeading = $("#sub-heading");
-	subHeading.html(text);
-	subHeading.show().fadeOut(0).fadeIn(300);
-	
-	$("#sub-close").show().fadeOut(0).fadeIn(300);
 	
 	var section = $("#section-content");
-	section.css("top", 0);
-	section.offset({top:$("header").outerHeight(), left:0});
-	$("#section-content > section").html(content);
-	section.show().fadeOut(0).fadeIn(300);
-	$("#header").css("position", "fixed");
-	$("#header").css("width", "100%");
-	$("#icons").fadeOut(300);
+	$("#icons").fadeOut(300, function() { 
+		section.css("top", 0);
+		section.offset({top:$("header").outerHeight(), left:0});
+		
+		$("#sub-arrow").show().fadeOut(0).fadeIn(300);
+	
+		var subHeading = $("#sub-heading");
+		subHeading.html(text);
+		subHeading.show().fadeOut(0).fadeIn(300);
+		
+		$("#sub-close").show().fadeOut(0).fadeIn(300);
+		
+		$("#section-content > section").html(content);
+		section.show().fadeOut(0).fadeIn(300);
+		$("#header").css("position", "fixed");
+		$("#header").css("width", "100%");
+	});
+	
+	
+	
 }
 
 $("#sub-close").click(function() {
@@ -28,8 +35,8 @@ $("#sub-close").click(function() {
 	$("#sub-heading").fadeOut(300, function() { $(this).html("").hide()});
 	$("#sub-close").fadeOut(300).hide(function() { $(this).hide() });
 	$("#header").css("position", "sticky");
-	$("#icons").fadeIn(300);
-	$(window).scrollTop(0);
+	$("#icons").fadeIn(300, function() {$(window).scrollTop(0);});
+	
 });
 
 $("#card-bio").click(function() {
