@@ -1,5 +1,5 @@
 let educationModel = [
-  { university: "Dalhousie University", degree: "Doctor of Philosophy", program: "Computer Science", start: "Jan 2018", end: "Present", logo: "dalhousie.png"},
+  { university: 'Dalhousie University', degree: '<i class="fas fa-hourglass-half"></i> Doctor of Philosophy', program: "Computer Science", start: "Jan 2018", end: "Present", logo: "dalhousie.png"},
   { university: "University of Calgary", degree: "Master of Science", program: "Computer Science", start: "Sep 2015", end: "Dec 2017", color: "red", logo: "ucalgary.png"},
   { university: "Dalhousie University", degree: "Visiting", program: "NICE RADIANT", start: "Aug 2016", end: "Aug 2016", color: "#FFD700", logo: "dalhousie.png"}, 
   { university: "University of Toronto", degree: "Bachelor of Science", program: "Computer Science (Specialist), Cognitive Science (Major), French (Minor)", start: "Sep 2011", end: "May 2015", color: "#00204E", logo: "uoft.png"}
@@ -11,7 +11,7 @@ let scholarshipModel = [
 ];
 
 let publicationModel = [
-  { reference: "Hu, S., & Willett, W. J. (2018). Kalgan: Video Player for Casual Language Learning. Proceedings of the 2018 CHI Conference Extended Abstracts on Human Factors in Computing Systems.", forthcoming:true }
+  { reference: "<strong>Hu, S.</strong>, & Willett, W. J. (2018). Kalgan: Video Player for Casual Language Learning. <em>CHI'18 Extended Abstracts: CHI Conference on Human Factors in Computing Systems Extended Abstracts Proceedings</em>.", forthcoming:true }
 ]
 
 let teachingModel = [
@@ -24,7 +24,7 @@ let teachingModel = [
 ];
 
 let projectModel = [
-  { name: "Mission-Relevant Information Management for Integrated Response", description: "A query and visualization system for maritime data."},
+  { name: "Mission-Relevant Information Management for Integrated Response", description: "A query and visualization system for maritime data"},
   { name: "Kalgan", description: "YouTube video player for language learning"},
   { name: "D-Plot", description: "Bigram visualization tool", link:"https://github.com/husathap/DPlot"},
   { name: "Project Happiness", description: "Digital physical installation"},

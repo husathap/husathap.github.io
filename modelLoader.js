@@ -55,7 +55,7 @@ for (const e in publicationModel) {
 	if (!obj.forthcoming) {
 		$("#publication-data").append(`<p>{0}<p/><hr/>`.format(obj.reference));
 	} else {
-		$("#publication-data").append(`<p><span style="font-weight:bold;">[Forthcoming]</span> {0}<p/><hr/>`.format(obj.reference));
+		$("#publication-data").append(`<p><i class="fas fa-hourglass-half"></i> {0}<p/><hr/>`.format(obj.reference));
 	}
 }
 
