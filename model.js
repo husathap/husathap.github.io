@@ -1,8 +1,8 @@
 let educationModel = [
-  { university: "Dalhousie University", degree: "Doctor of Philosophy", program: "Computer Science", start: "Jan 2018", end: "Present", locationImg: "dalhousie.jpg"},
-  { university: "University of Calgary", degree: "Master of Science", program: "Computer Science", start: "Sep 2015", end: "Dec 2017", color: "red", locationImg: "ucalgary.jpg"},
-  { university: "Dalhousie University", degree: "Visiting", program: "NICE RADIANT", start: "Aug 2016", end: "Aug 2016", color: "#FFD700", locationImg: "dalhousie.jpg"}, 
-  { university: "University of Toronto", degree: "Bachelor of Science", program: "Computer Science (Specialist), Cognitive Science (Major), French (Minor)", start: "Sep 2011", end: "May 2015", color: "#00204E", locationImg: "uoft.jpg"}
+  { university: "Dalhousie University", degree: "Doctor of Philosophy", program: "Computer Science", start: "Jan 2018", end: "Present", logo: "dalhousie.png"},
+  { university: "University of Calgary", degree: "Master of Science", program: "Computer Science", start: "Sep 2015", end: "Dec 2017", color: "red", logo: "ucalgary.png"},
+  { university: "Dalhousie University", degree: "Visiting", program: "NICE RADIANT", start: "Aug 2016", end: "Aug 2016", color: "#FFD700", logo: "dalhousie.png"}, 
+  { university: "University of Toronto", degree: "Bachelor of Science", program: "Computer Science (Specialist), Cognitive Science (Major), French (Minor)", start: "Sep 2011", end: "May 2015", color: "#00204E", logo: "uoft.png"}
 ];
 
 let scholarshipModel = [
@@ -15,12 +15,12 @@ let publicationModel = [
 ]
 
 let teachingModel = [
-  { classCode: "CSCI1101", className: "Computer Science II", term: "Winter 2018", university: "Dalhousie University", role:"Teaching Assistant"},	
-  { classCode: "CPSC203", className: "Introduction to Problem Solving using Application Software", term: "Fall 2017", university: "University of Calgary", role:"Teaching Assistant"},
-  { classCode: "SENG513", className: "Web-based System", term: "Winter 2017", university: "University of Calgary", role:"Teaching Assistant"},
-  { classCode: "SENG513", className: "Web-based System", term: "Winter 2016", university: "University of Calgary", role:"Teaching Assistant"},
-  { classCode: "CPSC217", className: "Introduction to Computer Science for Multidisciplinary Studies I", term: "Fall 2015", university: "University of Calgary", role:"Teaching Assistant"},
-  { classCode: "CSC108", className: "Introduction to Programming", term: "Fall 2013", university: "University of Toronto", role:"Teaching Assistant"},
+  { classCode: "CSCI1101", className: "Computer Science II", term: "Winter 2018", university: "Dalhousie University", role:"Teaching Assistant", logo: "dalhousie.png"},	
+  { classCode: "CPSC203", className: "Introduction to Problem Solving using Application Software", term: "Fall 2017", university: "University of Calgary", role:"Teaching Assistant", logo: "ucalgary.png"},
+  { classCode: "SENG513", className: "Web-based System", term: "Winter 2017", university: "University of Calgary", role:"Teaching Assistant", logo: "ucalgary.png"},
+  { classCode: "SENG513", className: "Web-based System", term: "Winter 2016", university: "University of Calgary", role:"Teaching Assistant", logo: "ucalgary.png"},
+  { classCode: "CPSC217", className: "Introduction to Computer Science for Multidisciplinary Studies I", term: "Fall 2015", university: "University of Calgary", role:"Teaching Assistant", logo: "ucalgary.png"},
+  { classCode: "CSC108", className: "Introduction to Programming", term: "Fall 2013", university: "University of Toronto", role:"Teaching Assistant", logo: "uoft.png"},
 ];
 
 let projectModel = [

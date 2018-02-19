@@ -1,4 +1,6 @@
 body {
+	background-color:gray;
+	
 	background-image:url('bg.jpg');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -16,11 +18,13 @@ body {
 header {
 	font-size:xx-large;
 	padding:1rem;
-	background-color:white;
 	margin-bottom:1rem;
 	position:sticky;
 	top:0px;
 	z-index:1000;
+	
+	background-color:white;
+	background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9));
 }
 
 .hidden {
@@ -30,6 +34,12 @@ header {
 #sub-close {
 	font-weight:xx-large;
 	margin-right:1rem;
+	text-decoration:none;
+	color:teal;
+}
+
+#sub-close:hover {
+	color:orange;
 }
 
 #icons {
@@ -82,7 +92,7 @@ header {
 	top:100px;
 	width:100%;
 	z-index:999;
-	padding-top:0.5rem;
+	padding-top:1.5rem;
 	padding-bottom:0.5rem;
 	background-color:rgba(255,255,255,0.9);
 }

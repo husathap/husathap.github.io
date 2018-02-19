@@ -16,22 +16,38 @@ String.prototype.format = function()
 for (const e in educationModel) {
 	let obj = educationModel[e];
 	$("#education-data").append(`
-	<h2 class="card-title">{0}, {1}</h2>
-	<div class="card-text">
+	<h2>{0}, {1}</h2>
+	<img src="uni_logos/{5}" style="float:right; width:3rem; height:3rem" aria-hidden="true"></img>
+	<div>
 		<div><strong>Program:</strong> {2}</div>
 		<div><strong>Duration:</strong> {3} until {4}</div>
-	</div><hr/>`.format(obj.degree, obj.university, obj.program, obj.start, obj.end))
+	</div><hr/>`.format(obj.degree, obj.university, obj.program, obj.start, obj.end, obj.logo))
 }
 
 for (const e in teachingModel) {
 	let obj = teachingModel[e];
+	let season = "";
+	
+	switch (obj.term.split(" ")[0]) {
+		case "Fall":
+			season = '<i class="fas fa-leaf" style="color:orange" aria-hidden="true"></i>';
+			break;
+		case "Winter":
+			season = '<i class="fas fa-snowflake" style="color:blue" aria-hidden="true"></i>';
+			break;
+		case "Summer":
+			season = '<i class="fas fa-sun" style="color:red" aria-hidden="true"></i>';
+			break;
+	}
+	
 	$("#teaching-data").append(`
-		<h2>{0} for {1}</h2>
+		<h2>{0} for <span style='font-family:monospace;font-weight:bold'>{1}</span></h2>
+		<img src="uni_logos/{5}" style="float:right; width:3rem; height:3rem" aria-hidden="true"></img>
 		<div>
 			<div><strong>Course Name:</strong> {2}</div>
 			<div><strong>University:</strong> {3}</div>
-			<div><strong>Term:</strong> {4}</div>
-		</div><hr/>`.format(obj.role, obj.classCode, obj.className, obj.university, obj.term));
+			<div><strong>Term:</strong> {6} {4} </div>
+		</div><hr/>`.format(obj.role, obj.classCode, obj.className, obj.university, obj.term, obj.logo, season));
 }
 
 for (const e in publicationModel) {
