@@ -15,7 +15,7 @@ let publicationModel = [
 ]
 
 let teachingModel = [
-  { classCode: "CSCI1101", className: "Computer Science II", term: "Winter 2018", university: "Dalhousie University", role:"Teaching Assistant", logo: "dalhousie.png"},	
+  { classCode: "CSCI1101", className: "Computer Science II", term: "Winter 2018", university: "Dalhousie University", role:"<i class='fas fa-hourglass-half'></i> Teaching Assistant", logo: "dalhousie.png"},	
   { classCode: "CPSC203", className: "Introduction to Problem Solving using Application Software", term: "Fall 2017", university: "University of Calgary", role:"Teaching Assistant", logo: "ucalgary.png"},
   { classCode: "SENG513", className: "Web-based System", term: "Winter 2017", university: "University of Calgary", role:"Teaching Assistant", logo: "ucalgary.png"},
   { classCode: "SENG513", className: "Web-based System", term: "Winter 2016", university: "University of Calgary", role:"Teaching Assistant", logo: "ucalgary.png"},
