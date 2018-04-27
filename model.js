@@ -11,11 +11,11 @@ let scholarshipModel = [
 ];
 
 let publicationModel = [
-  { reference: "<strong>Hu, S.</strong>, & Willett, W. J. (2018). Kalgan: Video Player for Casual Language Learning. <em>CHI'18 Extended Abstracts: CHI Conference on Human Factors in Computing Systems Extended Abstracts Proceedings</em>.", forthcoming:true }
+  { reference: "<strong>Hu, S.</strong>, & Willett, W. J. (2018). Kalgan: Video Player for Casual Language Learning. <em>CHI EA '18</em>. doi:<a href='http://doi.org/10.1145/3170427.3188498'>10.1145/3170427.3188498</a>"}
 ]
 
 let teachingModel = [
-  { classCode: "CSCI1101", className: "Computer Science II", term: "Winter 2018", university: "Dalhousie University", role:"<i class='fas fa-hourglass-half'></i> Teaching Assistant", logo: "dalhousie.png"},	
+  { classCode: "CSCI1101", className: "Computer Science II", term: "Winter 2018", university: "Dalhousie University", role:"Teaching Assistant", logo: "dalhousie.png"},	
   { classCode: "CPSC203", className: "Introduction to Problem Solving using Application Software", term: "Fall 2017", university: "University of Calgary", role:"Teaching Assistant", logo: "ucalgary.png"},
   { classCode: "SENG513", className: "Web-based System", term: "Winter 2017", university: "University of Calgary", role:"Teaching Assistant", logo: "ucalgary.png"},
   { classCode: "SENG513", className: "Web-based System", term: "Winter 2016", university: "University of Calgary", role:"Teaching Assistant", logo: "ucalgary.png"},
@@ -41,6 +41,7 @@ let privateModel = [
 ];
 
 let volunteerModel = [
+  { role: "Student Volunteer", organization: "CHI Conference on Human Factors in Computing Systems", affiliation: "Association of Computing Machinery", start: "April 2018"},
   { role: "Session Chair and Judge", organization: "Dalhousie Computer Science In-house Conference", affiliation: "Dalhousie University", start: "Jan 2018"},
   { role: "Vice President - Finance", organization: "Computer Science Graduate Society", affiliation: "University of Calgary", start: "Sep 2016", end: "Aug 2016"},
   { role: "Fire Warden", organization: "Crowsnest Hall Residence", affiliation: "University of Calgary", start: "Sep 2015", end: "Dec 2015"},
