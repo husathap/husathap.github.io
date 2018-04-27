@@ -25,7 +25,7 @@ let teachingModel = [
 
 let projectModel = [
   { name: "Mission-Relevant Information Management for Integrated Response", description: "A query and visualization system for maritime data"},
-  { name: "Kalgan", description: "YouTube video player for language learning"},
+  { name: "Kalgan", description: "YouTube video player for language learning", link:"https://github.com/husathap/kalgan-server"},
   { name: "D-Plot", description: "Bigram visualization tool", link:"https://github.com/husathap/DPlot"},
   { name: "Project Happiness", description: "Digital physical installation"},
   { name: "Part-of-Speech Visualization", description: "A HTML-based part-of-speech visualization"},
