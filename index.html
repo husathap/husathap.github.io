@@ -13,23 +13,26 @@
 	</head>
 
 	<body>
-		<header id="header">
+		<img src="saltire.png" style="position:fixed; top:0px; right:0px; height:100%; width:100%; z-index: 1"></img>
+
+		<header id="header" style="z-index: 2">
 			<img src="icon.png" style="height:2.5rem;"></img> Hubert (Sathaporn) Hu
 			<span id="sub-arrow"><i class="fas fa-arrow-right"></i></span> 
 			<span id="sub-heading">Publication</span>
 			<a id="sub-close" href="#">
 				<i class="fas fa-times" style="font-size:x-large"></i>
 			</a>
+			
 		</header>
-		
-		<div id="section-content">
+
+		<div id="section-content" style="z-index: 3">
 			<section class="container">
 			</section>
 		</div>
 
 		<!-- The menu bar -->
 		
-		<div class="container" id="icons">
+		<div class="container" id="icons" style="z-index: 3">
 			<div class="row row-icons">
 				<div class="col-lg section-card" id="card-bio">
 					<div class="card">
@@ -145,13 +148,13 @@
 			</section>
 			
 			<section id="experience-data">
-				<h2 style="text-align:center; margin-bottom:1rem; background-color:orange; color:white; color:black; padding:0.2rem">Jobs</h2>
+				<h2 class="sub-content-header">Jobs</h2>
 				<section id="job-data">
 					<h5 style="text-align:right"><i class="fas fa-hourglass-half"></i> In Progress</h5>
 					<!-- To be filled by a script -->
 				</section>
 				<br/>
-				<h2 style="text-align:center; margin-bottom:1rem; background-color:orange; color:white; color:black; padding:0.2rem">Volunteer</h2>
+				<h2 class="sub-content-header">Volunteer</h2>
 				<section id="volunteer-data">
 					<!-- To be filled by a script -->
 				</section>
