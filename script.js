@@ -8,8 +8,6 @@ function initializeSubHeader(text, content) {
 	
 	var section = $("#section-content");
 	$("#icons").fadeOut(300, function() { 
-		section.css("top", 0);
-		section.offset({top:$("header").outerHeight(), left:0});
 		
 		$("#sub-arrow").show().fadeOut(0).fadeIn(300);
 	
@@ -23,6 +21,9 @@ function initializeSubHeader(text, content) {
 		section.show().fadeOut(0).fadeIn(300);
 		$("#header").css("position", "fixed");
 		$("#header").css("width", "100%");
+
+		section.css("top", 0);
+		section.offset({top:$("header").outerHeight(), left:0});
 	});
 	
 	

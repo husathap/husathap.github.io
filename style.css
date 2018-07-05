@@ -1,7 +1,6 @@
 body {
-	background-color:gray;
+	background-color: lightskyblue;
 	
-	background-image:url('bg.jpg');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	
@@ -116,6 +115,10 @@ header {
 }
 
 @media (max-width: 1199px) {
+	body {
+		background-image: none;
+	}
+
 	.row-icons {
 		margin-bottom:0rem;
 	}
@@ -126,6 +129,10 @@ header {
 }
 
 @media (min-width: 1200px) {
+	body {
+		background-image:url('bg.jpg');
+	}
+
 	.row-icons {
 		margin-bottom:1rem;
 	}
