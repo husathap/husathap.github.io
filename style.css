@@ -119,6 +119,21 @@ header {
 		background-image: none;
 	}
 
+	#thai-name {
+		visibility: collapse;
+		display: none;
+	}
+
+	#mypicture {
+		visibility: collapse;
+		display: none;
+	}
+
+	#header-icon {
+		visibility: collapse;
+		display: none;
+	}
+
 	.row-icons {
 		margin-bottom:0rem;
 	}
@@ -131,6 +146,21 @@ header {
 @media (min-width: 1200px) {
 	body {
 		background-image:url('bg.jpg');
+	}
+
+	#thai-name {
+		visibility: visible;
+		display: inline-block;
+	}
+
+	#mypicture {
+		visibility: visible;
+		display: block;
+	}
+
+	#header-icon {
+		visibility: visible;
+		display: inline-block;
 	}
 
 	.row-icons {

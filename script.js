@@ -4,30 +4,29 @@ $("#sub-close").hide();
 $("#sub-arrow").hide();
 
 function initializeSubHeader(text, content) {
-	
-	
 	var section = $("#section-content");
-	$("#icons").fadeOut(300, function() { 
+	$("html, body").animate({scrollTop:0}, "fast", function() {
+		$("#icons").fadeOut(300, function() { 
+			
+			$("#sub-arrow").fadeIn(300);
+			$("#sub-close").fadeIn(300);
 		
-		$("#sub-arrow").show().fadeOut(0).fadeIn(300);
-	
-		var subHeading = $("#sub-heading");
-		subHeading.html(text);
-		subHeading.show().fadeOut(0).fadeIn(300);
-		
-		$("#sub-close").show().fadeOut(0).fadeIn(300);
-		
-		$("#section-content > section").html(content);
-		section.show().fadeOut(0).fadeIn(300);
-		$("#header").css("position", "fixed");
-		$("#header").css("width", "100%");
+			var subHeading = $("#sub-heading");
+			subHeading.html(text);
+			subHeading.fadeIn(300);
+			
+			
+			
+			$("#section-content > section").html(content);
+			section.fadeIn(300);
+			$("#header").css("position", "fixed");
+			$("#header").css("width", "100%");
 
-		section.css("top", 0);
-		section.offset({top:$("header").outerHeight(), left:0});
+			section.css("top", 0);
+			section.offset({top:$("header").outerHeight(), left:0});
+			
+		});
 	});
-	
-	
-	
 }
 
 $("#sub-close").click(function() {
