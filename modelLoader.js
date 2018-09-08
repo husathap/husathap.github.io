@@ -40,8 +40,18 @@ for (const e in teachingModel) {
 			break;
 	}
 	
-	$("#teaching-data").append(`
-		<h2>{0} for <span style='font-family:monospace;font-weight:bold'>{1}</span></h2>
+	if (!obj.current)
+		$("#teaching-data").append(`
+			<h2>{0} for <span style='font-family:monospace;font-weight:bold'>{1}</span></h2>
+			<img src="uni_logos/{5}" style="float:right; width:3rem; height:3rem" aria-hidden="true"></img>
+			<div>
+				<div><strong>Course Name:</strong> {2}</div>
+				<div><strong>University:</strong> {3}</div>
+				<div><strong>Term:</strong> {6} {4} </div>
+			</div><hr/>`.format(obj.role, obj.classCode, obj.className, obj.university, obj.term, obj.logo, season));
+	else
+		$("#teaching-data").append(`
+		<h2><i class="fas fa-hourglass-half"></i> {0} for <span style='font-family:monospace;font-weight:bold'>{1}</span></h2>
 		<img src="uni_logos/{5}" style="float:right; width:3rem; height:3rem" aria-hidden="true"></img>
 		<div>
 			<div><strong>Course Name:</strong> {2}</div>
@@ -61,8 +71,18 @@ for (const e in publicationModel) {
 
 for (const e in privateModel) {
 	let obj = privateModel[e];
-	$("#job-data").append(`
-		<h3>{0} at {1}</h3>
+
+	if (!obj.current)
+		$("#job-data").append(`
+			<h3>{0} at {1}</h3>
+			<div>
+				<div><strong>Location:</strong> {2}</div>
+				<div><strong>Duration:</strong> {3} until {4}</div>
+				</div>
+			</div><hr/>`.format(obj.role, obj.company, obj.location, obj.start, obj.end));
+	else
+		$("#job-data").append(`
+		<h3><i class="fas fa-hourglass-half"></i> {0} at {1}</h3>
 		<div>
 			<div><strong>Location:</strong> {2}</div>
 			<div><strong>Duration:</strong> {3} until {4}</div>

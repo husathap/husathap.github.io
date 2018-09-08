@@ -1,5 +1,5 @@
 let educationModel = [
-  { university: 'Dalhousie University', degree: '<i class="fas fa-hourglass-half"></i> Doctor of Philosophy', program: "Computer Science", start: "Jan 2018", end: "Present", logo: "dalhousie.png"},
+  { university: 'Dalhousie University', degree: '<i class="fas fa-hourglass-half"></i> Doctor of Philosophy', program: "Computer Science with Certificate in University Teaching and Learning", start: "Jan 2018", end: "Present", logo: "dalhousie.png", current: true},
   { university: "University of Calgary", degree: "Master of Science", program: "Computer Science", start: "Sep 2015", end: "Dec 2017", color: "red", logo: "ucalgary.png"},
   { university: "Dalhousie University", degree: "Visiting", program: "NICE RADIANT", start: "Aug 2016", end: "Aug 2016", color: "#FFD700", logo: "dalhousie.png"}, 
   { university: "University of Toronto", degree: "Bachelor of Science", program: "Computer Science (Specialist), Cognitive Science (Major), French (Minor)", start: "Sep 2011", end: "May 2015", color: "#00204E", logo: "uoft.png"}
@@ -15,6 +15,7 @@ let publicationModel = [
 ]
 
 let teachingModel = [
+  { classCode: "CSCI4163/6610", className: "Human-Computer Interaction", term: "Fall 2018", university: "Dalhousie University", role:"Teaching Assistant", logo:"dalhousie.png", current: true},
   { classCode: "CSCI1101", className: "Computer Science II", term: "Winter 2018", university: "Dalhousie University", role:"Teaching Assistant", logo: "dalhousie.png"},	
   { classCode: "CPSC203", className: "Introduction to Problem Solving using Application Software", term: "Fall 2017", university: "University of Calgary", role:"Teaching Assistant", logo: "ucalgary.png"},
   { classCode: "SENG513", className: "Web-based System", term: "Winter 2017", university: "University of Calgary", role:"Teaching Assistant", logo: "ucalgary.png"},
@@ -35,7 +36,7 @@ let projectModel = [
 ];
 
 let privateModel = [
-  { role: "<i class='fas fa-hourglass-half'></i> Graduate Research Assistant", company: "Dalhousie University", location: "Halifax, Canada", description: "Collecting and analyzing data from classrooms.", start: "May 2018", end: "Present"},
+  { role: "Graduate Research Assistant", company: "Dalhousie University", location: "Halifax, Canada", description: "Collecting and analyzing data from classrooms.", start: "May 2018", end: "Present", current: true},
   { role: "Research Intern", company: "Lenovo", location: "Beijing, China", description: "Analyzed online data. Conducted experiment with virtual reality.", start: "Sep 2016", end: "Dec 2016", color: "red", locationImg: "beijing.jpg"},
   { role: "Research Assistant/Trainee", company: "TAGLab, University of Toronto", location: "Toronto, Canada", description: "Tested, developed software. Assisted with research", start: "Feb 2015", end: "Aug 2015", color: "#00204E", locationImg: "toronto.jpg"},
   { role: "Information Technology Intern", company: "Jet Asia Airways", location: "Bangkok, Thailand", description: "Maintained the IT structure. Implementing a new infrastructure", start: "Jun 2014", end: "Aug 2014", color: "white", locationImg: "bangkok.jpg"},
