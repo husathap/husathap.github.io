@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(73, 184, 199);
+	background-color: rgb(124, 91, 7);
 	
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -146,8 +146,12 @@ header {
 		background-image: none;
 	}
 
+	#saltire {
+		visibility: visible;
+	}
+
 	header {
-		background: linear-gradient(90deg, rgb(0, 74, 127) 0%,teal 55%,rgb(167, 108, 0) 90%);
+		background: linear-gradient(90deg, rgb(0, 74, 127) 0%,teal 55%,rgb(167, 108, 0) 95%);
 	}
 
 	#thai-name {
@@ -179,6 +183,10 @@ header {
 		background-image:url('bg.jpg');
 	}
 
+	#saltire {
+		visibility: hidden;
+	}
+
 	#thai-name {
 		visibility: visible;
 		display: inline-block;
@@ -203,6 +211,6 @@ header {
 	}
 
 	header {
-		background: linear-gradient(90deg, rgb(0, 74, 127) 0%,teal 50%,rgb(167, 108, 0) 75%,rgba(125,185,232,0) 90%);
+		background: linear-gradient(90deg, rgb(0, 74, 127) 0%,teal 50%,rgb(167, 108, 0) 80%,rgba(125,185,232,0) 95%);
 	}
 }

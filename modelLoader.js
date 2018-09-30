@@ -117,8 +117,11 @@ for (const e in projectModel) {
 	}
 	
 	$("#projects-data").append(`
-		<h2 class="card-title">{0}</h2>
+	<div>
+		<h2>{0}</h2>
 		<div class="card-text">
-			<div><strong>Description:</strong> {1}</div>
-		</div><hr/>`.format(head, obj.description))
+			<div><strong>Description:</strong> {1}
+		</div>
+	</div>
+	<hr/>`.format(head, obj.description))
 }
