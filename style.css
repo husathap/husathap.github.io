@@ -57,7 +57,7 @@ a:hover {
 #icons {
 	margin-top:4rem;
 	padding-top:1rem;
-	padding-bottom:1rem;
+	padding-bottom:6rem;
 }
 
 .card-icon {
@@ -136,6 +136,7 @@ footer {
 	text-align: center;
 	padding-top:0.5rem;
 	padding-bottom:0.5rem;
+	z-index:1001;
 }
 
 footer a {
