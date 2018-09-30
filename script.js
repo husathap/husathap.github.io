@@ -15,8 +15,6 @@ function initializeSubHeader(text, content) {
 			subHeading.html(text);
 			subHeading.fadeIn(300);
 			
-			
-			
 			$("#section-content > section").html(content);
 			section.fadeIn(300);
 			$("#header").css("position", "fixed");
