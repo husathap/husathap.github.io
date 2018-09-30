@@ -112,8 +112,33 @@ header {
 	padding:0.2rem
 }
 
-#main-hr {
-	border: 1px white solid;
+#contact {
+	background-color:teal;
+	margin:auto;
+	margin-top:3rem;
+	color:white;
+	font-size:x-large;
+	padding-top:0.5rem;
+	padding-bottom:0.5rem;
+	width:auto;
+	border: 2px solid orange;
+}
+
+#contact a {
+	color:white;
+}
+
+#contact a:hover {
+	color:yellow;
+}
+
+#emails {
+	padding-left: 0.5rem;
+}
+
+#links {
+	padding-right: 0.5rem;
+	border-right:2px orange solid;
 }
 
 @media (max-width: 1199px) {
