@@ -1,21 +1,19 @@
 $("#section-content").hide();
 $("#sub-heading").hide();
 $("#sub-close").hide();
-$("#sub-arrow").hide();
 $("#section-content").css("marginBottom", $("footer").outerHeight());
 
 function initializeSubHeader(text, content) {
 	var section = $("#section-content");
 	$("html, body").animate({scrollTop:0}, "fast", function() {
-		$("#icons").fadeOut(300, function() { 
-			
-			$("#sub-arrow").fadeIn(300);
+		$("#icons").fadeOut(300, function() {
+
 			$("#sub-close").fadeIn(300);
-		
+
 			var subHeading = $("#sub-heading");
 			subHeading.html(text);
 			subHeading.fadeIn(300);
-			
+
 			$("#section-content > section").html(content);
 			section.fadeIn(300);
 			$("#header").css("position", "fixed");
@@ -23,19 +21,17 @@ function initializeSubHeader(text, content) {
 
 			section.css("top", 0);
 			section.offset({top:$("header").outerHeight(), left:0});
-			
 		});
 	});
 }
 
 $("#sub-close").click(function() {
 	$("#section-content").fadeOut(300, function() { $(this).hide() });
-	$("#sub-arrow").fadeOut(300, function() { $(this).hide() });
 	$("#sub-heading").fadeOut(300, function() { $(this).html("").hide()});
 	$("#sub-close").fadeOut(300).hide(function() { $(this).hide() });
 	$("#header").css("position", "sticky");
 	$("#icons").fadeIn(300, function() {$(window).scrollTop(0);});
-	
+
 });
 
 $("#card-bio").click(function() {

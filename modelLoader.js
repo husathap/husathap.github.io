@@ -6,7 +6,7 @@ String.prototype.format = function()
    for (var i=0; i < arguments.length; i++)
    {
         var replacement = '{' + i + '}';
-        content = content.replace(replacement, arguments[i]);  
+        content = content.replace(replacement, arguments[i]);
    }
    return content;
 };
@@ -21,13 +21,14 @@ for (const e in educationModel) {
 	<div>
 		<div><strong>Program:</strong> {2}</div>
 		<div><strong>Duration:</strong> {3} until {4}</div>
-	</div><hr/>`.format(obj.degree, obj.university, obj.program, obj.start, obj.end, obj.logo))
+	</div><hr/>`.format(obj.degree, obj.university, obj.program, obj.start, obj.end, obj.logo));
 }
+$("#education-data > hr").last().remove();
 
 for (const e in teachingModel) {
 	let obj = teachingModel[e];
 	let season = "";
-	
+
 	switch (obj.term.split(" ")[0]) {
 		case "Fall":
 			season = '<i class="fas fa-leaf" style="color:orange" aria-hidden="true"></i>';
@@ -39,7 +40,7 @@ for (const e in teachingModel) {
 			season = '<i class="fas fa-sun" style="color:red" aria-hidden="true"></i>';
 			break;
 	}
-	
+
 	if (!obj.current)
 		$("#teaching-data").append(`
 			<h2>{0} for <span style='font-family:monospace;font-weight:bold'>{1}</span></h2>
@@ -59,15 +60,13 @@ for (const e in teachingModel) {
 			<div><strong>Term:</strong> {6} {4} </div>
 		</div><hr/>`.format(obj.role, obj.classCode, obj.className, obj.university, obj.term, obj.logo, season));
 }
+$("#teaching-data > hr").last().remove();
 
 for (const e in publicationModel) {
 	let obj = publicationModel[e];
-	if (!obj.forthcoming) {
-		$("#publication-data").append(`<p>{0}<p/><hr/>`.format(obj.reference));
-	} else {
-		$("#publication-data").append(`<p><i class="fas fa-hourglass-half"></i> {0}<p/><hr/>`.format(obj.reference));
-	}
+	$("#publication-data").append(`<p>{0}<p/><hr/>`.format(obj.reference));
 }
+$("#publication-data > hr").last().remove();
 
 for (const e in privateModel) {
 	let obj = privateModel[e];
@@ -89,6 +88,7 @@ for (const e in privateModel) {
 			</div>
 		</div><hr/>`.format(obj.role, obj.company, obj.location, obj.start, obj.end));
 }
+$("#job-data > hr").last().remove();
 
 for (const e in volunteerModel) {
 	let obj = volunteerModel[e];
@@ -107,21 +107,21 @@ for (const e in volunteerModel) {
 				<div><strong>During:</strong> {3}</div>
 			</div><hr/>`.format(obj.role, obj.organization, obj.affiliation, obj.start));
 }
+$("#volunteer-data > hr").last().remove();
 
 for (const e in projectModel) {
 	let obj = projectModel[e];
 	let head = '<h2>{0}</h2>'.format(obj.name);
-	
+
 	if (obj.link) {
 		head = '<h2><a href="{0}" target="_blank">{1}</a></h2>'.format(obj.link, obj.name);
 	}
-	
+
 	$("#projects-data").append(`
-	<div>
 		<h2>{0}</h2>
 		<div class="card-text">
-			<div><strong>Description:</strong> {1}
-		</div>
-	</div>
+			<div><strong>Description:</strong> {1}</div>
+    </div>
 	<hr/>`.format(head, obj.description))
 }
+$("#projects-data > hr").last().remove();

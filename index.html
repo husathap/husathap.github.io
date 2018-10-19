@@ -7,34 +7,35 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>Hubert (Sathaporn) Hu</title>
-		
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<link rel="stylesheet" href="style.css">
 		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-		
+
 		<link rel="icon" href="icon.png" type="image/png">
 	</head>
 
 	<body>
-		<img id="saltire" src="saltire.png" style="position:fixed; top:0px; right:0px; height:100%; width:100%; z-index: 1"></img>
 
 		<header id="header" style="z-index: 4">
 			Hubert <div id="thai-name">(Sathaporn)</div> Hu
-			<span id="sub-arrow"><i class="fas fa-arrow-right"></i></span> 
-			<span id="sub-heading">Publication</span>
-			<a id="sub-close" href="#">
-				<i class="fas fa-times" style="font-size:x-large"></i>
-			</a>
-			
 		</header>
 
-		<div id="section-content" style="z-index: 3">
+
+
+		<div id="section-content">
+			<div id="section-head" class="container">
+				<span id="sub-heading">Publication</span>
+				<a id="sub-close" href="#" class="float-right">
+					<i class="fas fa-window-close"></i>
+				</a>
+			</div>
 			<section class="container">
 			</section>
 		</div>
 
 		<!-- The menu bar -->
-		
+
 		<div class="container" id="icons" style="z-index: 3">
 			<div class="row row-icons">
 				<div class="col-lg section-card" id="card-bio">
@@ -45,7 +46,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-lg section-card" id="card-education">
 					<div class="card">
 						<div class="card-block">
@@ -54,7 +55,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-lg section-card" id="card-publication">
 					<div class="card">
 						<div class="card-block">
@@ -64,9 +65,9 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- Second Row -->
-			
+
 			<div class="row row-icons">
 				<div class="col-lg section-card" id="card-teaching">
 					<div class="card">
@@ -76,7 +77,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-lg section-card" id="card-experience">
 					<div class="card">
 						<div class="card-block">
@@ -85,7 +86,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-lg section-card" id="card-projects">
 					<div class="card">
 						<div class="card-block">
@@ -107,36 +108,36 @@
 				<span id="emails"><i class="fas fa-envelope" aria-label="Emails"></i> <a href="mailto:hu.hubert@live.ca">hu.hubert@live.ca</a>, <a href="mailto:hs.hu@dal.ca">hs.hu@dal.ca</a></span>
 			</div>
 		</footer>
-		
-		
+
+
 		<!-- Hidden section -->
-		
+
 		<div class="hidden">
 			<section id="bio-data">
 				<img src="me.jpg" id="mypicture" style="max-width:8rem; border:1px solid gray; float:right; margin-left:1rem;"></img>
 				<h3>Alternate Names:<br>Thai: สถาพร ฮู (Sathaporn Hu) <br>Chinese: 胡秀楷 (Hu, Shiow-Kai) </h3>
-				<p>Hubert is a PhD student at Dalhousie University, Halifax, Canada under the supervision of Prof. Derek Reilly. He was previously a Master's degree student 
+				<p>Hubert is a PhD student at Dalhousie University, Halifax, Canada under the supervision of Prof. Derek Reilly. He was previously a Master's degree student
 				at the University of Calgary under the supervision of Prof. Wesley Willett.
 				He specializes human-computer interaction. However, he also dabbles in computer-assisted language learning, machine learning,
 				and computational linguistics. As a new PhD student, he does not yet have a clear focus.
 				</p>
 			</section>
-				
+
 			<section id="education-data">
 				<h5 style="text-align:right"><i class="fas fa-hourglass-half"></i> In Progress</h5>
 				<!-- To be filled by a script -->
 			</section>
-			
+
 			<section id="publication-data">
 				<!--<h5 style="text-align:right"><i class="fas fa-hourglass-half"></i> Forthcoming</h5>-->
 				<!-- To be filled by a script -->
 			</section>
-			
+
 			<section id="teaching-data">
 				<h5 style="text-align:right"><i class="fas fa-hourglass-half"></i> In Progress</h5>
 				<!-- To be filled by a script -->
 			</section>
-			
+
 			<section id="experience-data">
 				<h2 class="sub-content-header">Jobs</h2>
 				<section id="job-data">
@@ -149,14 +150,14 @@
 					<!-- To be filled by a script -->
 				</section>
 			</section>
-			
+
 			<section id="projects-data">
 					<!-- To be filled by a script -->
 			</section>
 		</div>
 
-		
-	
+
+
 		<!-- Scripts for the website -->
 		<script src="jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
