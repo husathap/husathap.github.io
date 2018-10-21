@@ -1,5 +1,5 @@
 body {
-	background-color: teal;
+	background-color: white;
 
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -11,6 +11,8 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+
+	overflow-x: hidden;
 }
 
 header {
@@ -22,11 +24,11 @@ header {
 	z-index:1000;
 
 	color:white;
-	background-color:rgb(0, 74, 127);
 
 	border-bottom: 0.25rem orange solid;
 
 	background: black;
+
 }
 
 a {
@@ -59,9 +61,9 @@ a:hover {
 
 .section-card > .card {
 	transition: background-color 0.23s ease-out;
-	background-color:black;
-	color:white;
-	border: white 2px solid;
+	background-color:white;
+	color:black;
+	border: orange 2px solid;
 }
 
 .section-card > .card:hover {
@@ -90,21 +92,23 @@ a:hover {
 }
 
 #section-head {
-	background-color:orange;
 	font-size:xx-large;
-	color:black;
+	color:white;
+	background-color: teal;
 	font-weight: bold;
+	padding:1rem;
+	padding-left:2rem;
 }
 
 #sub-close {
 	font-weight:xx-large;
 	text-decoration:none;
-	color:black;
+	color:white;
 }
 
 #sub-close:hover {
 	transition: background-color 0.23s ease-out;
-	color:white;
+	color:orange;
 }
 
 #section-content {
@@ -113,6 +117,7 @@ a:hover {
 	z-index:3;
 	padding-top:1.5rem;
 	width:100vw;
+	overflow-x: hidden;
 }
 
 #section-content > section {
@@ -121,6 +126,7 @@ a:hover {
 	background-color:rgba(255, 255, 255, 0.85);
 	padding:1rem;
 	border: 4px orange solid;
+	overflow-x: hidden;
 }
 
 .sub-content-header {

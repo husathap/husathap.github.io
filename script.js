@@ -35,31 +35,27 @@ $("#sub-close").click(function() {
 });
 
 $("#card-bio").click(function() {
-	initializeSubHeader("Bio", $("#bio-data").html());
+	initializeSubHeader("<i class='fas fa-user'></i> Bio", $("#bio-data").html());
 });
 
 $("#card-education").click(function() {
-	initializeSubHeader("Education", $("#education-data").html());
+	initializeSubHeader("<i class='fas fa-graduation-cap'></i> Education", $("#education-data").html());
 });
 
 $("#card-publication").click(function() {
-	initializeSubHeader("Publication", $("#publication-data").html());
+	initializeSubHeader("<i class='fas fa-paperclip'></i> Publication", $("#publication-data").html());
 });
 
 $("#card-teaching").click(function() {
-	initializeSubHeader("Teaching", $("#teaching-data").html());
+	initializeSubHeader("<i class='fas fa-chalkboard-teacher'></i> Teaching", $("#teaching-data").html());
 });
 
 $("#card-experience").click(function() {
-	initializeSubHeader("Experience", $("#experience-data").html());
+	initializeSubHeader("<i class='fab fa-black-tie'></i> Experience", $("#experience-data").html());
 });
 
 $("#card-projects").click(function() {
-	initializeSubHeader("Projects", $("#projects-data").html());
-});
-
-$("#card-contact").click(function() {
-	initializeSubHeader("Contact Info", $("#contact-data").html());
+	initializeSubHeader("<i class='fas fa-archive'></i> Projects", $("#projects-data").html());
 });
 
 $("#card-github").click(function() {
