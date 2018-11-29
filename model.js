@@ -36,7 +36,7 @@ let projectModel = [
 ];
 
 let privateModel = [
-  { role: "Graduate Research Assistant (Part-Time)", company: "Dalhousie University", location: "Halifax, Canada", description: "Collecting and analyzing data from classrooms.", start: "May 2018", end: "Oct 2018"},
+  { role: "Graduate Research Assistant (Part-Time)", company: "Dalhousie University", location: "Halifax, Canada", description: "Collecting and analyzing data from classrooms.", start: "May 2018", end: "November 2018"},
   { role: "Research Intern", company: "Lenovo", location: "Beijing, China", description: "Analyzed online data. Conducted experiment with virtual reality.", start: "Sep 2016", end: "Dec 2016", color: "red", locationImg: "beijing.jpg"},
   { role: "Research Assistant/Trainee", company: "TAGLab, University of Toronto", location: "Toronto, Canada", description: "Tested, developed software. Assisted with research", start: "Feb 2015", end: "Aug 2015", color: "#00204E", locationImg: "toronto.jpg"},
   { role: "Information Technology Intern", company: "Jet Asia Airways", location: "Bangkok, Thailand", description: "Maintained the IT structure. Implementing a new infrastructure", start: "Jun 2014", end: "Aug 2014", color: "white", locationImg: "bangkok.jpg"},

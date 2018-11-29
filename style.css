@@ -1,5 +1,5 @@
 body {
-	background-color: teal;
+	background-color: lightgray;
 
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -17,18 +17,20 @@ body {
 
 header {
 	font-size:xx-large;
+	font-weight:bold;
 	padding:1rem;
 	margin-bottom:1rem;
+	text-align:center;
 	position:sticky;
 	top:0px;
 	z-index:1000;
 
 	color:white;
 
-	border-bottom: 0.25rem orange solid;
+	/*border-bottom: 0.25rem orange solid;*/
 
 	background: black;
-
+	background: linear-gradient(to bottom, rgba(0,0,0,0.98) 99%,rgba(255,255,255,0) 100%);
 }
 
 a {
@@ -63,7 +65,7 @@ a:hover {
 	transition: background-color 0.23s ease-out;
 	background-color:white;
 	color:black;
-	border: orange 2px solid;
+	border: black 2px solid;
 }
 
 .section-card > .card:hover {
@@ -93,8 +95,8 @@ a:hover {
 
 #section-head {
 	font-size:xx-large;
-	color:white;
-	background-color: teal;
+	color:black;
+	background-color: white;
 	font-weight: bold;
 	padding:1rem;
 	padding-left:2rem;
@@ -103,7 +105,7 @@ a:hover {
 #sub-close {
 	font-weight:xx-large;
 	text-decoration:none;
-	color:white;
+	color:black;
 }
 
 #sub-close:hover {
@@ -125,17 +127,16 @@ a:hover {
 	margin-bottom:1rem;
 	background-color:rgba(255, 255, 255, 0.85);
 	padding:1rem;
-	border: 4px orange solid;
 	overflow-x: hidden;
 }
 
 .sub-content-header {
 	text-align:center;
 	margin-bottom:1rem;
-	color:teal;
+	color:black;
 	font-weight:bolder;
 	font-size:xx-large;
-	border-bottom: teal 0.5rem solid;
+	border-bottom: black 0.25rem solid;
 	padding:0.2rem
 }
 
@@ -146,11 +147,13 @@ hr {
 }
 
 footer {
-	background:black;
+	background: black;
+	background: linear-gradient(to top, rgba(0,0,0,0.98) 99%, rgba(0,0,0,0) 100%);
+	
 	margin-top:3rem;
 	color:white;
 	font-size:x-large;
-	border-top: 4px solid orange;
+	/*border-top: 4px solid white;*/
 	overflow-x:hidden;
 	position: fixed;
 	bottom:0;
@@ -167,7 +170,7 @@ footer a {
 }
 
 footer a:hover {
-	color: goldenrod;
+	color: orange;
 }
 
 #emails {
@@ -176,7 +179,7 @@ footer a:hover {
 
 #links {
 	padding-right: 0.5rem;
-	border-right:2px orange solid;
+	border-right:2px white solid;
 }
 
 @media (max-width: 860px) {
