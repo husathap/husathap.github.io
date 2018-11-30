@@ -30,7 +30,6 @@ header {
 	/*border-bottom: 0.25rem orange solid;*/
 
 	background: black;
-	background: linear-gradient(to bottom, rgba(0,0,0,0.98) 99%,rgba(255,255,255,0) 100%);
 }
 
 a {
@@ -150,7 +149,6 @@ hr {
 
 footer {
 	background: black;
-	background: linear-gradient(to top, rgba(0,0,0,0.98) 99%, rgba(0,0,0,0) 100%);
 	
 	margin-top:3rem;
 	color:white;
