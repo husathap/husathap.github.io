@@ -18,8 +18,7 @@ body {
 header {
 	font-size:xx-large;
 	font-weight:bold;
-	padding:1rem;
-	margin-bottom:1rem;
+	padding-bottom:0px;
 	text-align:center;
 	position:sticky;
 	top:0px;
@@ -31,6 +30,11 @@ header {
 
 	background: teal;
 	background: linear-gradient(to right, rgba(0,135,219,1) 0%,rgba(129,178,5,1) 100%);
+}
+
+#name {
+	padding-top:1rem;
+	padding-bottom:1rem;
 }
 
 a {
@@ -148,29 +152,24 @@ hr {
 	height:0px;
 }
 
-footer {
+#contact {
 	background: black;
 	
-	margin-top:3rem;
+	margin-top:0;
 	color:white;
-	font-size:x-large;
+	font-size:large;
 	/*border-top: 4px solid white;*/
-	overflow-x:hidden;
-	position: fixed;
-	bottom:0;
-	width:100%;
 	text-align: center;
 	padding-top:0.5rem;
 	padding-bottom:0.5rem;
-	z-index:1001;
 }
 
-footer a {
+#contact a {
 	color:white;
 	font-weight: normal;
 }
 
-footer a:hover {
+#contact a:hover {
 	color: orange;
 }
 

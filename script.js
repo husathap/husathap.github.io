@@ -1,7 +1,6 @@
 $("#section-content").hide();
 $("#sub-heading").hide();
 $("#sub-close").hide();
-$("#section-content").css("marginBottom", $("footer").outerHeight());
 
 function initializeSubHeader(text, content) {
 	var section = $("#section-content");
@@ -65,11 +64,9 @@ $("#card-github").click(function() {
 $(window).resize(function() {
 	var section = $("#section-content");
 	section.offset({top:$("header").position().top + $("header").outerHeight(), left:0});
-	section.css("marginBottom", $("footer").outerHeight());
 });
 
 $(window).scroll(function() {
 	var section = $("#section-content");
 	section.offset({top:$("header").position().top + $("header").outerHeight(), left:0});
-	section.css("marginBottom", $("footer").outerHeight());
 });
