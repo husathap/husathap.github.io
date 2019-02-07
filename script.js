@@ -1,4 +1,5 @@
-$("#section-content").hide();
+/*$("#section-content").hide();
+$("#section-container").hide();
 $("#sub-heading").hide();
 $("#sub-close").hide();
 
@@ -6,6 +7,8 @@ function initializeSubHeader(text, content) {
 	var section = $("#section-content");
 	$("html, body").animate({scrollTop:0}, "fast", function() {
 		$("#icons").fadeOut(300, function() {
+			
+			$("#section-container").fadeIn(300);
 
 			$("#sub-close").fadeIn(300);
 
@@ -26,8 +29,39 @@ function initializeSubHeader(text, content) {
 
 $("#sub-close").click(function() {
 	$("#section-content").fadeOut(300, function() { $(this).hide() });
+	$("#section-container").fadeOut(300, function() { $(this).hide() });
 	$("#sub-heading").fadeOut(300, function() { $(this).html("").hide()});
 	$("#sub-close").fadeOut(300).hide(function() { $(this).hide() });
+	$("#header").css("position", "sticky");
+	$("#icons").fadeIn(300, function() {$(window).scrollTop(0);});
+
+});*/
+
+$("#section-content").hide();
+
+function initializeSubHeader(text, content)
+{
+	var section = $("#section-content");
+	
+	$("html, body").animate({scrollTop:0}, "fast", function() {
+		$("#icons").fadeOut(300, function() {
+			
+			var subHeading = $("#sub-heading");
+			subHeading.html(text);
+			$("#section-box > section").html(content);
+			
+			section.fadeIn(300);
+			$("#header").css("position", "fixed");
+			$("#header").css("width", "100%");
+
+			section.css("top", 0);
+			section.offset({top:$("header").outerHeight(), left:0});
+		});
+	});
+}
+
+$("#sub-close").click(function() {
+	$("#section-content").fadeOut(300, function() { $(this).hide() });
 	$("#header").css("position", "sticky");
 	$("#icons").fadeIn(300, function() {$(window).scrollTop(0);});
 

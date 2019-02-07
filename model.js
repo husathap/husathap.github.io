@@ -43,6 +43,9 @@ let privateModel = [
 ];
 
 let volunteerModel = [
+  { role: "Mentor", organization: "Dalhousie Computer Science In-House Conference", affiliation: "SURGE Deep Dive", start: "February 2019"},
+  { role: "Presenter", organization: "Dalhousie Computer Science In-House Conference", affiliation: "Dalhousie University", start: "January 2019"},	
+  { role: "Reviewer", organization: "CHI Conference on Human Factors in Computing Systems", affiliation: "Association of Computing Machinery", start: "January 2019"},
   { role: "Student Volunteer", organization: "CHI Conference on Human Factors in Computing Systems", affiliation: "Association of Computing Machinery", start: "April 2018"},
   { role: "Session Chair and Judge", organization: "Dalhousie Computer Science In-house Conference", affiliation: "Dalhousie University", start: "Jan 2018"},
   { role: "Vice President - Finance", organization: "Computer Science Graduate Society", affiliation: "University of Calgary", start: "Sep 2016", end: "Aug 2016"},
