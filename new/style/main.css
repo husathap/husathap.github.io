@@ -1,0 +1,20 @@
+body {
+	margin:0;
+	padding:0;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+#scaffold {
+	background-color:white;
+	position:relative;
+	z-index:0;
+}
+
+#scaffold > section {
+	margin: 3rem;
+	background-color:white;
+}
+
+#scaffold > section > h1 {
+	font-size:xx-large;
+}
