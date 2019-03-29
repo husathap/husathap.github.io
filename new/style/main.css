@@ -7,11 +7,12 @@ body {
 #scaffold {
 	background-color:white;
 	position:relative;
+	text-align:center;
 	z-index:0;
 }
 
 #scaffold > section {
-	margin: 3rem;
+	margin: auto;
 	background-color:white;
 }
 
