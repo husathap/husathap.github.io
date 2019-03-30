@@ -14,7 +14,17 @@
 	border-radius:5px;
 	padding:0.25rem;
 	cursor: pointer;
+	display:inline-block;
 }
+
+.toggle:hover {
+	border:2px teal solid;
+	background-color:teal;
+	color:white;
+	border-radius:5px;
+	padding:0.25rem;
+}
+
 
 .toggle.selected {
 	border:2px teal solid;
@@ -26,12 +36,10 @@
 
 #position_list {
 	list-style:none;
+	padding-left:0;
 }
 
 #position_list li {
-	/*border: black 1px solid;*/
-	/*border-bottom: black 1px solid;*/
-
 	box-shadow: 0px 0px 6px 2px #000000;
 	padding:0.5rem;
 	padding-right:1rem;
@@ -96,4 +104,31 @@
 
 #position_list .sub_detail {
 	font-weight:normal;
+}
+
+@media only screen and (max-width: 800px) {
+	
+	#position_list .detail {
+		padding-left:1rem;
+		font-size:small;
+	}
+	
+	#position_list .type_icon {
+		display:none;
+	}
+}
+
+@media only screen and (min-width: 801px) {
+	#position_list {
+		font-size:large;
+	}
+	
+	#position_list .detail {
+		padding-left:0rem;
+		font-size:large;
+	}
+	
+	#position_list .type_icon {
+		display:flex;
+	}
 }
