@@ -8,7 +8,7 @@
 		float:left;
 		margin:0px;
 		height:100vh;
-		position:absolute;
+		position:fixed;
 		top:0;
 		left:0;
 		z-index:10;
@@ -21,6 +21,14 @@
 		font-size:large;
 		display:flex-inline;
 	}
+	
+	#hide_nav:hover {
+		background:none;
+		color:red;
+		font-size:large;
+		display:flex-inline;
+		cursor:pointer;
+	}
 }
 
 @media only screen and (min-width: 801px) {
@@ -31,7 +39,7 @@
 		width:auto;
 		float:left;
 		margin:0px;
-		position:absolute;
+		position:fixed;
 		top:0;
 		left:0;
 		height:100vh;
@@ -82,11 +90,12 @@ nav a:hover {
 		background-color:black;
 		color:white;
 		padding:1em;
-		width:auto;
 		position:fixed;
 		left:0px;
 		top:0px;
-		display:inline-flex;
+		display:inline;
+		cursor:pointer;
+		z-index:9;
 	}
 }
 

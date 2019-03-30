@@ -4,7 +4,7 @@ $("#hamburger").click(function() {
 	adjustScaffold();
 });
 
-$("#hide_a").click(function() {
+$("#hide_nav").click(function() {
 	$("#hamburger").css({"display": ""});
 	$("nav").css({"display": ""});
 	adjustScaffold();

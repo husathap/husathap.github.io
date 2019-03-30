@@ -1,0 +1,36 @@
+#name {
+	margin-bottom:2rem;
+	margin-top:3rem;
+}
+
+#english_name {
+	font-size:xx-large;
+	font-weight:bold;
+}
+
+#thai_name {
+	font-size:x-large;
+	color:teal;
+}
+
+#chinese_name {
+	font-size:x-large;
+	color:teal;
+}
+
+#contact {
+	background-color:teal;
+	padding:0.5rem;
+	color:white;
+}
+
+#contact > a {
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+#contact > a:hover {
+	color:teal;
+	background-color:white;
+}

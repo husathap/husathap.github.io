@@ -1,0 +1,99 @@
+#position_filters {
+	font-family: Monaco, monospace;
+	font-size:large;
+	text-align:center;
+	margin-bottom:1.5rem;
+}
+
+#toggle_label {
+	font-weight:bold;
+}
+
+.toggle {
+	border:2px teal solid;
+	border-radius:5px;
+	padding:0.25rem;
+	cursor: pointer;
+}
+
+.toggle.selected {
+	border:2px teal solid;
+	background-color:teal;
+	color:white;
+	border-radius:5px;
+	padding:0.25rem;
+}
+
+#position_list {
+	list-style:none;
+}
+
+#position_list li {
+	/*border: black 1px solid;*/
+	/*border-bottom: black 1px solid;*/
+
+	box-shadow: 0px 0px 6px 2px #000000;
+	padding:0.5rem;
+	padding-right:1rem;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	margin-bottom:0.5rem;
+}
+
+#position_list .duration {
+	background-color:teal;
+	font-size:small;
+	text-align:center;
+	padding:0.5rem;
+	justify-content:center;
+	vertical-align:center;
+	min-height:2rem;
+	width:2rem;
+	border: 1px solid gray;
+}
+
+#position_list .duration > hr {
+	background:white;
+	border: 1px solid white;
+	width:50%;
+	justify-content:center;
+}
+
+#position_list .education .duration {
+	background-color:black;
+	color:white;
+}
+
+#position_list .private .duration {
+	background-color:brown;
+	color:white;
+}
+
+#position_list .volunteer .duration {
+	background-color:orange;
+	color:white;
+}
+
+#position_list .teaching .duration {
+	background-color:teal;
+	color:white;
+}
+
+#position_list .type_icon {
+	font-size:xx-large;
+	justify-content:center;
+	flex: 0 0 1.8em;
+	text-align:center;
+	vertical-align:center;
+}
+
+#position_list .detail {
+	justify-content: center;
+	font-size:large;
+	font-weight:bold;
+}
+
+#position_list .sub_detail {
+	font-weight:normal;
+}

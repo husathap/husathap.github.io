@@ -1,0 +1,28 @@
+#publication_list {
+	list-style:none;
+}
+
+#publication_list li {
+	padding-left:2em;
+	text-indent:-2em;
+	padding-bottom:1em;
+}
+
+.author {
+	font-weight:bold;
+}
+
+.title {
+	font-style:italic;
+}
+
+.doi {
+	font-weight:bold;
+	text-decoration:none;
+	color:teal;
+}
+
+.doi:hover {
+	background-color:teal;
+	color:white;
+}

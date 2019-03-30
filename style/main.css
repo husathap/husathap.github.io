@@ -7,13 +7,15 @@ body {
 #scaffold {
 	background-color:white;
 	position:relative;
-	text-align:center;
 	z-index:0;
 }
 
 #scaffold > section {
-	margin: auto;
 	background-color:white;
+	margin:auto;
+	width:70%;
+	padding:1rem;
+	max-width:900px;
 }
 
 #scaffold > section > h1 {
