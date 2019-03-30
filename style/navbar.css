@@ -18,15 +18,15 @@
 	
 	#hide_nav {
 		float:right;
-		font-size:large;
-		display:flex-inline;
+		font-size:x-large;
+		display:inline;
 	}
 	
 	#hide_nav:hover {
 		background:none;
 		color:red;
-		font-size:large;
-		display:flex-inline;
+		font-size:x-large;
+		display:inline;
 		cursor:pointer;
 	}
 }

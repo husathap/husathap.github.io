@@ -19,7 +19,7 @@
 
 .toggle:hover {
 	border:2px teal solid;
-	background-color:teal;
+	background-color:orange;
 	color:white;
 	border-radius:5px;
 	padding:0.25rem;
@@ -29,6 +29,14 @@
 .toggle.selected {
 	border:2px teal solid;
 	background-color:teal;
+	color:white;
+	border-radius:5px;
+	padding:0.25rem;
+}
+
+.toggle.selected:hover {
+	border:2px teal solid;
+	background-color:orange;
 	color:white;
 	border-radius:5px;
 	padding:0.25rem;
@@ -79,7 +87,7 @@
 }
 
 #position_list .volunteer .duration {
-	background-color:orange;
+	background-color:#9b870c;
 	color:white;
 }
 
