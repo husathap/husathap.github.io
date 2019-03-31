@@ -12,9 +12,10 @@
 .toggle {
 	border:2px teal solid;
 	border-radius:5px;
-	padding:0.25rem;
+	padding:0.1rem;
 	cursor: pointer;
 	display:inline-block;
+	margin-top:0.1rem;
 }
 
 .toggle:hover {
@@ -22,7 +23,8 @@
 	background-color:orange;
 	color:white;
 	border-radius:5px;
-	padding:0.25rem;
+	padding:0.1rem;
+	margin-top:0.1rem;
 }
 
 
@@ -31,7 +33,7 @@
 	background-color:teal;
 	color:white;
 	border-radius:5px;
-	padding:0.25rem;
+	padding:0.1rem;
 }
 
 .toggle.selected:hover {
@@ -39,7 +41,7 @@
 	background-color:orange;
 	color:white;
 	border-radius:5px;
-	padding:0.25rem;
+	padding:0.1rem;
 }
 
 #position_list {
