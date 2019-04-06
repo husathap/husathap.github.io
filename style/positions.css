@@ -12,10 +12,10 @@
 .toggle {
 	border:2px teal solid;
 	border-radius:5px;
-	padding:0.1rem;
+	padding:0.3rem;
 	cursor: pointer;
 	display:inline-block;
-	margin-top:0.1rem;
+	margin-top:0.3rem;
 }
 
 .toggle:hover {
@@ -23,8 +23,8 @@
 	background-color:orange;
 	color:white;
 	border-radius:5px;
-	padding:0.1rem;
-	margin-top:0.1rem;
+	padding:0.3rem;
+	margin-top:0.3rem;
 }
 
 
@@ -33,15 +33,15 @@
 	background-color:teal;
 	color:white;
 	border-radius:5px;
-	padding:0.1rem;
+	padding:0.3rem;
 }
 
 .toggle.selected:hover {
 	border:2px teal solid;
-	background-color:orange;
+	background-color:teal;
 	color:white;
 	border-radius:5px;
-	padding:0.1rem;
+	padding:0.3rem;
 }
 
 #position_list {
@@ -76,6 +76,7 @@
 	border: 1px solid white;
 	width:50%;
 	justify-content:center;
+	height:0.05rem;
 }
 
 #position_list .education .duration {

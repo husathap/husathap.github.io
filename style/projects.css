@@ -1,0 +1,23 @@
+.showcase {
+	box-shadow: 0px 0px 6px 2px #000000;
+	padding:1rem;
+	margin-bottom:1em;
+}
+
+.showcase > h1 {
+	font-size:large;
+}
+
+
+.date {
+	color:maroon;
+	font-size:medium;
+	font-weight:bold;
+}
+
+.subbox {
+	box-shadow: 0px 0px 6px 1px #000000;
+	padding:1rem;
+	margin-bottom:1em;
+	background:linear-gradient(135deg, #ffffff 0%,#e5e5e5 100%);
+}
