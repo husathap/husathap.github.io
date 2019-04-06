@@ -10,16 +10,17 @@
 
 #thai_name {
 	font-size:x-large;
-	color:teal;
+	color:indigo;
 }
 
 #chinese_name {
 	font-size:x-large;
-	color:teal;
+	color:red;
 }
 
 #contact {
-	background-color:teal;
+	background:teal;
+	background:linear-gradient(135deg, #1e000b 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);
 	padding:0.5rem;
 	color:white;
 }
