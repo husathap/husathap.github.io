@@ -45,6 +45,10 @@ body {
 
 @media only screen and (max-width: 800px) {
 	
+	#scaffold {
+		margin-top:2rem;
+	}
+	
 	#scaffold > section {
 		width:90%;
 	}

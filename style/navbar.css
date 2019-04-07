@@ -97,6 +97,10 @@ nav a:hover {
 		cursor:pointer;
 		z-index:9;
 	}
+	
+	#hamburger:hover {
+		background-color:red;
+	}
 }
 
 @media only screen and (min-width: 801px) {
