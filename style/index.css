@@ -1,6 +1,6 @@
 #name {
 	margin-bottom:2rem;
-	margin-top:3rem;
+	margin-top:1rem;
 }
 
 #english_name {
@@ -10,17 +10,16 @@
 
 #thai_name {
 	font-size:x-large;
-	color:indigo;
+	color:teal;
 }
 
 #chinese_name {
 	font-size:x-large;
-	color:red;
+	color:teal;
 }
 
 #contact {
 	background:teal;
-	background:linear-gradient(135deg, #1e000b 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);
 	padding:0.5rem;
 	color:white;
 }
@@ -34,4 +33,9 @@
 #contact > a:hover {
 	color:teal;
 	background-color:white;
+}
+
+#image {
+	float:right;
+	width:5rem;
 }

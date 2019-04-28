@@ -2,8 +2,8 @@
 
 @media only screen and (max-width: 800px) {
 	nav {
-		background-color:black;
-		background: linear-gradient(135deg, #1e000b 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);
+		background-color:teal;
+		/*background: linear-gradient(135deg, #1e000b 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);*/
 		color:white;
 		float:left;
 		margin:0px;
@@ -33,8 +33,8 @@
 
 @media only screen and (min-width: 801px) {
 	nav {
-		background-color:black;
-		background: linear-gradient(135deg, #1e000b 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);
+		background-color:teal;
+		/*background: linear-gradient(135deg, #1e000b 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);*/
 		color:white;
 		width:auto;
 		float:left;
@@ -78,7 +78,7 @@ nav a {
 }
 
 nav a:hover {
-	color:red;
+	color:teal;
 	background-color:white;
 	font-size:large;
 	font-weight:bold;

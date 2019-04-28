@@ -50,7 +50,9 @@
 }
 
 #position_list li {
-	box-shadow: 0px 0px 6px 2px #000000;
+	
+	background-color:gainsboro;
+	color:black;
 	padding:0.5rem;
 	padding-right:1rem;
 	display:flex;
@@ -68,7 +70,7 @@
 	vertical-align:center;
 	min-height:2rem;
 	width:2rem;
-	border: 1px solid gray;
+	border: 2px solid white;
 }
 
 #position_list .duration > hr {
