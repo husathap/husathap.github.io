@@ -16,15 +16,17 @@
 	cursor: pointer;
 	display:inline-block;
 	margin-top:0.3rem;
+	box-shadow: 0px 0px 3px teal;
 }
 
 .toggle:hover {
-	border:2px teal solid;
+	border:2px orange solid;
 	background-color:orange;
 	color:white;
 	border-radius:5px;
 	padding:0.3rem;
 	margin-top:0.3rem;
+	box-shadow: 0px 0px 3px orange;
 }
 
 
@@ -50,7 +52,7 @@
 }
 
 #position_list li {
-	
+	box-shadow: 0px 0px 3px gray;
 	background-color:gainsboro;
 	color:black;
 	padding:0.5rem;
@@ -62,6 +64,7 @@
 }
 
 #position_list .duration {
+	box-shadow: 0px 0px 2px white;
 	background-color:teal;
 	font-size:small;
 	text-align:center;
