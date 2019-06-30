@@ -67,14 +67,20 @@ body {
 
 
 @media only screen and (max-width: 800px) {
+	body {
+		background-color:white;
+	}
 	
 	#scaffold {
 		margin-top:2rem;
 		margin-bottom:0;
+		border:none;
+		
 	}
 	
 	#scaffold > section {
 		width:90%;
+		box-shadow:none;
 	}
 	
 	#background {

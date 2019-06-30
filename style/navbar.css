@@ -2,8 +2,8 @@
 
 @media only screen and (max-width: 800px) {
 	nav {
-		background-color:teal;
-		/*background: linear-gradient(135deg, #1e000b 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);*/
+		background-color:black;
+		background: linear-gradient(135deg, black 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);
 		color:white;
 		float:left;
 		margin:0px;
@@ -104,7 +104,8 @@ nav a:hover {
 	}
 	
 	#hamburger:hover {
-		background-color:teal;
+		background-color:black;
+		background:linear-gradient(135deg, black 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);;
 	}
 }
 
