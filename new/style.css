@@ -1,0 +1,92 @@
+body {
+	font-family:arial;
+	margin:0;
+	padding:0;
+}
+
+nav {
+	background: linear-gradient(135deg, black 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);
+	color:white;
+	margin:none;
+	font-size:x-large;
+	text-align:center;
+}
+
+#navbrand {
+	padding:0.8rem;
+	background:black;
+}
+
+#navbtn {
+	margin:0.5rem;
+	border:none;
+	background:white;
+	text-decoration:none;
+	outline:none;
+	font-size:x-large;
+	cursor:pointer;
+	width:50px;
+}
+
+#navbtn:hover {
+	background:orange;
+}
+
+#navbtn:click {
+	border:none;
+}
+
+
+#navlinks {
+	font-size:medium;
+	margin:0;
+	background:linear-gradient(135deg, black 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);
+	padding:0.5rem;
+	display:none;
+	color:black;
+}
+
+#navlinks ul {
+	padding:0;
+	margin:0;
+}
+
+#navlinks li {
+	display:inline;
+}
+
+#navlinks a {
+	color:white;
+	font-weight:bold;
+	padding-left:1rem;
+	padding-right:1rem;
+	text-decoration:none;
+}
+
+#navlinks a:hover {
+	color:yellow;
+}
+
+#main {
+	margin:auto;
+	margin-top:1rem;
+	padding:0.5rem;
+	width:80%;
+	max-width:1000px;
+	border:solid 1px black;
+}
+
+@media only screen and (max-width: 800px) {
+	#navlinks li {
+		display:block;
+	}
+	
+	#main {
+		margin:auto;
+		margin-top:0.5rem;
+		padding:1rem;
+		border:none;
+		width:auto;
+	}
+}
+
