@@ -1,116 +1,102 @@
 /* Styling sheet for the navigation bar */
 
-@media only screen and (max-width: 800px) {
-	nav {
-		background-color:black;
-		background: linear-gradient(135deg, black 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);
-		color:white;
-		float:left;
-		margin:0px;
-		height:100vh;
-		position:fixed;
-		top:0;
-		left:0;
-		z-index:10;
-		
-		display:none;
-		box-shadow: 0px 0px 2px black; 
-	}
-	
-	#hide_nav {
-		float:right;
-		font-size:x-large;
-		display:inline;
-	}
-	
-	#hide_nav:hover {
-		background:none;
-		color:red;
-		font-size:x-large;
-		display:inline;
-		cursor:pointer;
-	}
-}
-
-@media only screen and (min-width: 801px) {
-	nav {
-		background-color:black;
-		background: linear-gradient(135deg, black 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);
-		color:white;
-		width:auto;
-		float:left;
-		margin:0px;
-		position:fixed;
-		top:0;
-		left:0;
-		height:100vh;
-		z-index:10;
-		
-		box-shadow: 0px 0px 3px black; 
-	}
-	
-	#hide_nav {
-		display:none;
-	}
-}
-
-nav > #brand {
-	padding:0.5em;
-	font-size:x-large;
-	border-bottom:gray 0.05em solid;
-}
-
-nav > #links {
-	list-style: none;
-	padding:0;
-	padding-left:1em;
-	padding-right:1em;
-	
-}
-
-nav > #links > li {
-	margin:0.2em;
-}
-
-nav a {
+nav {
+	/*background: linear-gradient(135deg, black 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);*/
+	background:black;
 	color:white;
-	font-size:large;
-	font-weight:bold;
-	text-decoration:none;
-	padding:0.2em;
+	margin:none;
+	font-size:x-large;
+	text-align:center;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:10;
+	width:100%;
 }
 
-nav a:hover {
-	color:teal;
-	background-color:white;
-	font-size:large;
-	font-weight:bold;
+#navbrand {
+	padding:0.8rem;
+	background:black;
+}
+
+#navbtn {
+	margin:0.5rem;
+	border:none;
+	background:white;
 	text-decoration:none;
-	box-shadow: 0px 0px 3px black;
+	outline:none;
+	font-size:x-large;
+	cursor:pointer;
+	width:50px;
+}
+
+#navbtn:hover {
+	background:orange;
+}
+
+#navbtn:click {
+	border:none;
+}
+
+
+#navlinks {
+	font-size:medium;
+	margin:0;
+	background:linear-gradient(135deg, black 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);
+	/*background:orange;*/
+	padding:0.5rem;
+	display:none;
+	color:black;
+}
+
+#navlinks ul {
+	padding:0;
+	margin:0;
+}
+
+#navlinks li {
+	display:inline;
+}
+
+#navlinks a {
+	color:white;
+	font-weight:bold;
+	padding-left:1rem;
+	padding-right:1rem;
+	text-decoration:none;
+}
+
+#navlinks a:hover {
+	color:yellow;
+}
+
+#main {
+	margin:auto;
+	margin-top:1rem;
+	padding:0.5rem;
+	width:80%;
+	max-width:1000px;
+	border:solid 1px black;
+}
+
+#more_names {
+	display:inline;
 }
 
 @media only screen and (max-width: 800px) {
-	#hamburger {
-		background-color:black;
-		width:100%;
-		color:white;
-		padding:1em;
-		position:fixed;
-		left:0px;
-		top:0px;
-		display:inline;
-		cursor:pointer;
-		z-index:9;
+	#navlinks li {
+		display:block;
 	}
 	
-	#hamburger:hover {
-		background-color:black;
-		background:linear-gradient(135deg, black 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);;
+	#main {
+		margin:auto;
+		margin-top:0.5rem;
+		padding:1rem;
+		border:none;
+		width:auto;
 	}
-}
-
-@media only screen and (min-width: 801px) {
-	#hamburger {
+	
+	#more_names {
 		display:none;
 	}
 }
