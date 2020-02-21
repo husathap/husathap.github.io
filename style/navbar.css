@@ -42,9 +42,7 @@ nav {
 #navlinks {
 	font-size:medium;
 	margin:0;
-	/*background:linear-gradient(135deg, black 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);*/
 	background:white;
-	/*background:orange;*/
 	padding:0.5rem;
 	display:none;
 	color:black;
