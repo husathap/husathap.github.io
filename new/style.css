@@ -2,8 +2,8 @@ body {
 	margin:0;
 	padding:0;
 	font-family:"Trebuchet MS", Verdana, Helvetica, sans-serif;
-	background: rgb(34,193,195);
-	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	background: lightgray;
+	background: linear-gradient(0deg, lightgray 0%, white 100%);
 	background-repeat:no-repeat;
 	background-attachment: fixed;
 }
@@ -92,7 +92,7 @@ section {
 	width:90%;
 	padding:0.2rem 0.5rem 0.2rem;
 	background-color:white;
-	box-shadow: 0px 0px 8px #888888;
+	/*box-shadow: 0px 0px 8px #888888;*/
 }
 
 .notebar {
