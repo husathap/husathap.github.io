@@ -30,6 +30,7 @@ body {
 
 nav{
 	margin:auto;
+	margin-bottom:0.5rem;
 	max-width:800px;
 	width:90%;
 	background-color:black;
@@ -51,8 +52,21 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-	color:cyan;
+	color:white;
+	border:black 3px solid;
+	padding:0.25rem;
 	font-weight:bold;
+	text-decoration:none;
+	background-color:black;
+}
+
+nav > ul > li > a:hover {
+	color:black;
+	border:orange 3px solid;
+	padding:0.25rem;
+	font-weight:bold;
+	text-decoration:none;
+	background-color:orange;
 }
 
 section {
@@ -61,7 +75,7 @@ section {
 	width:90%;
 	padding:0.2rem 0.5rem 0.2rem;
 	background-color:white;
-	border-bottom:black 1px solid;
+	box-shadow: 0px 0px 8px #888888;
 }
 
 
