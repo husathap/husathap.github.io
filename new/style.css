@@ -1,94 +1,67 @@
 body {
-	font-family:arial;
+	font-family:monospace;
 	margin:0;
 	padding:0;
+	background-color:lightgray;
 }
 
-nav {
+#myname {
 	/*background: linear-gradient(135deg, black 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);*/
-	background:black;
+	margin:1rem 1rem 0.5rem;
+	padding-bottom:0.5rem;
+	font-size:large;
+	border-bottom:black 0.05rem solid;
+}
+
+#myname > ul {
+	margin:0px;
+	list-style-type:none;
+	padding-left:3rem;
+}
+
+#mytitle {
+	margin:0rem 1rem 1rem;
+	padding-bottom:0.5rem;
+	padding-left:3rem;
+	border-bottom:black 0.05rem solid;
+	font-size:large;
+	font-weight:bold;
+}
+
+nav{
+	margin:auto;
+	max-width:800px;
+	width:90%;
+	background-color:black;
 	color:white;
-	margin:none;
-	font-size:x-large;
+	padding:0.5rem 0.5rem 0.5rem;
 	text-align:center;
 }
 
-#navbrand {
-	padding:0.8rem;
-	background:black;
-}
-
-#navbtn {
+nav > ul {
+	list-style-type:none;
+	display:inline;
 	margin:0.5rem;
-	border:none;
-	background:white;
-	text-decoration:none;
-	outline:none;
-	font-size:x-large;
-	cursor:pointer;
-	width:50px;
-}
-
-#navbtn:hover {
-	background:orange;
-}
-
-#navbtn:click {
-	border:none;
-}
-
-
-#navlinks {
-	font-size:medium;
-	margin:0;
-	background:linear-gradient(135deg, black 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);
-	/*background:orange;*/
 	padding:0.5rem;
-	display:none;
-	color:black;
+	
 }
 
-#navlinks ul {
-	padding:0;
-	margin:0;
-}
-
-#navlinks li {
+nav > ul > li {
 	display:inline;
 }
 
-#navlinks a {
-	color:white;
+nav > ul > li > a {
+	color:cyan;
 	font-weight:bold;
-	padding-left:1rem;
-	padding-right:1rem;
-	text-decoration:none;
 }
 
-#navlinks a:hover {
-	color:yellow;
-}
-
-#main {
+section {
 	margin:auto;
-	margin-top:1rem;
-	padding:0.5rem;
-	width:80%;
-	max-width:1000px;
-	border:solid 1px black;
+	max-width:800px;
+	width:90%;
+	padding:0.2rem 0.5rem 0.2rem;
+	background-color:white;
+	border-bottom:black 1px solid;
 }
 
-@media only screen and (max-width: 800px) {
-	#navlinks li {
-		display:block;
-	}
-	
-	#main {
-		margin:auto;
-		margin-top:0.5rem;
-		padding:1rem;
-		border:none;
-		width:auto;
-	}
-}
 
