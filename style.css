@@ -192,6 +192,7 @@ th {
 	font-weight:bold;
 	text-decoration:none;
 	color:teal;
+	border:teal 2px solid;
 }
 
 .doi:hover {
