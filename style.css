@@ -2,8 +2,8 @@ body {
 	margin:0;
 	padding:0;
 	font-family:"Trebuchet MS", Verdana, Helvetica, sans-serif;
-	background: rgb(34,193,195);
-	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	background: lightgray;
+	/*background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);*/
 	background-repeat:no-repeat;
 	background-attachment: fixed;
 }
@@ -24,25 +24,38 @@ h3 {
 
 #myname {
 	/*background: linear-gradient(135deg, black 0%,#071f25 29%,#392c03 63%,#1f0506 89%,black 100%);*/
-	margin:1rem 1rem 0.5rem;
+	margin:auto;
+	width:90%;
+	margin-top:1rem;
 	padding-bottom:0.5rem;
 	font-size:large;
-	border-bottom:black 0.05rem solid;
+	
+	max-width:1000px;
 }
 
 #myname > ul {
 	margin:0px;
+	padding-left:1rem;
 	list-style-type:none;
-	padding-left:3rem;
+}
+
+#myname li {
+	padding:0px;
 }
 
 #mytitle {
-	margin:0rem 1rem 1rem;
-	padding-bottom:0.5rem;
-	padding-left:3rem;
-	border-bottom:black 0.05rem solid;
+	margin:auto;
+	margin-top:0.5rem;
+	margin-bottom:0.5rem;
+	padding-left:1rem;
 	font-size:large;
 	font-weight:bold;
+	max-width:1000px;
+	width:90%;
+	border-top:black 1px solid;
+	border-bottom:black 1px solid;
+	padding-top:0.5rem;
+	padding-bottom:0.5rem;
 }
 
 nav{
@@ -50,12 +63,13 @@ nav{
 	margin-bottom:0.5rem;
 	max-width:1000px;
 	width:90%;
-	background-color:black;
+	background-color:lightgray;
 	color:white;
 	padding:0.5rem 0.5rem 0.5rem;
 	text-align:center;
 	position:sticky;
 	top:0px;
+	
 }
 
 nav > ul {
@@ -71,10 +85,11 @@ nav li {
 }
 
 nav > ul > li > a {
-	color:white;
+	color:black;
 	padding:0.25rem;
 	font-weight:bold;
 	text-decoration:none;
+	border:black 2px solid;
 }
 
 nav > ul > li > a:hover {
@@ -92,7 +107,6 @@ section {
 	width:90%;
 	padding:0.2rem 0.5rem 0.2rem;
 	background-color:white;
-	box-shadow: 0px 0px 8px #888888;
 }
 
 .notebar {
@@ -102,8 +116,7 @@ section {
 }
 
 .notebar.light {
-	border:black 0.1rem solid;
-	background-color:white;
+	background-color:beige;
 	color:black;
 }
 
@@ -111,6 +124,9 @@ section {
 	font-weight:bold;
 	color:white;
 	text-decoration:none;
+	border:white 2px solid;
+	padding-left:0.5rem;
+	padding-right:0.5rem;
 }
 
 .notebar a:hover {
@@ -124,6 +140,10 @@ section {
 
 .notebar.light a {
 	color:black;
+	border:black 2px solid;
+	padding-left:0.5rem;
+	padding-right:0.5rem;
+	display:inline-block;
 }
 
 .notebar.light a:hover {
