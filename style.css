@@ -65,7 +65,7 @@ nav{
 	width:90%;
 	background-color:lightgray;
 	color:white;
-	padding:0.5rem 0.5rem 0.5rem;
+	padding:0.5rem 0.5rem 0.1rem;
 	text-align:center;
 	position:sticky;
 	top:0px;
@@ -75,8 +75,6 @@ nav{
 nav > ul {
 	list-style-type:none;
 	display:inline;
-	margin:0.1rem;
-	
 }
 
 nav li {
@@ -90,6 +88,7 @@ nav > ul > li > a {
 	font-weight:bold;
 	text-decoration:none;
 	border:black 2px solid;
+	display:inline-block !important;
 }
 
 nav > ul > li > a:hover {
