@@ -1,6 +1,5 @@
 var teaching_data = [
-	{term:"Summer", year:2020, university:"Dalhousie University", position:"Instructor", course_code:"CSCI 6055", course_name:"Research Methodology and Statistics"},
-	{term:"Summer", year:2020, university:"Dalhousie University", position:"Course Developer", course_code:"CSCI 6055", course_name:"Research Methodology and Statistics"},
+	{term:"Summer", year:2020, university:"Dalhousie University", position:"Instructor/Course Developer", course_code:"CSCI 6055", course_name:"Research Methodology and Statistics"},
 	{term:"Winter", year:2020, university:"Dalhousie University", position:"Teaching Assistant/Marker", course_code:"CSCI 6055/ECMM 6040", course_name:"Research Methodology and Statistics"},
 	{term:"Winter", year:2020, university:"Dalhousie University", position:"Teaching Assistant/Marker", course_code:"CSCI 6610/CSCI 4163", course_name:"Human-Computer Interaction"},
 	{term:"Fall", year:2019, university:"Dalhousie University", position:"Teaching Assistant/Marker", course_code:"CSCI 6307/CSCI 4169", course_name:"Usable Privacy and Security"},
