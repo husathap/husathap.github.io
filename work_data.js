@@ -19,7 +19,7 @@ var work_data = [
 ];
 
 function work_data_html(row_data) {
-	return "<tr>" +
+	return "<tr class='work_row'>" +
 		"<td>" + row_data.date + "</td>" +
 		"<td>" + row_data.company + "</td>" +
 		"<td>" + row_data.position + (row_data.volunteer ? " <strong><em>(Volunteer)</em></strong>":"") + "</td>" +

@@ -1,11 +1,11 @@
 var teaching_data = [
 	{term:"Fall", year:2020, university:"Dalhousie University", position:"Teaching Assistant", course_code:"SCIE 4701", course_name:"Sci. and Tech. Innovation, Commercialization, and Entrepreneurship I"},
-	{term:"Summer", year:2020, university:"Dalhousie University", position:"Instructor/Course Developer", course_code:"CSCI 6055", course_name:"Research Methodology and Statistics"},
+	{term:"Spring+Summer", year:2020, university:"Dalhousie University", position:"Instructor/Course Developer", course_code:"CSCI 6055", course_name:"Research Methodology and Statistics"},
 	{term:"Winter", year:2020, university:"Dalhousie University", position:"Teaching Assistant/Marker", course_code:"CSCI 6055/ECMM 6040", course_name:"Research Methodology and Statistics"},
 	{term:"Winter", year:2020, university:"Dalhousie University", position:"Teaching Assistant/Marker", course_code:"CSCI 6610/CSCI 4163", course_name:"Human-Computer Interaction"},
 	{term:"Fall", year:2019, university:"Dalhousie University", position:"Teaching Assistant/Marker", course_code:"CSCI 6307/CSCI 4169", course_name:"Usable Privacy and Security"},
 	{term:"Fall", year:2019, university:"Dalhousie University", position:"Marker", course_code:"CSCI 6610/CSCI 4163", course_name:"Human-Computer Interaction"},
-	{term:"Summer", year:2019, university:"Dalhousie University", position:"Teaching Assistant/Marker", course_code:"CSCI 6055", course_name:"Research Methodology and Statistics"},
+	{term:"Spring+Summer", year:2019, university:"Dalhousie University", position:"Teaching Assistant/Marker", course_code:"CSCI 6055", course_name:"Research Methodology and Statistics"},
 	{term:"Winter", year:2019, university:"Dalhousie University", position:"Teaching Assistant/Marker", course_code:"CSCI 6610/CSCI 4163", course_name:"Human-Computer Interaction"},
 	{term:"Fall", year:2018, university:"Dalhousie University", position:"Teaching Assistant/Marker", course_code:"CSCI 6610/CSCI 4163", course_name:"Human-Computer Interaction"},
 	{term:"Winter", year:2018, university:"Dalhousie University", position:"Teaching Assistant/Marker", course_code:"CSCI 1101", course_name:"Computer Science II"},
@@ -17,7 +17,24 @@ var teaching_data = [
 ];
 
 function teaching_data_html(row_data) {
-	return "<tr>" +
+	var season = "";
+
+	switch(row_data.term) {
+		case "Fall":
+			season = "fall";
+			break;
+		case "Winter":
+			season = "winter";
+			break;
+		case "Spring+Summer":
+			season = "springsummer";
+			break;
+		default:
+			season = "gapseason";
+			break;
+	}
+
+	return "<tr class='" + season + "'>" +
 		"<td>" + row_data.term + "</td>" +
 		"<td>" + row_data.year + "</td>" +
 		"<td>" + row_data.university + "</td>" +

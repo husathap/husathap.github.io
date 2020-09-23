@@ -171,6 +171,26 @@ th {
 	color:white;
 }
 
+.fall {
+	background-color:#FFEFD5;
+}
+
+.winter {
+	background-color:#ADD8E6;
+}
+
+.springsummer {
+	background-color:#D0F0C0;
+}
+
+.gapseason {
+	background-color:gray;
+}
+
+.work_row:nth-child(odd)	{
+	background-color:lightgray;
+}
+
 /* Styling for publication list */
 
 #publication_list {
