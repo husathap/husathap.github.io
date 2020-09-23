@@ -22,8 +22,7 @@ function work_data_html(row_data) {
 	return "<tr>" +
 		"<td>" + row_data.date + "</td>" +
 		"<td>" + row_data.company + "</td>" +
-		"<td>" + row_data.position + "</td>" +
-		"<td>" + (row_data.volunteer ? "Yes":"No") + "</td>" +
+		"<td>" + row_data.position + (row_data.volunteer ? " <strong><em>(Volunteer)</em></strong>":"") + "</td>" +
 		"<td>" + row_data.location + "</td>" +
 		"</tr>"
 }
