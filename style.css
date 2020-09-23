@@ -48,6 +48,17 @@ header {
 
 #myname li {
 	padding:0px;
+	margin:auto;
+	text-align: center;
+}
+
+.mymainname {
+	font-size: x-large;
+	font-weight: bold;
+}
+
+.myaltname {
+	font-size: medium;
 }
 
 #mytitle {
@@ -59,6 +70,7 @@ header {
 	width:90%;
 	padding-top:0.25rem;
 	padding-bottom:0.25rem;
+	text-align: center;
 }
 
 nav{
