@@ -1,4 +1,5 @@
 var work_data = [
+	{date:"20/Sep-Now", company:"Ericsson", position:"Mitacs Accelerate Intern", volunteer:false, location:"Montreal, Canada"},
 	{date:"20/May-Now", company:"Centre for Teaching and Learning, Dalhousie University", position:"Remote Support/Course Builder", volunteer:false, location:"Halifax, Canada"},
 	{date:"20/Jan", company:"Faculty of Computer Science, Dalhousie University", position:"Local Guide", volunteer:true, location:"Halifax, Canada"},
 	{date:"19/Dec-19/Jan", company:"Windsor/West Hants Together, The Government of Nova Scotia", position:"Part-Time Statistician", volunteer:false, location:"West Hants, Canada"},
