@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Result</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">AirSeer: Model Creations, Quick and Easy</span>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">AirSeer: Results</h1>
+            <p class="lead">The analysis is now complete.</p>
+            <p>You can now view the result below.
+            </p>
+        </div>
+      </div>
+
+    <div class="container">
+      <h1>Map-based Visualization</h1>
+
+        <div class="alert alert-primary">
+          <h2>Legend</h2>
+          <p>Good <span style="width:40%;background: linear-gradient(90deg, rgba(16,0,255,1) 0%, rgba(255,0,0,1) 100%);color:transparent">asdfasdfasdfasdfasdfasdfasdfasdfvasdfasdfasdfasdfa</span> Bad</p>
+          <p>Model 1: ⬤; Model 2: ■</p>
+        </div>
+
+        <img src="result.png" style="width:100%"></img>
+        <p>Modified from: https://stjohnsairport.com/wp-content/uploads/2019/09/YYT-Map-interior-SecondFloor-Sept2019-e1568812696234.png</p>
+
+        <h2>Layman's Term</h2>
+        <p>Model 1 performs worse than Model 2 close to the Arrival Staircase. Model 1 performs well near Gate 7, 8. Model 2 performs poorly near the lounge.
+          The sample sizes may be too small; the user may need better data collection.
+        </p>
+
+        <div class="alert alert-danger">
+          Layman's Term is a very high-level interpretation of the visualization for a quick and dirty analysis. It is not necessarily accurate. The user is encouraged to apply their own expertise
+          as well as additional information below.
+        </div>
+
+      <h1>Technical Details</h1>
+        <h2>R-squared</h2>
+        This effect size that we primarily use for analysis. The effect size is global; that is, it assumes the models to work
+        equally well in all areas. While we can add a zone term into the models, the zone term does not necessarily mean that the
+        models will work equally well in all areas.
+
+        <ul><li>Model 1: 60%</li><li>Model 2: 70%</li></ul>
+
+        <h2>ANOVA</h2>
+        <p>This is a novel type of ANOVA that tests whether the models' R-squared values differ between each zone or not.
+        If there is an interaction between Model and Zone, then it may be a good idea to create zone-specific models.
+        If there is only the effect of the Model, then the best model maybe the one with the highest F. If there is only
+        the effect of the area, it suggests that all models work equally well but we should create zone-specific models.</p>
+
+        <p>Print Report will provide you with a full PDF report of the anlaysis</p>
+
+        <ul>
+          <li>
+            Model: F = 90, p = 0.21
+          </li>
+          <li>
+            Zone: F = 95, p = 0.0001
+          </li>
+          <li>
+            Interaction: F = 100, p = 0.00001
+          </li>
+        </ul>
+      
+      <button class="btn btn-primary btn-lg" style="margin-bottom: 3em;">Print Report</button>
+      <button class="btn btn-primary btn-lg" style="margin-bottom: 3em;">Restart</button>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
