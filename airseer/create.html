@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Create New Models</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">AirSeer: Model Creations, Quick and Easy</span>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">AirSeer: Create Models</h1>
+            <p class="lead">One Dependent Variable, Sets of Factors</p>
+            <p>To compare the models, you must first create them. Below contains user-friendly tools that quickly create models.
+            Currently, AirSeer only support mutliple linear regression models.
+            </p>
+        </div>
+      </div>
+
+    <div class="container">
+        <h1>Dependent Variable</h1>
+        <p>This variable represents the value that can be predicted by the models. The variable must be the same for all models.
+            For example, if you decide use "Time Passenger Spent in the Security" as the prediction value, then all models must be about
+            predicting that value.
+        </p>
+
+        <p><strong>Pick your dependent variable here:</strong> <button type="button" class="btn btn-primary">Time Passenger Spent in the Security</button></p>
+
+        <hr/>
+
+        <h1>Factors</h1>
+        <p>You can creating the models here.</p>
+
+        <div class="card" style="margin-bottom: 2em;">
+            <div class="card-body">
+                <h2>Model 1</h2>
+                <button class="btn btn-secondary btn-lg">Domestic</button> <button class="btn btn-secondary btn-lg">Airlines</button> <button class="btn btn-secondary btn-lg">Checkin Time</button> <button class="btn btn-secondary btn-lg">Luggage Size</button> <button class="btn btn-success btn-lg">+</button>
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 2em;">
+            <div class="card-body">
+                <h2>Model 2</h2>
+                <button class="btn btn-secondary btn-lg">Domestic</button> <button class="btn btn-secondary btn-lg">Airlines</button> <button class="btn btn-secondary btn-lg">Checkin Time</button> <button class="btn btn-success btn-lg">+</button>
+            </div>
+        </div>
+
+        <div><button class="btn btn-primary btn-lg">Add More Models</button></div>
+
+        <hr/>
+
+        <h1>Note</h1>
+        <p>This will not be used for calculation. However, it will serve as a note for you and for the other users why they are creating the models.</p>
+
+        <textarea style="width:100%"></textarea>
+
+        <hr/>
+
+        <button class="btn btn-primary btn-lg" style="margin-bottom: 3em;">Fit and Analyze the Models</button>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
