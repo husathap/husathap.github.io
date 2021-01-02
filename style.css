@@ -122,7 +122,8 @@ section {
 
 .notebar {
 	padding:0.5rem;
-	background-color:white;
+	margin-bottom:0.5rem;
+	background-color:#ADD8E6;
 	border: black 1px solid;
 }
 
@@ -141,6 +142,10 @@ section {
 .notebar a:hover {
 	background:black;
 	color:white !important;
+}
+
+.notebar.light {
+	background:white;
 }
 
 .notebar.light a {
