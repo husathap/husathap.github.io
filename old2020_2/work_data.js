@@ -1,5 +1,5 @@
 var work_data = [
-	{date:"21/Jan-Now", company:"Ericsson", position:"Mitacs Accelerate Intern", volunteer:false, location:"Montreal, Canada"},
+	{date:"20/Sep-Now", company:"Ericsson", position:"Mitacs Accelerate Intern", volunteer:false, location:"Montreal, Canada"},
 	{date:"20/May-Now", company:"Centre for Teaching and Learning, Dalhousie University", position:"Remote Support/Course Builder", volunteer:false, location:"Halifax, Canada"},
 	{date:"20/Jan", company:"Faculty of Computer Science, Dalhousie University", position:"Local Guide", volunteer:true, location:"Halifax, Canada"},
 	{date:"19/Dec-19/Jan", company:"Windsor/West Hants Together, The Government of Nova Scotia", position:"Part-Time Statistician", volunteer:false, location:"West Hants, Canada"},
@@ -20,19 +20,10 @@ var work_data = [
 ];
 
 function work_data_html(row_data) {
-	return `<tr class='work_row'><td>${row_data.date}</td><td>${row_data.company}</td><td>${row_data.position}${row_data.volunteer ? " <strong><em>(Volunteer)</em></strong>" : ""}</td><td>${row_data.location}</td></tr>`
-}
-
-function work_data_card(row_data) {
-	var non_volunteer_style = "";
-
-	if (!row_data.volunteer) {
-		non_volunteer_style = "style='background-color:black; color:white'";
-	}
-
-	return `<div class='card' ${non_volunteer_style}>
-		<h1>${row_data.date}, ${row_data.position}</h1>
-		<h2>${row_data.company}</h2>
-		<p><strong>Location:</strong> ${row_data.location}<br><strong>Is Volunteer:</strong> ${row_data.volunteer}</p>
-	</div>`
+	return "<tr class='work_row'>" +
+		"<td>" + row_data.date + "</td>" +
+		"<td>" + row_data.company + "</td>" +
+		"<td>" + row_data.position + (row_data.volunteer ? " <strong><em>(Volunteer)</em></strong>":"") + "</td>" +
+		"<td>" + row_data.location + "</td>" +
+		"</tr>"
 }
