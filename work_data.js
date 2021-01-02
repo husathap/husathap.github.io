@@ -13,7 +13,6 @@ var work_data = [
 	{date:"15/Sep-15/Dec", company:"Crowsnest Residence, University of Calgary", position:"Fire Warden", volunteer:true, location:"Calgary, Canada"},
 	{date:"15/May-15/Aug", company:"TAGLab, University of Toronto", position:"Research Trainee", volunteer:false, location:"Toronto, Canada"},
 	{date:"14/Jun-14/Aug", company:"JetAsia Airways", position:"Information Technology Intern", volunteer:false, location:"Bangkok, Thailand"},
-	{date:"12/Sep-15/Dec", company:"Crowsnest Residence, University of Calgary", position:"Fire Warden", volunteer:true, location:"Calgary, Canada"},
 	{date:"12/Sep-13/Sep", company:"Innis Residence, University of Toronto", position:"InSight Mentor", volunteer:true, location:"Toronto, Canada"},
 	{date:"12/Feb", company:"University of Toronto", position:"Alternative Reading Week Job Shadower", volunteer:true, location:"Toronto, Canada"},
 	{date:"11/Sep-14/Apr", company:"Japan-Canada Student Association at University of Toronto", position:"Language Exchange Participant", volunteer:true, location:"Toronto, Canada"},
