@@ -120,6 +120,25 @@ section {
 	border:black 1px solid;
 }
 
+.big_link {
+	color:black;
+	background-color:white;
+	padding:0.25rem;
+	font-weight:bold;
+	text-decoration:none;
+	border:black 1px solid;
+	box-shadow: black 0px 0px 5px;
+	font-size: large;
+}
+
+.big_link:hover {
+	background-color:black;
+	color:white;
+	padding:0.25rem;
+	font-weight:bold;
+	text-decoration:none;
+}
+
 .notebar {
 	padding:0.5rem;
 	margin-bottom:0.5rem;
