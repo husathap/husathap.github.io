@@ -1,6 +1,6 @@
 var work_data = [
 	{date:"21/Jan-Now", company:"Ericsson", position:"Mitacs Accelerate Intern", volunteer:false, location:"Montreal, Canada"},
-	{date:"20/May-Now", company:"Centre for Teaching and Learning, Dalhousie University", position:"Remote Support/Course Builder", volunteer:false, location:"Halifax, Canada"},
+	{date:"20/May-20/Apr", company:"Centre for Teaching and Learning, Dalhousie University", position:"Remote Support/Course Builder", volunteer:false, location:"Halifax, Canada"},
 	{date:"20/Jan", company:"Faculty of Computer Science, Dalhousie University", position:"Local Guide", volunteer:true, location:"Halifax, Canada"},
 	{date:"19/Dec-19/Jan", company:"Windsor/West Hants Together, The Government of Nova Scotia", position:"Part-Time Statistician", volunteer:false, location:"West Hants, Canada"},
 	{date:"19/May-19/Aug", company:"Centre for Teaching and Learning, Dalhousie University", position:"Graudate Research Associate", volunteer:false, location:"Halifax, Canada"},
