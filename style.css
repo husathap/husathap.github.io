@@ -15,7 +15,7 @@ section > h1 {
 }
 
 section > h1 > span {
-    background-color:teal;
+    background-color:black;
     color:white;
     padding:0.5rem;
     padding-left:0.75rem;
