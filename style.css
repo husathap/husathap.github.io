@@ -8,10 +8,13 @@ header {
 section {
     max-width: 1000px;
     margin:auto;
+    margin-bottom:3rem;
 }
 
 section > h1 {
     margin-bottom:3rem;
+    border-top: 0.25rem solid black;
+    padding-top:0.5rem;
 }
 
 section > h1 > span {
@@ -61,3 +64,50 @@ nav > a:hover {
     box-shadow: 0px 0px 5px gray;
 }
 
+.author {
+    font-weight: bold;
+}
+
+.title {
+    font-style: italic;
+}
+
+#works {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work_card {
+    flex: 250px;
+    border: 1px solid black;
+    margin:0.5rem;
+    padding:0.5rem;
+    
+}
+
+.work_card > h1 {
+    background-color: black;
+    color:white;
+    margin:0;
+    padding:0.2rem;
+    padding-left:1rem;
+    font-size:large;
+}
+
+.work_time {
+    text-align: center;
+    padding:0.5rem;
+    font-weight: bold;
+}
+
+.work_position {
+    text-align: center;
+}
+
+footer {
+    background-color:black;
+    height:2rem;
+    background-color: bisque;
+    background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-bottom: 3px solid black;
+}
