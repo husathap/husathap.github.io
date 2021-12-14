@@ -14,7 +14,6 @@ section > h1 > span {
     background-color:teal;
     color:white;
     padding:0.5rem;
-    border-radius: 3rem;
     padding-left:0.75rem;
     padding-right:0.75rem;
     font-size: large;
@@ -33,10 +32,12 @@ hr {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     background-color: lightgray;
+    border-radius: 3rem;
 }
 
 .major-links > a {
     background-color:white;
+    border-radius: 3rem;
     box-shadow: 0px 0px 5px black;
     padding: 0.25rem;
     padding-left:1rem;
