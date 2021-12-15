@@ -13,8 +13,7 @@ section {
 
 section > h1 {
     margin-bottom:3rem;
-    border-top: 0.25rem solid black;
-    padding-top:0.5rem;
+    margin-top:3rem;
 }
 
 section > h1 > span {
@@ -78,7 +77,8 @@ nav > a:hover {
 }
 
 .work_card {
-    flex: 250px;
+    flex-grow: 1;
+    width: 33%;
     border: 1px solid black;
     margin:0.5rem;
     padding:0.5rem;
