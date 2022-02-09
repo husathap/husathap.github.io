@@ -61,8 +61,11 @@ li:last-child {
 
 #university > li {
     font-weight: bold;
-    
     border-bottom:black 1px solid;
+}
+
+#university > li:last-child {
+    border-bottom:none;
 }
 
 .time_right {
