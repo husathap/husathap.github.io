@@ -1,11 +1,21 @@
 #name {
-    border-bottom:black 1px solid; 
     padding-top:1rem;
+    font-size:xx-large;
+    font-weight: bold;
+}
+
+#alt_names {
+    border-bottom:black 1px solid; 
+    font-size:x-large;
+    padding-bottom: 2rem;
 }
 
 #title {
     border-bottom:black 1px solid; 
     padding:0.5rem;
+    font-weight: bold;
+    background-color:teal;
+    color:white;
 }
 
 #contact {
@@ -14,24 +24,166 @@
     border-bottom: black 1px solid;
 }
 
+section {
+    border-bottom:black 1px solid;
+}
+
+li:last-child {
+    border-bottom:none;
+}
+
 .external_link {
-    border: black 2px solid;
     border-radius: 4px;
     padding:0.5rem;
-    text-decoration: none;
-    color:blue;
+    color:teal;
+    font-weight: bold;
 }
 
 .external_link:hover {
-    padding:0.5rem;
-    text-decoration: none;
     color:orange;
 }
 
 .section_title {
     font-size:xx-large;
     padding:0.5rem;
-    padding-left:2rem;
+    padding-left:1rem;
     padding-top:1rem;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+#university {
+    margin-top:1rem;
+    list-style-type: none;
+    box-shadow: 0px 0px 2px black inset;
+    padding:1rem;
+}
+
+#university > li {
+    font-weight: bold;
+    
+    border-bottom:black 1px solid;
+}
+
+.time_right {
+    font-weight: 400;
+    float:right;
+    padding-left:4rem;
+}
+
+.program {
+    font-weight: 400;
+}
+
+.skill_box {
+    margin-bottom:1rem;
+    box-shadow: 0px 0px 2px black inset;
+}
+
+.skill_title {
+    font-weight:bold;
+    font-size:larger;
+    margin:1rem;
+}
+
+.skill_box > ul {
+    list-style: none;
+    margin-left:1rem;
+    margin-right:1rem;
+}
+
+.skill_box li {
+    background:darkolivegreen;
+    color:white;
+    font-weight: bold;
+    display: inline-block;
+    border-radius:5px;
+    padding:0.25rem;
+    margin:0.1rem;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+}
+
+#work {
+    padding-bottom:2rem;
+}
+
+#work_frame {
+    box-shadow: 0px 0px 2px black inset;
+    padding:1rem;
+}
+
+#teaching_frame {
+    box-shadow: 0px 0px 2px black inset;
+    padding:1rem;
+}
+
+#teaching {
+    padding-bottom: 2rem;
+}
+
+.work {
+    color:black;
+    display: inline-block;
+    padding:0.25rem;
+    margin:0.1rem;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+    border-bottom:black 1px solid;
+}
+
+.company {
+    font-weight:bold;
+}
+
+.work_time {
+    float:right;
+    font-weight: bold;
+}
+
+.volunteer {
+    background-color: black;
+    color:white;
+    padding:0.25rem;
+    border-radius: 3px;
+}
+
+.teaching_position {
+    font-weight: bold;
+}
+
+#publication_list {
+    box-shadow: 0px 0px 2px black inset;
+	list-style:none;
+    padding:1rem;
+}
+
+#publication_list li {
+	padding-left:2em;
+	text-indent:-2em;
+}
+
+.author {
+	font-weight:bold;
+}
+
+.title {
+	font-style:italic;
+}
+
+.doi {
+	font-weight:bold;
+	text-decoration:none;
+	color:teal;
+}
+
+.doi:hover {
+	background-color:teal;
+	color:white;
+}
+
+footer {
+    margin:1rem;
+    text-align: center;
     font-weight: bold;
 }

@@ -3,17 +3,18 @@
     <head>
         <title>Hubert's Resume</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
         <link rel="stylesheet" href="./normalize.css">
         <link rel="stylesheet" href="./skeleton.css">
         <link rel="stylesheet" href="./eresume.css">
     </head>
 
-    <body>
+    <body onload="render()">
         <div class="container">
-            <div id="name" class="row">
+            <div class="row">
                 <div class="twelve columns">
-                    <h1>Hubert (Sathaporn) Hu</h1>
-                    <h5><strong>Thai:</strong> สถาพร ฮู (Sathaporn Hu) <strong>| Chinese:</strong> 胡秀楷 (Hu, Shiow-Kai)</h5>
+                    <div id="name">Hubert (Sathaporn) Hu</div>
+                    <div id="alt_names"><strong>Thai:</strong> สถาพร ฮู (Sathaporn Hu) <strong>| Chinese:</strong> 胡秀楷 (Hu, Shiow-Kai)</div>
                 </div>
             </div>
 
@@ -22,31 +23,133 @@
             </div>
 
             <div id="contact" class="row">
-                <div class="four columns">
+                <div class="six columns">
                     <strong>Location:</strong> Halifax, Canada
                 </div>
-                <div class="four columns">
+                <div class="six columns">
                     <strong>Website:</strong> <a class="external_link" href="https://husathap.github.io/">https://husathap.github.io/</a>
-                </div>
-                <div class="four columns">
-                    <strong>LinkedIn:</strong> <a class="external_link" href="https://www.linkedin.com/in/hubert-sathaporn-hu-3b8ab463/">Launch</a>
                 </div>
             </div>
 
-            <div id="education" class="row">
-                <div class="twelve columns">
-                    <h1 class="section_title">Education</h1>
+            <section id="education">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h1 class="section_title">Education</h1>
+                    </div>
                 </div>
-                <div class="four columns university">
-                    <h1>PhD (In Progress), Dalhousie University</h1>
+                <div class="row">
+                    <div class="twelve columns">
+                        <ul id="university">
+                            <li><div>PhD (In Progress), Dalhousie University <span class="time_right">2018-Now</span></div><div class="program">Computer Science + Certificate in University Teaching and Learning + GradPD</div></li>
+                            <li><div>Master of Science, University of Calgary <span class="time_right">2015-17</span></div><div class="program">Computer Science</div></li>
+                            <li><div>Honours Bachelor of Science, University of Toronto <span class="time_right">2011-15</span></div><div class="program">Computer Science (Specialist), Cognitive Science (Major), French (Minor)</div></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="four columns university">
-                    <h1>Master of Science, University of Calgary</h1>
+            </section>
+
+            <section id="skills">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h1 class="section_title">Skills</h1>
+                    </div>
                 </div>
-                <div class="four columns university">
-                    <h1>Honours Bachelor of Science, University of Toronto</h1>
+
+                <div class="row">
+                    <div class="four columns skill_box">
+                        <div class="skill_title">Programming</div>
+                        <ul>
+                            <li>C#</li>
+                            <li>R</li>
+                            <li>HTML/JavaScript</li>
+                            <li>SQL</li>
+                            <li>Python</li>
+                            <li>Visual Basic</li>
+                            <li>Java</li>
+                            <li>Unity</li>
+                            <li>Augmented Reality</li>
+                            <li>Virtual Reality</li>
+                        </ul>
+                    </div>
+                    <div class="four columns skill_box">
+                        <div class="skill_title">Data Science</div>
+                        <ul>
+                            <li>Regression</li>
+                            <li>Usability Test</li>
+                            <li>Data Visualization</li>
+                            <li>Inferential Statistics</li>
+                            <li>Excel</li>
+                        </ul>
+                    </div>
+                    <div class="four columns skill_box">
+                        <div class="skill_title">Languages</div>
+                        <ul>
+                            <li>Thai (First)</li>
+                            <li>English</li>
+                            <li>French (Intermediate)</li>
+                            <li>Mandarin (Intermediate)</li>
+                            <li>Japanese (Beginner)</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+            <section id="work">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h1 class="section_title">Work+Volunteer Experience (Without Teaching)</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="work_frame" class="twelve columns">
+                        <ul id="work_target"></ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="teaching">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h1 class="section_title">Teaching Experience</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div  id="teaching_frame" class="twelve columns">
+                        <ul id="teaching_target"></ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="publication">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h1 class="section_title">Publication</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul id="publication_list">
+                        <li><span class="author">Hu, S.</span>, Malloch, J., & Reilly, D. (2021).
+                            <span class="title">A Comparative Evaluation of Techniques for Locating Out of View Targets in Virtual Reality.</span>
+                            Proceedings of Graphics Interface 2021. doi:<a class="doi" href="https://doi.org/10.20380/GI2021.32">10.20380/GI2021.32</a>
+                        </li>
+            
+            
+                        <li><span class="author">Hu, S.</span>, & Willett, W. J. (2018).
+                            <span class="title">Kalgan: Video Player for Casual Language Learning.</span>
+                                CHI EA '18 Extended Abstracts of the 2018 CHI Conference on Human Factors in Computing Systems.
+                                doi:<a class="doi" href=" https://doi.org/10.1145/3170427.3188498">10.1145/3170427.3188498</a>
+                        </li>
+            
+                        <li><span class="author">Hu, S.</span> (2017). <span class="title">Designing and Evaluating a
+                            Lightweight Video Player for Language Learning</span> (Master's thesis). University of Calgary, Canada.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <footer>Hubert (Sathaporn) Hu</footer>
         </div>
+
+        <script src="./eresume_render.js"></script>
     </body>
 </html>
