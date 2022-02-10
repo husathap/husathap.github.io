@@ -96,7 +96,7 @@ li:last-child {
 }
 
 .skill_box li {
-    background:darkolivegreen;
+    background:teal;
     color:white;
     font-weight: bold;
     display: inline-block;
