@@ -1,15 +1,21 @@
 body {
     background-color: darkcyan;
+    background: url(polyline.png) no-repeat center center fixed;
+    background-size: cover;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
-    
+    background: black;
+    background: rgba(0, 0, 127, 0.75);
     margin: auto;
     margin-top: 2rem;
     color:white;
     text-align: center;
+    padding-top: 0.1rem;
     padding-bottom: 1rem;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
 }
 
 #myname {
@@ -22,14 +28,19 @@ header {
 }
 
 #altnames > li {
-    display:inline;
-    padding:1rem;
+    display:inline-block;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+    font-size:large;
 }
 
-#mytitle {
+#myposition {
     text-align: center;
-    color:white;
+    color:black;
+    background:yellow;
     margin:auto;
+    font-weight: bold;
+    padding:0.5rem;
 }
 
 #contact {
@@ -71,8 +82,9 @@ header {
     padding:1rem;
     font-size:large;
     text-decoration: none;
-    box-shadow: 0px 0px 5px black;
-    width:10rem;
+    box-shadow: 0px 0px 2px white;
+    width:25%;
+    max-width:10rem;
     border-radius: 10px;
     color:black;
 }
