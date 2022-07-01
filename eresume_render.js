@@ -1,8 +1,11 @@
 var work_data = [
 	{date:"Jun/2022-July/2022", company:"IEEE ISMAR", position:"Reviewer", volunteer:true, location:"Singapore"},
+	{date:"Jan/2021-Apr/2022", company:"Dalhousie University", position:"Instructor", volunteer:false, location:"Halifax, Canada"},
     {date:"Jan/2021-Jun/2022", company:"Ericsson/Dalhousie University", position:"MITACS Accelerate Intern", volunteer:false, location:"Montreal, Canada"},
 	{date:"Jun/2021-Aug/2021", company:"Dalhousie Computer Science In-House Student Conference", position:"Organizer", volunteer:true, location:"Online"},
+	{date:"Apr/2021-Aug/2021", company:"Dalhousie University", position:"Instructor", volunteer:false, location:"Halifax, Canada"},
 	{date:"Jun/2020-July/2020", company:"IEEE ISMAR", position:"Reviewer", volunteer:true, location:"Online"},
+	{date:"Apr/2020-Aug/2022", company:"Dalhousie University", position:"Instructor", volunteer:false, location:"Halifax, Canada"},
 	{date:"May/2020-Dec/2020", company:"Centre for Teaching and Learning, Dalhousie University", position:"Remote Support/Course Builder", volunteer:false, location:"Halifax, Canada"},
 	{date:"Jan/2020", company:"Faculty of Computer Science, Dalhousie University", position:"Local Guide", volunteer:true, location:"Halifax, Canada"},
 	{date:"Dec/2019-Jan/2019", company:"Windsor/West Hants Together, The Government of Nova Scotia", position:"Part-Time Data Analyst", volunteer:false, location:"West Hants, Canada"},
@@ -23,9 +26,9 @@ var work_data = [
 ];
 
 var teaching_data = [
-    {term:"Winter", year:2021, university:"Dalhousie University", position:"Instructor", course_code:"CSCI 4163/6610", course_name:"Human-Computer Interaction"},
-	{term:"Summer", year:2020, university:"Dalhousie University", position:"Instructor", course_code:"CSCI 6055", course_name:"Research Methodology and Statistics"},
-	{term:"Summer", year:2020, university:"Dalhousie University", position:"Course Developer", course_code:"CSCI 6055", course_name:"Research Methodology and Statistics"},
+    //{term:"Winter", year:2021, university:"Dalhousie University", position:"Instructor", course_code:"CSCI 4163/6610", course_name:"Human-Computer Interaction"},
+	//{term:"Summer", year:2020, university:"Dalhousie University", position:"Instructor", course_code:"CSCI 6055", course_name:"Research Methodology and Statistics"},
+	//{term:"Summer", year:2020, university:"Dalhousie University", position:"Course Developer", course_code:"CSCI 6055", course_name:"Research Methodology and Statistics"},
 	{term:"Winter", year:2020, university:"Dalhousie University", position:"Teaching Assistant/Marker", course_code:"CSCI 6055/ECMM 6040", course_name:"Research Methodology and Statistics"},
 	{term:"Winter", year:2020, university:"Dalhousie University", position:"Teaching Assistant/Marker", course_code:"CSCI 6610/CSCI 4163", course_name:"Human-Computer Interaction"},
 	{term:"Fall", year:2019, university:"Dalhousie University", position:"Teaching Assistant/Marker", course_code:"CSCI 6307/CSCI 4169", course_name:"Usable Privacy and Security"},
@@ -44,16 +47,22 @@ var teaching_data = [
 function render() {
     var target = document.getElementById('work_target');
     work_data.forEach((e) => {
-        let newLi = document.createElement("li");
-        newLi.setAttribute("class", "work twelve columns");
+		let volunteer="";
+		let volunteer_row="";
 
-        let volunteer="";
-
-        if (e.volunteer) {
+		if (e.volunteer) {
             volunteer="<span class='volunteer'>Volunteer</span>";
+			volunteer_row="volunteer-row";
         }
 
-        newLi.innerHTML =  `<div class="company">${volunteer} ${e.company} <span class="time_right">${e.date}</span></div><div class="position">${e.position}</div>`;
+        let newLi = document.createElement("li");
+        newLi.setAttribute("class", `work twelve columns ${volunteer_row}`);
+
+        newLi.innerHTML =  `<div class="row">
+				<div class="nine columns">${volunteer} ${e.company}</div> 
+				<div class="three columns time">${e.date}</div>
+			</div>
+			<div class="row position">${e.position}</div>`;
 
         target.appendChild(newLi);
     });
@@ -64,7 +73,46 @@ function render() {
         let newLi = document.createElement("li");
         newLi.setAttribute("class", "work twelve columns");
 
-        newLi.innerHTML =  `<span class="teaching_position">${e.position}</span> for <span class="teaching_position">${e.course_code}</span>: <span class="teaching_position">${e.course_name}</span><span class="time_right">${e.term}, ${e.year}</span><br/><span>${e.university}</span> `;
+        newLi.innerHTML =  `<div class="row">
+			<div class="ten columns">
+				<span class="teaching_position">${e.position}</span> for <span class="teaching_position">${e.course_code}</span>: <span class="teaching_position">${e.course_name}</span>
+			</div>
+			<div class="two columns time">${e.term}, ${e.year}</div>
+		</div>
+		<div>${e.university}</div> `;
         target.appendChild(newLi);
     })
+}
+
+function hideTeaching() {
+	const button = document.getElementById("hideTeachingButton");
+	const section = document.getElementById("teaching");
+
+	if (section.style.display != "none") {
+		section.style.display = "none";
+		button.innerText = "Show Teaching Assistance Positions";
+	} else {
+		section.style.display = "block";
+		button.innerText = "Hide Teaching Assistance Positions";
+	}
+}
+
+function hideVolunteer() {
+	const button = document.getElementById("hideVolunteerButton");
+	const entries = document.getElementsByClassName("volunteer-row");
+
+	[...entries].forEach(e => {
+		if (e.style.display != "none") {
+			e.style.display = "none";
+		} else {
+			e.style.display = "block";
+		}
+	});
+
+
+	if (button.innerText == "Show Volunteer Positions") {
+		button.innerText = "Hide Volunteer Positions";
+	} else {
+		button.innerText = "Show Volunteer Positions";
+	}
 }

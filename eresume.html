@@ -14,15 +14,14 @@
     <body onload="render()">
 
         <header class="container no_print">
-            <h1>Resume</h1>
-            <p>This page is designed to provide a print-friendly cirriculum vitae. Use the print button below to print out a copy of my resume.
-                You should use the print dialog to adjust the margin before pritning. While this page uses Skeleton which is a mobile CSS library,
-                it is not necessarily mobile-friendly itself.
-                For a more interactive and more mobile-friendly job profile, please visit my LinkedIn page instead.</p>
-            <hr>
-            <h3>Printing Tools</h3>
-            <p>Currently, you can only print everything. In the future, you can exclude certain items such as volunteer or teaching activities.</p>
-            <button class="no_print button-primary" onclick="window.print()">Print</button>
+            <h1>Note</h1>
+            <p>This page is designed to provide a print-friendly cirriculum vitae. However, printing is not working properly at the moment.
+            </p>
+
+            <button id="hideVolunteerButton" class="button-primary" onclick="hideVolunteer()">Hide Volunteer Positions</button>
+            <button id="hideTeachingButton" class="button-primary" onclick="hideTeaching()">Hide Teaching Assistance Positions</button>
+            <!--<button class="button-primary" onclick="window.print()">Print</button>-->
+            
         </header>
 
         <div class="container">
@@ -53,9 +52,9 @@
                 <div class="row">
                     <div class="twelve columns activities">
                         <ul id="university">
-                            <li><div>PhD (In Progress), Dalhousie University <span class="time_right">2018-Now</span></div><div class="program">Computer Science + Certificate in University Teaching and Learning + GradPD</div></li>
-                            <li><div>Master of Science, University of Calgary <span class="time_right">2015-2017</span></div><div class="program">Computer Science</div></li>
-                            <li><div>Honours Bachelor of Science, University of Toronto <span class="time_right">2011-2015</span></div><div class="program">Computer Science (Specialist) + Cognitive Science (Major) + French (Minor)</div></li>
+                            <li><div>PhD (In Progress), Dalhousie University</div><div class="program">Computer Science + Certificate in University Teaching and Learning + GradPD</div></li>
+                            <li><div>Master of Science, University of Calgary</div><div class="program">Computer Science</div></li>
+                            <li><div>Honours Bachelor of Science, University of Toronto</div><div class="program">Computer Science (Specialist) + Cognitive Science (Major) + French (Minor)</div></li>
                         </ul>
                     </div>
                 </div>
@@ -85,7 +84,7 @@
                         </ul>
                     </div>
                     <div class="four columns skill_box">
-                        <div class="skill_title">Data Science</div>
+                        <div class="skill_title">Data Science and Research</div>
                         <ul>
                             <li>Regression</li>
                             <li>Usability Test</li>
@@ -110,7 +109,7 @@
             <section id="work">
                 <div class="row">
                     <div class="twelve columns">
-                        <h1 class="section_title">Experience (Without Teaching)</h1>
+                        <h1 class="section_title">Job Experience</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -123,7 +122,7 @@
             <section id="teaching">
                 <div class="row">
                     <div class="twelve columns">
-                        <h1 class="section_title">Teaching Experience</h1>
+                        <h1 class="section_title">Teaching Assistance</h1>
                     </div>
                 </div>
                 <div class="row">

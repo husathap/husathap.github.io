@@ -20,6 +20,10 @@ header {
     font-weight: bold;
 }
 
+#teaching {
+    visibility: visible;
+}
+
 .external_link {
     border-radius: 4px;
     padding:0.5rem;
@@ -59,10 +63,12 @@ header {
 }
 
 
-.time_right {
+.time {
     font-weight: bold;
-    float:right;
-    display:flex;
+}
+
+.position {
+    font-weight: normal;
 }
 
 .program {
@@ -71,7 +77,6 @@ header {
 
 .skill_box {
     margin-bottom:1rem;
-    box-shadow: 0px 0px 2px black inset;
 }
 
 .skill_title {
@@ -97,60 +102,6 @@ header {
     padding-left:0.5rem;
     padding-right:0.5rem;
 }
-
-/*#work {
-    padding-bottom:2rem;
-}
-
-#work_frame {
-    box-shadow: 0px 0px 2px black inset;
-    padding:1rem;
-}
-
-#teaching_frame {
-    box-shadow: 0px 0px 2px black inset;
-    padding:1rem;
-}
-
-#teaching {
-    padding-bottom: 2rem;
-}
-
-.work {
-    color:black;
-    display: inline-block;
-    padding:0.25rem;
-    margin:0.1rem;
-    padding-left:0.5rem;
-    padding-right:0.5rem;
-    border-bottom:black 1px solid;
-}
-
-.company {
-    font-weight:bold;
-}
-
-.work_time {
-    float:right;
-    font-weight: bold;
-}
-
-
-
-.teaching_position {
-    font-weight: bold;
-}
-
-#publication_list {
-    box-shadow: 0px 0px 2px black inset;
-	list-style:none;
-    padding:1rem;
-}
-
-#publication_list li {
-	padding-left:2em;
-	text-indent:-2em;
-}*/
 
 .volunteer {
     background-color: black;
@@ -187,5 +138,15 @@ footer {
 @media print {
     .no_print {
         display:none;
+    }
+
+    html, body, div, .container {
+        page-break-after: avoid !important;
+        page-break-inside: avoid !important;
+        overflow: visible !important;
+    }
+
+    .container {
+        width:8in;
     }
 }
