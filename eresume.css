@@ -1,41 +1,29 @@
+body {
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    background:black; 
+    color:white;
+    padding:1rem !important;
+}
+
+.resume_head {
+    background: rgb(127,0,0);
+    color:white;
+    padding:1.5rem;
+}
+
 #name {
-    padding-top:1rem;
     font-size:xx-large;
     font-weight: bold;
-}
-
-#alt_names {
-    border-bottom:black 1px solid; 
-    font-size:x-large;
-    padding-bottom: 2rem;
-}
-
-#title {
-    border-bottom:black 1px solid; 
-    padding:0.5rem;
-    font-weight: bold;
-    background-color:teal;
-    color:white;
-}
-
-#contact {
-    padding:1rem;
-    font-size: medium;
-    border-bottom: black 1px solid;
-}
-
-section {
-    border-bottom:black 1px solid;
-}
-
-li:last-child {
-    border-bottom:none;
 }
 
 .external_link {
     border-radius: 4px;
     padding:0.5rem;
-    color:teal;
+    color:white;
     font-weight: bold;
 }
 
@@ -52,21 +40,24 @@ li:last-child {
     font-weight: bold;
 }
 
-#university {
+.activities {
     margin-top:1rem;
-    list-style-type: none;
-    box-shadow: 0px 0px 2px black inset;
     padding:1rem;
 }
 
-#university > li {
+.activities ul {
+    list-style-type: none;
+}
+
+.activities li {
     font-weight: bold;
     border-bottom:black 1px solid;
 }
 
-#university > li:last-child {
+.activities li:last-child {
     border-bottom:none;
 }
+
 
 .time_right {
     font-weight: bold;
@@ -107,7 +98,7 @@ li:last-child {
     padding-right:0.5rem;
 }
 
-#work {
+/*#work {
     padding-bottom:2rem;
 }
 
@@ -144,12 +135,7 @@ li:last-child {
     font-weight: bold;
 }
 
-.volunteer {
-    background-color: black;
-    color:white;
-    padding:0.25rem;
-    border-radius: 3px;
-}
+
 
 .teaching_position {
     font-weight: bold;
@@ -164,6 +150,13 @@ li:last-child {
 #publication_list li {
 	padding-left:2em;
 	text-indent:-2em;
+}*/
+
+.volunteer {
+    background-color: black;
+    color:white;
+    padding:0.25rem;
+    border-radius: 3px;
 }
 
 .author {
@@ -189,4 +182,10 @@ footer {
     margin:1rem;
     text-align: center;
     font-weight: bold;
+}
+
+@media print {
+    .no_print {
+        display:none;
+    }
 }

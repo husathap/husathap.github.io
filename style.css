@@ -1,96 +1,55 @@
 body {
-    background-color: darkcyan;
-    background: url(polyline.png) no-repeat center center fixed;
-    background-size: cover;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Source Code Pro', monospace;
 }
 
 header {
-    background: black;
-    background: rgba(0, 0, 127, 0.75);
-    margin: auto;
-    margin-top: 2rem;
-    color:white;
     text-align: center;
-    padding-top: 0.1rem;
-    padding-bottom: 1rem;
-    border-top:1px solid white;
-    border-bottom:1px solid white;
+    font-size:x-large;
 }
 
 #myname {
-    margin: auto;
-    margin-top: 2rem;
-    width:auto;
-    text-align: center;
-    font-size:xx-large;
-    padding-bottom:0.5rem;
+    padding-top:2rem;
+    border-bottom:1px black solid;
 }
 
-#altnames > li {
-    display:inline-block;
-    padding-left:0.5rem;
-    padding-right:0.5rem;
+#aka {
+    color:gray;
     font-size:large;
 }
 
-#myposition {
+nav {
     text-align: center;
-    color:black;
-    background:rgb(255, 255, 127);
-    margin:auto;
-    font-weight: bold;
+    background-color:teal;
+    margin-top:1rem !important;
+    padding:0.5rem !important;
+}
+
+nav a {
+    border:2px black solid;
+    font-size: large;
     padding:0.5rem;
+    color:white;
+    display:inline-block;
+    margin:0.25em;
 }
 
-#contact {
-    text-align: center;
-    background-color: white;
-    padding:0.1em;
-    font-size:large;
+nav a:hover {
+    color:orange;
 }
 
-#contact-list > li {
-    display:inline;
-}
-
-#aboutme {
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    max-width:1000px;
-    width:80%;
-    background-color: white;
-    padding:1rem;
-    font-size:large;
-    box-shadow: inset 1px 1px 5px black;
-}
-
-#links {
-    margin:auto;
-    display:flex;
-    width:80%;
-    max-width:1000px;
-    justify-content: center;
-    flex-basis: 100%;
-    flex-wrap:wrap;
-}
-
-#links > a {
-    background:white;
-    margin:1rem;
-    padding:1rem;
-    font-size:large;
-    text-decoration: none;
-    box-shadow: 0px 0px 2px white;
-    border:2px yellow solid;
-    width:25%;
-    max-width:10rem;
+#current {
+    background-color: rgba(0,0,127,1);
+    color:white;
     border-radius: 10px;
-    color:black;
+    padding:1rem;
+    margin-top:1rem;
 }
 
-#links > a:hover {
-    box-shadow: 0px 0px 0px black;
-    border: 2px rgb(0, 0, 127) solid;
+#past {
+    background-color: rgba(255,255,127,1);
+    color:black;
+    border-radius: 10px;
+    padding:1rem;
+    margin-top:1rem;
 }
+

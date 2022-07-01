@@ -1,8 +1,11 @@
 var work_data = [
-    {date:"Jan/2021-Now", company:"Ericsson/Dalhousie University", position:"MITACS Accelerate Intern", volunteer:false, location:"Halifax, Canada"},
-	{date:"May/2010-Dec/2020", company:"Centre for Teaching and Learning, Dalhousie University", position:"Remote Support/Course Builder", volunteer:false, location:"Halifax, Canada"},
+	{date:"Jun/2022-July/2022", company:"IEEE ISMAR", position:"Reviewer", volunteer:true, location:"Singapore"},
+    {date:"Jan/2021-Jun/2022", company:"Ericsson/Dalhousie University", position:"MITACS Accelerate Intern", volunteer:false, location:"Montreal, Canada"},
+	{date:"Jun/2021-Aug/2021", company:"Dalhousie Computer Science In-House Student Conference", position:"Organizer", volunteer:true, location:"Online"},
+	{date:"Jun/2020-July/2020", company:"IEEE ISMAR", position:"Reviewer", volunteer:true, location:"Online"},
+	{date:"May/2020-Dec/2020", company:"Centre for Teaching and Learning, Dalhousie University", position:"Remote Support/Course Builder", volunteer:false, location:"Halifax, Canada"},
 	{date:"Jan/2020", company:"Faculty of Computer Science, Dalhousie University", position:"Local Guide", volunteer:true, location:"Halifax, Canada"},
-	{date:"Dec/2019-Jan/2019", company:"Windsor/West Hants Together, The Government of Nova Scotia", position:"Part-Time Statistician", volunteer:false, location:"West Hants, Canada"},
+	{date:"Dec/2019-Jan/2019", company:"Windsor/West Hants Together, The Government of Nova Scotia", position:"Part-Time Data Analyst", volunteer:false, location:"West Hants, Canada"},
 	{date:"May/2019-Aug/2019", company:"Centre for Teaching and Learning, Dalhousie University", position:"Graudate Research Association", volunteer:false, location:"Halifax, Canada"},
 	{date:"Apr/2019", company:"SURGE Sandbox, Dalhousie University", position:"Mentor", volunteer:true, location:"Halifax, Canada"},
 	{date:"Jan/2019", company:"CHI Conference on Human Factors in Computing Systems", position:"Reviewer", volunteer:true, location:"Glasgow, United Kingdom"},
@@ -50,7 +53,7 @@ function render() {
             volunteer="<span class='volunteer'>Volunteer</span>";
         }
 
-        newLi.innerHTML =  `<div class="company">${volunteer} ${e.company} <span class="work_time">${e.date}</span></div><div class="position">${e.position}</div>`;
+        newLi.innerHTML =  `<div class="company">${volunteer} ${e.company} <span class="time_right">${e.date}</span></div><div class="position">${e.position}</div>`;
 
         target.appendChild(newLi);
     });
@@ -61,7 +64,7 @@ function render() {
         let newLi = document.createElement("li");
         newLi.setAttribute("class", "work twelve columns");
 
-        newLi.innerHTML =  `<span class="teaching_position">${e.position}</span> for <span class="teaching_position">${e.course_code}</span>: <span class="teaching_position">${e.course_name}</span><span class="work_time">${e.term}, ${e.year}</span><br/><span>${e.university}</span> `;
+        newLi.innerHTML =  `<span class="teaching_position">${e.position}</span> for <span class="teaching_position">${e.course_code}</span>: <span class="teaching_position">${e.course_name}</span><span class="time_right">${e.term}, ${e.year}</span><br/><span>${e.university}</span> `;
         target.appendChild(newLi);
     })
 }

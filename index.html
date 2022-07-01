@@ -5,35 +5,45 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+        <link rel="stylesheet" href="skeleton.css">
+        <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
     </head>
 
     <body>
-        <header>
+        <header class="container">
             <div id="myname">Sathaporn "Hubert" Hu</div>
-            <ul id="altnames">
-                <li>Thai: สถาพร ฮู (Sathaporn Hu)</li>
-                <li>Mandarin: 胡秀楷 (Hu, Shiow-Kai)</li>
-            </ul>
-            <div id="myposition">PhD Student at Dalhousie University, MITACS Accelerate Intern at Ericsson</div>
+            <div id="aka">aka. สถาพร ฮู, 胡秀楷</div>
         </header>
 
-        <section id="aboutme">
-        <p>Hello, my name is Hubert. I am currently a PhD student at GEMLab, Dalhousie University. My areas of study are in mixed reality and immersive analytics.
-        As a student funded by MITACS Accelerate, I also hold a concurrent position as an IT Intern at Ericsson.
-        Previously, I was a Master's degree student at the University of Calgary with the specialization in computer-assisted language learning.
-        I completed my Bachelor degree at the University of Toronto with a specialist in computer science, a major in cognitive science, and a
-        minor in French.</p>
-
-        <p>I was also an instructor at Dalhousie University, and an intern at Lenovo in Beijing, China.</p>
-        </section>
-
-        <section id="links">
-            <a href="https://gem.cs.dal.ca/people/hubert-hu/">GEMLab Profile</a>
+        <nav class="container">
             <a href="https://github.com/husathap">GitHub</a>
             <a href="https://www.linkedin.com/in/hubert-sathaporn-hu-3b8ab463/">LinkedIn</a>
+            <a href="https://gem.cs.dal.ca/people/hubert-hu/">GemLab, Dalhousie</a>
             <a href="eresume.html">Resume</a>
+        </nav>
+
+        <section id="current" class="container">
+            <h1>PhD Student at Dalhousie University</h1>
+            <p>Currently, I am a PhD student at GEMLab, Dalhousie University under the supervision of Derek Reilly.
+                My program is computer science with Certificate in University Teaching and Learning, and GradPD.
+                My specialization is in creating mixed reality multimodal interface for immersive analytics.
+            </p>
+        </section>
+
+        <section id="past" class="container">
+            <h1>I was...</h1>
+            <ul>
+                <li>MITACS Accelerate Intern at Ericsson</li>
+                <li>Instructor at Dalhousie University</li>
+                <li>Intern at Lenovo</li>
+                <li>MSc in Computer Science at Univeristy of Calgary under the supervision of Wesley Willett</li>
+                <li>Intern at JetAsia Airways</li>
+                <li>BSc with a specialist in computer science, major in cognitive science, and minor in French at University of Toronto </li>
+            </ul>
         </section>
 
     </body>

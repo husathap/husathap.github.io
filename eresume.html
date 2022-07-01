@@ -3,31 +3,44 @@
     <head>
         <title>Hubert's Resume</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Work+Sans&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="./normalize.css">
         <link rel="stylesheet" href="./skeleton.css">
         <link rel="stylesheet" href="./eresume.css">
     </head>
 
     <body onload="render()">
+
+        <header class="container no_print">
+            <h1>Resume</h1>
+            <p>This page is designed to provide a print-friendly cirriculum vitae. Use the print button below to print out a copy of my resume.
+                You should use the print dialog to adjust the margin before pritning. While this page is mobile friendly, it is best view
+                on a desktop monitor.
+                For a more interactive job profile, please visit my LinkedIn page instead.</p>
+            <hr>
+            <h3>Printing Tools</h3>
+            <p>Currently, you can only print everything. In the future, you can exclude certain items such as volunteer or teaching activities.</p>
+            <button class="no_print button-primary" onclick="window.print()">Print</button>
+        </header>
+
         <div class="container">
-            <div class="row">
-                <div class="twelve columns">
-                    <div id="name">Hubert (Sathaporn) Hu</div>
-                    <div id="alt_names"><strong>Thai:</strong> สถาพร ฮู (Sathaporn Hu) <strong>| Chinese:</strong> 胡秀楷 (Hu, Shiow-Kai)</div>
+            <div class="resume_head">
+                <div class="row">
+                    <div class="twelve columns">
+                        
+                        <div id="name">Hubert (Sathaporn) Hu</div> 
+                    </div>
                 </div>
-            </div>
 
-            <div id="title" class="row">
-                <div class="twelve columns" style="text-align: center; font-size:large">PhD Student at Dalhousie University</div>
-            </div>
-
-            <div id="contact" class="row">
-                <div class="six columns">
-                    <strong>Location:</strong> Halifax, Canada
-                </div>
-                <div class="six columns">
-                    <strong>Website:</strong> <a class="external_link" href="https://husathap.github.io/">https://husathap.github.io/</a>
+                <div id="contact" class="row">
+                    <div class="six columns">
+                        <strong>Location:</strong> Halifax, Canada
+                    </div>
+                    <div class="six columns">
+                        <strong>Website:</strong> <a class="external_link" href="https://husathap.github.io/">https://husathap.github.io/</a>
+                    </div>
                 </div>
             </div>
 
@@ -38,11 +51,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="twelve columns">
+                    <div class="twelve columns activities">
                         <ul id="university">
                             <li><div>PhD (In Progress), Dalhousie University <span class="time_right">2018-Now</span></div><div class="program">Computer Science + Certificate in University Teaching and Learning + GradPD</div></li>
                             <li><div>Master of Science, University of Calgary <span class="time_right">2015-2017</span></div><div class="program">Computer Science</div></li>
-                            <li><div>Honours Bachelor of Science, University of Toronto <span class="time_right">2011-2015</span></div><div class="program">Computer Science (Specialist), Cognitive Science (Major), French (Minor)</div></li>
+                            <li><div>Honours Bachelor of Science, University of Toronto <span class="time_right">2011-2015</span></div><div class="program">Computer Science (Specialist) + Cognitive Science (Major) + French (Minor)</div></li>
                         </ul>
                     </div>
                 </div>
@@ -97,11 +110,11 @@
             <section id="work">
                 <div class="row">
                     <div class="twelve columns">
-                        <h1 class="section_title">Work+Volunteer Experience (Without Teaching)</h1>
+                        <h1 class="section_title">Experience (Without Teaching)</h1>
                     </div>
                 </div>
                 <div class="row">
-                    <div id="work_frame" class="twelve columns">
+                    <div id="work_frame" class="twelve columns activities">
                         <ul id="work_target"></ul>
                     </div>
                 </div>
@@ -114,7 +127,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div  id="teaching_frame" class="twelve columns">
+                    <div  id="teaching_frame" class="twelve columns activities">
                         <ul id="teaching_target"></ul>
                     </div>
                 </div>
@@ -126,7 +139,7 @@
                         <h1 class="section_title">Publication</h1>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row activities">
                     <ul id="publication_list">
                         <li><span class="author">Hu, S.</span>, Malloch, J., & Reilly, D. (2021).
                             <span class="title">A Comparative Evaluation of Techniques for Locating Out of View Targets in Virtual Reality.</span>
