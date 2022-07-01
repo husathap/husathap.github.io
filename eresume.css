@@ -62,7 +62,7 @@ header {
 .time_right {
     font-weight: bold;
     float:right;
-    padding-left:4rem;
+    display:flex;
 }
 
 .program {
