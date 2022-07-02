@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="./normalize.css">
         <link rel="stylesheet" href="./skeleton.css">
         <link rel="stylesheet" href="./eresume.css">
-        <link rel="stylesheet" media="print" href="./eresume_print.css">
     </head>
 
     <body onload="render()">
@@ -21,7 +20,7 @@
 
             <button id="hideVolunteerButton" class="button-primary" onclick="hideVolunteer()">Hide Volunteer Positions</button>
             <button id="hideTeachingButton" class="button-primary" onclick="hideTeaching()">Hide Teaching Assistance Positions</button>
-            <!--<button class="button-primary" onclick="window.print()">Print</button>-->
+            <button class="button-primary" onclick="window.print()">Print</button>
             
         </header>
 
@@ -44,7 +43,7 @@
                 </div>
             </div>
 
-            <div id="education" class="container">
+            <section id="education" class="container">
                 <div class="section_title">Education</div>
 
                 <div class="row">
@@ -56,9 +55,10 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </section>
+            
 
-            <div id="skills" class="container">
+            <section id="skills" class="container">
                 <div class="section_title">Skills</div>
 
                 <div class="row">
@@ -98,29 +98,30 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div id="work" class="container">
+            
+
+            <section id="work" class="container">
                 <div class="section_title">Job Experience</div>
 
-                <div class="row">
                     <div id="work_frame" class="twelve columns activities">
                         <ul id="work_target"></ul>
                     </div>
-                </div>
-            </div>
+                </section>
 
-            <div id="teaching" class="container">
+                
+
+            <section id="teaching" class="container">
                 <div class="section_title">Teaching Assistance</div>
-
-                <div class="row">
                     <div  id="teaching_frame" class="twelve columns activities">
                         <ul id="teaching_target"></ul>
                     </div>
-                </div>
-            </div>
+            </section>
 
-            <div id="publication" class="container">
+            
+
+            <section id="publication" class="container">
                 <div class="section_title">Publication</div>
 
                 <div class="row activities">
@@ -142,7 +143,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </section>
 
             <footer>Hubert (Sathaporn) Hu</footer>
         <!--</div>-->
