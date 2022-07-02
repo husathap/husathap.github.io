@@ -74,7 +74,7 @@ function render() {
         newLi.setAttribute("class", "work twelve columns");
 
         newLi.innerHTML =  `<div class="row">
-			<div class="eight columns">
+			<div class="eight columns position">
 				<span class="teaching_position">${e.position}</span> for <span class="teaching_position">${e.course_code}</span>: <span class="teaching_position">${e.course_name}</span>
 			</div>
 			<div class="four columns time">${e.term}, ${e.year}</div>
