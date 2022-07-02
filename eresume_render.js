@@ -59,8 +59,8 @@ function render() {
         newLi.setAttribute("class", `work twelve columns ${volunteer_row}`);
 
         newLi.innerHTML =  `<div class="row">
-				<div class="nine columns">${volunteer} ${e.company}</div> 
-				<div class="three columns time">${e.date}</div>
+				<div class="eight columns">${volunteer} ${e.company}</div> 
+				<div class="four columns time">${e.date}</div>
 			</div>
 			<div class="row position">${e.position}</div>`;
 
@@ -74,10 +74,10 @@ function render() {
         newLi.setAttribute("class", "work twelve columns");
 
         newLi.innerHTML =  `<div class="row">
-			<div class="ten columns">
+			<div class="eight columns">
 				<span class="teaching_position">${e.position}</span> for <span class="teaching_position">${e.course_code}</span>: <span class="teaching_position">${e.course_name}</span>
 			</div>
-			<div class="two columns time">${e.term}, ${e.year}</div>
+			<div class="four columns time">${e.term}, ${e.year}</div>
 		</div>
 		<div>${e.university}</div> `;
         target.appendChild(newLi);

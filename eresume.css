@@ -135,28 +135,20 @@ footer {
     font-weight: bold;
 }
 
+h1 {
+    font-size:x-large;
+    padding-top:1rem;
+    font-weight:bold;
+}
+
 
 @media print {
     .no_print {
         display:none;
     }
 
-    * {
-        float:none;
-        break-before:avoid-page !important;
-        break-inside:avoid-page !important;
-        break-after:avoid-page !important;
-        page-break-before:avoid-page !important;
-        page-break-inside:avoid-page !important;
-        page-break-after:avoid-page !important;
-    }
-
-    .container {
-        width: 100% !important;
-    }
-
-    section::after {
-        display:none !important;
+    h1 {
+        page-break-after: avoid;
     }
     
 }
