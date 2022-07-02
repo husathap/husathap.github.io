@@ -2,13 +2,14 @@
 <html lang="en">
     <head>
         <title>Hubert's Resume</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Work+Sans&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="./normalize.css">
         <link rel="stylesheet" href="./skeleton.css">
         <link rel="stylesheet" href="./eresume.css">
+        <link rel="stylesheet" media="print" href="./eresume_print.css">
     </head>
 
     <body onload="render()">
@@ -24,8 +25,8 @@
             
         </header>
 
-        <div class="container">
-            <div class="resume_head">
+        <!--<div class="container">-->
+            <div class="resume_head container">
                 <div class="row">
                     <div class="twelve columns">
                         
@@ -43,12 +44,9 @@
                 </div>
             </div>
 
-            <section id="education">
-                <div class="row">
-                    <div class="twelve columns">
-                        <h1 class="section_title">Education</h1>
-                    </div>
-                </div>
+            <div id="education" class="container">
+                <div class="section_title">Education</div>
+
                 <div class="row">
                     <div class="twelve columns activities">
                         <ul id="university">
@@ -58,14 +56,10 @@
                         </ul>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section id="skills">
-                <div class="row">
-                    <div class="twelve columns">
-                        <h1 class="section_title">Skills</h1>
-                    </div>
-                </div>
+            <div id="skills" class="container">
+                <div class="section_title">Skills</div>
 
                 <div class="row">
                     <div class="four columns skill_box">
@@ -104,40 +98,31 @@
                         </ul>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section id="work">
-                <div class="row">
-                    <div class="twelve columns">
-                        <h1 class="section_title">Job Experience</h1>
-                    </div>
-                </div>
+            <div id="work" class="container">
+                <div class="section_title">Job Experience</div>
+
                 <div class="row">
                     <div id="work_frame" class="twelve columns activities">
                         <ul id="work_target"></ul>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section id="teaching">
-                <div class="row">
-                    <div class="twelve columns">
-                        <h1 class="section_title">Teaching Assistance</h1>
-                    </div>
-                </div>
+            <div id="teaching" class="container">
+                <div class="section_title">Teaching Assistance</div>
+
                 <div class="row">
                     <div  id="teaching_frame" class="twelve columns activities">
                         <ul id="teaching_target"></ul>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section id="publication">
-                <div class="row">
-                    <div class="twelve columns">
-                        <h1 class="section_title">Publication</h1>
-                    </div>
-                </div>
+            <div id="publication" class="container">
+                <div class="section_title">Publication</div>
+
                 <div class="row activities">
                     <ul id="publication_list">
                         <li><span class="author">Hu, S.</span>, Malloch, J., & Reilly, D. (2021).
@@ -157,10 +142,10 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </div>
 
             <footer>Hubert (Sathaporn) Hu</footer>
-        </div>
+        <!--</div>-->
 
         <script src="./eresume_render.js"></script>
     </body>

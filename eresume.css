@@ -140,13 +140,26 @@ footer {
         display:none;
     }
 
-    html, body, div, .container {
-        page-break-after: avoid !important;
-        page-break-inside: avoid !important;
-        overflow: visible !important;
+    * {
+        page-break-before:avoid !important;
+        page-break-inside:avoid !important;
+        page-break-after:avoid !important;
+    }
+
+    .row {
+        page-break-before:avoid !important;
+        page-break-inside:avoid !important;
+        page-break-after:avoid !important;
     }
 
     .container {
-        width:8in;
+        width: 100% !important;
+    }
+
+    .section_title::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-bottom: -100px;
     }
 }
