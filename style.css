@@ -52,5 +52,9 @@ nav a:hover {
     border-radius: 10px;
     padding:1rem;
     margin-top:1rem;
+    margin-bottom:2rem;
 }
 
+footer {
+    border-top: solid 1px black;
+}
