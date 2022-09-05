@@ -1,52 +1,106 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hubert</title>
+        <title>Hubert's Website</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" href="skeleton.css">
-        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/grids-responsive-min.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-
     <body>
-        <header class="container">
-            <div id="myname">Sathaporn "Hubert" Hu</div>
-            <div id="aka">aka. สถาพร ฮู, 胡秀楷</div>
+        <header>
+            <div class="pure-g">
+                <div id="name" class="pure-u-5-5"><i class="bi bi-globe2"></i> Sathaporn "Hubert" Hu</div>
+                <div id="aka" class="pure-u-5-5">aka. สถาพร ฮู, 胡秀楷</div>
+                <div id="title" class="pure-u-5-5">PhD Candidate, Dalhousie University</div>
+            </div>
         </header>
 
-        <nav class="container">
-            <a href="https://github.com/husathap">GitHub</a>
-            <a href="https://www.linkedin.com/in/hubert-sathaporn-hu-3b8ab463/">LinkedIn</a>
-            <a href="https://gem.cs.dal.ca/people/hubert-hu/">GemLab, Dalhousie</a>
-            <a href="eresume.html">Resume</a>
-        </nav>
-
-        <section id="current" class="container">
-            <h1>PhD Student at Dalhousie University</h1>
-            <p>Currently, I am a PhD student at GEMLab, Dalhousie University under the supervision of Derek Reilly.
-                My program is computer science with Certificate in University Teaching and Learning, and GradPD.
-                My specialization is in creating mixed reality multimodal interface for immersive analytics.
-            </p>
+        <section id="contact">
+            <div id="contact-a-group" class="pure-g">
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <a href="https://gem.cs.dal.ca/people/hubert-hu/"><i class="bi bi-globe"></i> GEMLab Profile</a>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <a href="https://github.com/husathap"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <a href="https://www.linkedin.com/in/hubert-sathaporn-hu-3b8ab463/"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                </div>
+                <!--<div class="pure-u-1 pure-u-md-1-4">
+                    <a href="">Resume</a>
+                </div>-->
+            </div>
         </section>
 
-        <section id="past" class="container">
-            <h1>I was...</h1>
-            <ul>
-                <li>MITACS Accelerate Intern at Ericsson</li>
-                <li>Instructor at Dalhousie University</li>
-                <li>Intern at Lenovo</li>
-                <li>MSc in Computer Science at Univeristy of Calgary under the supervision of Wesley Willett</li>
-                <li>Intern at JetAsia Airways</li>
-                <li>BSc with a specialist in computer science, major in cognitive science, and minor in French at University of Toronto </li>
-            </ul>
+        <section id="intro">
+            <div class="pure-g text-content">
+                <div class="pure-u-1">
+                    <h1><i class="bi bi-person-circle"></i> About Me</h1>
+                    <img id="latest-img" src="polyline.png" width="100%" style="margin:auto;text-align: center; max-height: 300px;padding-bottom:none" alt="A prototype for Gander.">
+                    <div id="img-description">A prototype of Gander, my current PhD project. An outdated screenshot is provided here since the project is patent pending and it is still being evaluated.</div>
+
+                    <p>Hubert is a PhD candidate at Dalhousie University under the supervision of Prof. Derek Reilly. 
+                    Currently, he is based out of Sault Ste. Marie, Ontario. He currently studies computer science
+                    and is specializing in the area of human-computer interaction, augmented reality, and immersive
+                    analytics. He is now keen to get started on a virtual reality project that will help
+                    Sault Ste. Marie to become a better place.</p>
+
+                    <p>Currently, Hubert is working on Gander. Gander is a multimodal interface that combines Augmented Reality together
+                    with a tablet interface. The goal of the interface is to help the user become better at forming
+                    linear regression models.</p>
+                </div>
+
+                <div id="email" class="pure-u-1">
+                    <strong><i class="bi bi-envelope-fill"></i> Email:</strong> hs.hu@dal.ca
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <h2><i class="bi bi-pc-display-horizontal"></i> Skills</h2>
+                    <ul>
+                        <li>Virtual and augmented reality development with Unity</li>
+                        <li>Web development</li>
+                        <li>Statistical analysis with languages like R, Python, and MATLAB</li>
+                        <li>Programming in C#, Java, Visual Basic, and other languages</li>
+                        <li>User experience design</li>
+                        <li>Conducting research</li>
+                        <li>Can speak in Thai, English, Mandarin, and French</li>
+                    </ul>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <h2><i class="bi bi-file-earmark-fill"></i> Patent and Publication</h2>
+                    <ul>
+                        <li><strong>Patent:</strong> Augmented Reality + Tablet Interface for Multiple Linear Regression Model Creation, PCT/IB2022/052779 (Pending)
+                        </li>
+                        <li><strong>Paper:</strong> A Comparative Evaluation of Techniques for Locating Out of View Targets in Virtual Reality, <a href="https://openreview.net/forum?id=1S3TXjkEVmH">URL</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
         </section>
 
-        <footer class="container"></footer>
+        <section id="past">
+            <div class="pure-g text-content">
+                <div class="pure-u-1">
+                    <h1><i class="bi bi-clock-history"></i> Past</h1>
+                    In the past, Hubert was following:
 
+                    <ul>
+                        <li>Sessional Lecturer at Dalhousie University</li>
+                        <li>MITACS Accelerate intern at Ericsson</li>
+                        <li>Master's degree student at University of Calgary</li>
+                        <li>Intern at Lenovo</li>
+                        <li>Lab Member at TAGLab, University of Toronto</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications">
+
+        </section>
     </body>
 </html>
