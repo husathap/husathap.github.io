@@ -54,7 +54,8 @@ header {
 }
 
 #img-description {
-    background-color: salmon;
+    background-color: teal;
+    color:white;
     margin:none;
     padding:0.25rem;
     text-align: center;
