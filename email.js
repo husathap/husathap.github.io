@@ -1,3 +1,5 @@
+// Anti-scraping idea from: https://www.matthewthom.as/blog/stop-email-scraping/
+
 let acct = "hs.hu";
 let dom = "dal.ca";
 
