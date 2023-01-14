@@ -3,102 +3,80 @@
     <head>
         <title>Hubert's Website</title>
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/grids-responsive-min.css">
+        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/grids-responsive-min.css">-->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
-            <div class="pure-g">
-                <div id="name" class="pure-u-5-5"><i class="bi bi-globe2"></i> Sathaporn "Hubert" Hu</div>
-                <div id="aka" class="pure-u-5-5">aka. สถาพร ฮู, 胡秀楷</div>
-                <div id="title" class="pure-u-5-5">PhD Candidate, Dalhousie University</div>
+            <div class="name">
+                <h1>Sathaporn "Hubert" Hu | สถาพร ฮู | 胡秀楷</h1>
+                <h2>PhD Candidate, Dalhousie University</h2>
             </div>
         </header>
 
-        <section id="contact">
-            <div id="contact-a-group" class="pure-g">
-                <div class="pure-u-1 pure-u-md-1-3">
-                    <a href="https://gem.cs.dal.ca/people/hubert-hu/"><i class="bi bi-globe"></i> GEMLab Profile</a>
-                </div>
-                <div class="pure-u-1 pure-u-md-1-3">
-                    <a href="https://github.com/husathap"><i class="bi bi-github"></i> GitHub</a>
-                </div>
-                <div class="pure-u-1 pure-u-md-1-3">
-                    <a href="https://www.linkedin.com/in/hubert-sathaporn-hu-3b8ab463/"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                </div>
-                <!--<div class="pure-u-1 pure-u-md-1-4">
-                    <a href="">Resume</a>
-                </div>-->
+        <div class="contact">
+            <span aria-hidden="true">🖂</span> Email: <span id="email"></span> | <a href="https://gem.cs.dal.ca/people/hubert-hu/">GEMLab Bio</a> | <a href="https://www.linkedin.com/in/hubert-sathaporn-hu-3b8ab463/">LinkedIn</a>
+        </div>
+
+        <section class="teaser">
+            <div class="teaser_image">
+                <img src="polyline.png">
+            </div>
+            <div class="teaser_caption">A prototype of Gander, my PhD project. Since this software is patent-pending, an outdated
+                prototype is shown instead.
             </div>
         </section>
 
-        <section id="intro">
-            <div class="pure-g text-content">
-                <div class="pure-u-1">
-                    <h1><i class="bi bi-person-circle"></i> About Me</h1>
-                    <img id="latest-img" src="polyline.png" width="100%" style="margin:auto;text-align: center; max-height: 300px;padding-bottom:none" alt="A prototype for Gander.">
-                    <div id="img-description">A prototype of Gander, my current PhD project. An outdated screenshot is provided here since the project is patent pending and it is still being evaluated.</div>
+        <section class="aboutme">
+            <p><span aria-hidden="true">🖐</span> I am a PhD candidate at GEMLab, Dalhousie University, under the supervision of Derek Reilly.
+            My specialization includes augmented reality, information visualization, and human-computer interaction. Furthermore,
+            I have experience in UI design, data science, and web development. I was also a MITACS intern at Ericsson from
+            2020 to 2021. I am an alumnus of the University of Calgary (MSc) and the University of Toronto (HBSc).</p>
 
-                    <p>Hubert is a PhD candidate at Dalhousie University under the supervision of Prof. Derek Reilly. 
-                    Currently, he is based out of Sault Ste. Marie, Ontario. He currently studies computer science
-                    and is specializing in the area of human-computer interaction, augmented reality, and immersive
-                    analytics. He is now keen to get started on a virtual reality project that will help
-                    Sault Ste. Marie to become a better place.</p>
-
-                    <p>Currently, Hubert is working on Gander. Gander is a multimodal interface that combines Augmented Reality together
-                    with a tablet interface. The goal of the interface is to help the user become better at forming
-                    linear regression models.</p>
-                </div>
-
-                <div id="email" class="pure-u-1">
-                    <strong><i class="bi bi-envelope-fill"></i> Email:</strong> hs.hu@dal.ca
-                </div>
-
-                <div class="pure-u-1 pure-u-md-1-2">
-                    <h2><i class="bi bi-star-fill"></i> Skills</h2>
-                    <ul>
-                        <li>Virtual and augmented reality development with Unity</li>
-                        <li>Web development</li>
-                        <li>Statistical analysis with languages like R, Python, and MATLAB</li>
-                        <li>Programming in C#, Java, Visual Basic, and other languages</li>
-                        <li>User experience design</li>
-                        <li>Conducting research</li>
-                        <li>Can speak in Thai, English, Mandarin, and French</li>
-                    </ul>
-                </div>
-                <div class="pure-u-1 pure-u-md-1-2">
-                    <h2><i class="bi bi-file-earmark-fill"></i> Patent and Publication</h2>
-                    <ul>
-                        <li><strong>Patent:</strong> Augmented Reality + Tablet Interface for Multiple Linear Regression Model Creation, PCT/IB2022/052779 (Pending)
-                        </li>
-                        <li><strong>Paper:</strong> A Comparative Evaluation of Techniques for Locating Out of View Targets in Virtual Reality, <a href="https://openreview.net/forum?id=1S3TXjkEVmH">URL</a>
-                        </li>
-                        <li><strong>Paper:</strong> Kalgan: Video Player for Casual Language Learning, <a href="https://dl.acm.org/doi/10.1145/3170427.3188498">URL</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <hr>
-
-            <div class="pure-g text-content">
-                <div class="pure-u-1">
-                    <h1><i class="bi bi-clock-history"></i> Past</h1>
-                    In the past, Hubert was following:
-
-                    <ul>
-                        <li>Sessional Lecturer at Dalhousie University</li>
-                        <li>MITACS Accelerate intern at Ericsson</li>
-                        <li>Master's degree student at University of Calgary</li>
-                        <li>Intern at Lenovo</li>
-                        <li>Lab Member at TAGLab, University of Toronto</li>
-                    </ul>
-                </div>
-            </div>
-            
+            <p>Currently, my technology stack is: Unity, MRTK, C#, HTML, R, Python, and Microsoft Office. However, I also worked
+                with other technologies in the past (eg. Django, Visual Basic, Android, and iOS development). I also have
+                some knowledge in cognitive science, computer-assisted language learning, and development for seniors from my
+                experience before my PhD program.
+            </p>
         </section>
+        <hr>
+
+        <section>
+            <h1><span aria-hidden="true">⌛︎</span> Past Work</h1>
+            In the past, I held the following positions. Please see LinkedIn for more detail:
+            <ul>
+                <li>Sessional Lecturer at Dalhousie University for Intro Research and Statistics, and Human-Computer Interaction</li>
+                <li>Data Analyst for Windsor/West Hants Amalgamation</li>
+                <li>Intern at Ericsson, Lenovo, TAGLab, and JetAsia Airways</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section>
+            <h1><span aria-hidden="true">🗔</span> Projects</h1>
+            I am working or worked on the following projects:
+            <ul class="project">
+                <li>Gander (Current): Augmented reality (AR)+tablet software that visualizes data to help
+                    the user with regression and spatial analysis. Part of my work is patent-pending.
+                </li>
+                <li>Nocturne 2021 AR Exhibit: An AR exhibit in Halifax that also doubled as a study. I mainly worked with 
+                    logging software and data analysis.
+                </li>
+                <li>Windsor/West Hants Together: Analyzed online survey data for the government of Nova Scotia.</li>
+                <li>Kalgan: My Master's degree work. A HTML-based video player for language learning.
+                </li>
+                <li>Tangra: A HTML-based web portal for conducting online studies.</li>
+                <li>InTouch: An iOS app for communication with seniors.</li>
+                <li>ALTT: An Android eReader app for senrios which includes autmoatic reading.</li>
+                <li>Office 365 Migration: Assisted JetAsia Airways in migrating onto Office 365.</li>
+            </ul>
+        </section>
+
+        <script src="email.js"></script>
+        
     </body>
 </html>
