@@ -8,42 +8,56 @@ body {
 }
 
 .teaser_image {
-    width:100%;
+    /*width:100%;*/
+    margin:auto;
     text-align: center;
     background-color: beige;
     border:black 10px double;
-    padding-top: 4px;
-    
+    padding:5px;
 }
 
 .teaser_image > img {
     width:100%;
     max-width:650px;
-    box-shadow: 8px 8px 6px -6px black;
+
 }
 
 .teaser_caption {
     color: teal;
     font-weight: bold;
     font-size: larger;
-    padding-top:0.25rem;
-    padding-bottom:0.25rem;
-    border-bottom: teal 2px solid;
+    padding-top:3px;
+    text-align: center;
 }
 
 .contact {
-    background-color: black;
+    /*background-color: black;*/
     color:white;
     text-align: center;
     font-size:x-large;
     padding:0.5rem;
+    margin:auto;
+    width:auto;
+}
+
+.contact_links {
+    background:black;
+    width:auto;
+    padding:0.5rem;
+    border-radius: 10px;
+    width:70%;
+    max-width:1000px;
+    margin:auto;
+}
+
+.contact_link {
+    display: inline-block;
+    padding:5px;
 }
 
 .contact a {
     color:white;
 }
-
-
 
 section {
     margin:auto;
@@ -51,9 +65,40 @@ section {
     padding-bottom:1rem;
     width:80%;
     max-width:1000px;
-    font-size:large
+    font-size:large;
 }
 
 .aboutme {
-    font-size:x-large   
+    font-size:x-large;
+    color:firebrick;
+}
+
+@media screen and (min-width: 900px) {
+    .mobile_separator {
+        display:none;
+    }
+
+    .contact_link:not(:last-child) {
+        border-right:white 1px solid;
+        padding-right:1rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color:white;
+    }
+
+    .teaser_caption {
+        color:cyan;
+    }
+
+    .contact_links {
+        background:dimgray;
+    }
+
+    .aboutme {
+        color:orange;
+    }
 }
