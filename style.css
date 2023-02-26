@@ -1,10 +1,21 @@
-body {
+html, body {
     font-family: monospace;
+    margin:0 auto;
 }
 
 .name {
     margin:auto;
+    padding-top:3rem;
     text-align: center;
+    background-image: linear-gradient(rgb(0, 127, 127), rgb(255, 127, 127));
+    color:white;
+}
+
+#title {
+    background-color: teal;
+    color:white;
+    margin:auto;
+    padding:0.5rem;
 }
 
 .teaser_image {
@@ -36,6 +47,7 @@ body {
     padding:0.5rem;
     margin:auto;
     width:auto;
+    
 }
 
 .contact_links {
@@ -46,11 +58,14 @@ body {
     width:70%;
     max-width:1000px;
     margin:auto;
+    box-shadow: 0px 0px 10px orange;
+        border:1px orangered solid;
 }
 
 .contact_link {
     display: inline-block;
     padding:5px;
+    
 }
 
 .contact a {
@@ -94,6 +109,8 @@ section {
 
     .contact_links {
         background:dimgray;
+        box-shadow: 0px 0px 15px orange;
+        border:1px orange solid;
     }
 
     .aboutme {
