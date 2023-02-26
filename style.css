@@ -7,12 +7,14 @@ html, body {
     margin:auto;
     padding-top:3rem;
     text-align: center;
-    background-image: linear-gradient(rgb(0, 127, 127), rgb(255, 127, 127));
+    background-image: linear-gradient(rgb(127, 255, 255), rgb(127, 0, 0));
     color:white;
 }
 
 #title {
-    background-color: teal;
+    background-color: rgb(127, 0, 0);
+    border-top:1px white solid;
+    border-bottom:1px white solid;
     color:white;
     margin:auto;
     padding:0.5rem;
