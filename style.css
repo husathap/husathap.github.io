@@ -21,7 +21,6 @@ html, body {
 }
 
 .teaser_image {
-    /*width:100%;*/
     margin:auto;
     text-align: center;
     padding:5px;
@@ -53,15 +52,14 @@ html, body {
 }
 
 .contact_links {
-    background:black;
+    background-color: rgb(127, 0, 0);
     width:auto;
     padding:0.5rem;
-    border-radius: 10px;
     width:70%;
     max-width:1000px;
     margin:auto;
     box-shadow: 0px 0px 10px orange;
-        border:1px orangered solid;
+    border:1px orangered solid;
 }
 
 .contact_link {
@@ -110,7 +108,7 @@ section {
     }
 
     .contact_links {
-        background:dimgray;
+        
         box-shadow: 0px 0px 15px orange;
         border:1px orange solid;
     }
