@@ -141,7 +141,7 @@ li {
 
 @media (max-width: 600px) {
     header, section {
-        width:100%;
+        width:fit-content;
         border-radius:0em;
     }
 
