@@ -3,4 +3,6 @@
 let acct = "hs.hu";
 let dom = "dal.ca";
 
-document.getElementById("email").innerHTML = `<a href="mailto:${acct}@${dom}">${acct}@${dom}</a>`;
+let email_element = document.getElementById("email");
+email_element.innerHTML = `${acct}@${dom}`;
+email_element.setAttribute("href", `mailto:${acct}@${dom}`);
