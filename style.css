@@ -49,6 +49,7 @@ header {
     margin:1rem;
     background-color: white;
     border-radius: 15px;
+    box-shadow: inset 0px 0px 4px black;
 }
 
 a {
