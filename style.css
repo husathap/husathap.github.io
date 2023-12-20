@@ -1,160 +1,70 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin:0 auto;
-    background-image: url('bg1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    padding-bottom:1rem;
-}
-
-header {
-    text-align: center;
-    background: teal;
-    background: linear-gradient(0deg, rgba(0,0,127,0.5) 0%, rgba(102,169,207,0.5) 100%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width:1000px;
     margin:auto;
-    margin-top:1rem;
-    width:80%;
-    max-width:900px;
-    border-radius: 2em;
-    padding:1rem;
-    padding-bottom:0.5rem;
+}
+
+#name {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+    font-size:large;
+}
+
+#contacts_container {
+    text-align: center;
+    margin:auto;
+    background-color: teal;
+    padding:none;
+}
+
+#contacts {
+    display:inline-flex;
+    list-style: none;
+    text-align: center;
+    padding:none;
+    margin:none;
+}
+
+#contacts > li {
+    margin:0.05rem;
+    padding-left:1rem;
+    padding-right:1rem;
     color:white;
 }
 
-.sub-name {
-    margin-bottom:0px;
-    padding-bottom:10px;
+#contacts a {
     color:white;
-    font-size:xx-large;
-    font-weight: bold;
-}
-
-.name_lang {
-    border:2px solid orange;
-    padding:2px;
-    font-weight: lighter;
-}
-
-#title {
-    font-size:x-large;
-    margin-top:0.75em;
-    border-top:1px white solid;
-    padding-top:0.5rem;
-}
-
-#contact {
-    padding:1rem;
-    margin:1rem;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: inset 0px 0px 4px black;
-}
-
-a {
-    background:white;
-    border:1px solid black;
-    padding:0.5rem;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px black;
-    font-weight: bold;
     text-decoration: none;
-    display:inline-block;
-    margin:0.2rem;
-    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:large;
 }
 
-a:hover {
-    box-shadow:none;
-    color:navy;
+.proj_card_coll {
+    display:flex;
+    flex-wrap: wrap;
+    
 }
 
-h1 {
-    text-align: center;
-}
-
-section {
-    background: white;
-    background: rgba(255,255,255,0.85);
-    margin:auto;
-    margin-top:1rem;
-    margin-bottom:0.5rem;
-    width:80%;
-    max-width:900px;
-    border-radius: 2em;
-    padding:1rem;
-    color:black;
-}
-
-p {
-    padding:1rem;
+.proj_card {
+    flex:1 1 200px;
+    border: solid 1px black;
     margin:1rem;
+    padding:0.5rem;
+    border-radius: 8px;
 }
 
-#phd-section {
-    background-color: black;
-    background: linear-gradient(0deg, rgba(0,0,127,0.9) 0%, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0.9) 60%, rgba(127,0,0,0.9) 100%);
-    color:white;
+.proj_card > h1 {
+    font-size:larger
 }
 
-#msc-section {
-    background-color: black;
-    background: linear-gradient(0deg, rgba(255,128,0,0.75) 0%, rgba(0,128,128,0.9) 100%);
-    color:white;
-    height:100%;
+.proj_card > h2 {
+    font-size:large
 }
 
-#bsc-section {
-    background-color: black;
-    background: linear-gradient(0deg, rgba(0,128,128,0.75) 0%, rgba(0,0,75,0.9) 100%);
-    color:white;
-    height:100%;
-}
-
-.highlight-img-container {
-    width:40%; 
-    float: left;
-    margin-right:3rem;
-    background: black;
-    border-radius: 15px;
-    clear: both;
-    display:block;
-}
-
-.highlight-img-container > img {
-    width:100%;
-    border-radius: 15px;
-}
-
-.highlight-img-container > div {
-    text-align: center;
-    padding:0.25rem;
-}
-
-
-li {
-    padding-left:3rem;
-    list-style-position: inside;
-}
-
-@media (max-width: 600px) {
-    header, section {
-        width:fit-content;
-        border-radius:0em;
-    }
-
-    .highlight-img-container {
-        width:80%;
-        float:none;
-        margin:auto;
-        padding:none;
-        text-align: center;
-    }
-
-    ul {
-        margin:0px; 
-        padding:0px;
-    }
-
+hr {
+    border: 1px solid black;
 }
