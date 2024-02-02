@@ -11,6 +11,8 @@ body {
     margin:auto;
     background-color: rgba(255, 255, 255, 0.8);
     padding-bottom: 1rem;
+    border-top:1rem solid crimson;
+    border-bottom:1rem solid crimson;
 }
 
 header {
@@ -27,6 +29,7 @@ header > hr {
 #name {
     font-size: xx-large;
     color:black;
+    font-weight: bolder;
 }
 
 #title {
@@ -59,11 +62,42 @@ section {
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 0.5rem;
-    border:0.1rem solid black;
+    border:0.2rem solid black;
     font-size: medium;
 }
 
 #contacts > li > a:hover {
+    background-color: white;
+    color:black;
+}
+
+.paper {
+    background-color: beige;
+    margin:0.5rem 0rem 0.5rem 0rem;
+    padding:0.5rem;
+}
+
+.paper-link {
+    text-align: right;
+    border-top: 0.15rem solid black;
+    margin:0.5rem 0rem 0rem 0rem;
+}
+
+.paper-link > a {
+    background-color:black;
+    color:white;
+    padding:0.5rem;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 0.5rem;
+    border:0.15rem solid black;
+    font-size: medium;
+    text-align:right;
+    display:inline-block;
+    margin-top:0.3rem;
+}
+
+.paper-link > a:hover {
     background-color: white;
     color:black;
 }
