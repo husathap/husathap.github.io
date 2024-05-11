@@ -13,6 +13,9 @@ body {
     padding-bottom: 1rem;
     border-top:1rem solid crimson;
     border-bottom:1rem solid crimson;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    box-shadow: 0px 0px 10px black;
 }
 
 header {
@@ -24,6 +27,11 @@ header {
 header > hr {
     border: 0.1rem solid crimson;
     font-size:large;
+}
+
+#aboutme {
+    color:black;
+    font-size: large;
 }
 
 #name {
@@ -46,6 +54,7 @@ section {
     margin:auto;
     text-align: center;
     padding:0;
+    background-color: black;
 }
 
 #contacts > li {
