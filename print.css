@@ -1,0 +1,23 @@
+@media print {
+    body {
+        zoom: 70%;
+    }
+
+    .d-none-print {
+        display:none;
+    }
+
+    #cv_menu {
+        width:0px;
+    }
+
+    .container {
+        padding-left: unset !important;
+        padding-right: unset !important;
+        max-width: unset !important;
+    }
+
+    #cv_body {
+        width:100%;
+    }
+}
