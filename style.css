@@ -42,7 +42,7 @@ h1 {
     text-align: right; 
     overflow: scroll; 
     height:90vh;
-    min-width: 100px;
+    min-width: 80px;
 }
 
 #cv_menu a {
@@ -55,4 +55,12 @@ h1 {
     margin:0.5rem;
     color: rgb(0, 33, 71);
     text-shadow: none;
+}
+
+#cv_main {
+    overflow: scroll; 
+    height:85vh; 
+    scroll-behavior: smooth;
+    width:auto;
+    max-width: 75%;
 }

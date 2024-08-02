@@ -9,15 +9,18 @@
 
     #cv_menu {
         width:0px;
+        display:none;
+    }
+
+    #cv_main {
+        padding-left: unset !important;
+        padding-right: unset !important;
+        max-width: unset !important;
     }
 
     .container {
         padding-left: unset !important;
         padding-right: unset !important;
         max-width: unset !important;
-    }
-
-    #cv_body {
-        width:100%;
     }
 }
