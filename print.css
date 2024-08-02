@@ -1,10 +1,18 @@
 @media print {
     body {
-        zoom: 70%;
+        overflow:unset !important;
+        height:unset !important;
     }
 
     .d-none-print {
         display:none;
+    }
+    
+
+    #cv_main {
+        width: 100% !important;
+        height: unset !important;
+        max-width: unset !important;
     }
 
     #cv_menu {
@@ -12,15 +20,23 @@
         display:none;
     }
 
-    #cv_main {
-        padding-left: unset !important;
-        padding-right: unset !important;
+    .container {
+        margin: unset !important;
+        width: unset !important;
         max-width: unset !important;
     }
 
-    .container {
+    /*#cv_main {
         padding-left: unset !important;
-        padding-right: unset !important;
         max-width: unset !important;
+        height:unset !important;
+        margin: unset !important;
     }
+
+    .container {
+        padding-left: 1rem !important;
+        margin:1rem;
+        height: unset !important;
+        margin: unset !important;
+    }*/
 }

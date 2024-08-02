@@ -14,7 +14,8 @@
 
         <!-- Custom CSS -->
         <link href="style.css" rel="stylesheet">
-        <link href="print.css" rel="stylesheet">
+        <link href="print.css" rel="stylesheet" media="print">
+        <link href="bootstrap-print.min.css" rel="stylesheet" media="print">
 
         <title>CV: Sathaporn "Hubert" Hu</title>
 
@@ -46,69 +47,67 @@
         </header>
         
         <div class="container" >
-            <div class="d-flex flex-row p-0 m-0">
-                <aside class="p-0 p-md-2 d-none-print" id="cv_menu">
+            <div class="row">
+                <aside class="col-1 col-xl-2 m-0 m-md-1 d-none-print" id="cv_menu">
                     <ul class="nav nav-pills flex-column">
                         <li class="nav-item">
                             <a href="#bio" class="nav-link">
-                                <span class="d-none d-lg-inline">Bio</span> <i class="bi bi-file-earmark-person-fill"></i> 
+                                <span class="d-none d-xl-inline">Bio</span> <i class="bi bi-file-earmark-person-fill"></i>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a href="#education" class="nav-link">
-                                <span class="d-none d-lg-inline">Education</span> <i class="bi bi-mortarboard-fill"></i> 
+                                <span class="d-none d-xl-inline">Education</span> <i class="bi bi-mortarboard-fill"></i>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a href="#research" class="nav-link">
-                                <span class="d-none d-lg-inline">Research</span> <i class="fa fa-flask"></i> 
+                                <span class="d-none d-xl-inline">Research</span> <i class="fa fa-flask"></i>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a href="#teaching" class="nav-link">
-                                <span class="d-none d-lg-inline">Teaching</span> <i class="bi bi-easel3-fill"></i>
+                                <span class="d-none d-xl-inline">Teaching</span> <i class="bi bi-easel3-fill"></i>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a href="#work" class="nav-link">
-                                <span class="d-none d-lg-inline">Work</span> <i class="fa fa-briefcase" aria-hidden="true"></i>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="#grant" class="nav-link">
-                                <span class="d-none d-lg-inline">Grants</span> <i class="fa fa-money" aria-hidden="true"></i>
+                                <span class="d-none d-xl-inline">Work</span> <i class="fa fa-briefcase" aria-hidden="true"></i>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a href="#papers" class="nav-link">
-                                <span class="d-none d-lg-inline">Publications</span> <i class="bi bi-file-earmark-text-fill"></i>
+                                <span class="d-none d-xl-inline">Publications</span> <i class="bi bi-file-earmark-text-fill"></i>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#service" class="nav-link">
-                                <span class="d-none d-lg-inline">Services</span> <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+                            <a href="#services" class="nav-link">
+                                <span class="d-none d-xl-inline">Services</span> <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a href="#skills" class="nav-link">
-                                <span class="d-none d-lg-inline">Skills</span> <i class="bi bi-tools"></i>
+                                <span class="d-none d-xl-inline">Skills</span> <i class="bi bi-tools"></i>
                             </a>
                         </li>
                     </ul>
                 </aside>
     
+                <!-- The main content of the CV -->
+                <main id="cv_main" class="col-11 col-xl-10 m-1">
 
-                <main id="cv_main" class="p-0 m-md-1 p-md-4 justify-content-right">
-                    <a id="#bio"></a>
-                    <div class="p-4 bg-dark text-white">
+                    <div class="alert alert-warning d-none-print">Alpha: This page is still under development.</div>
+
+                    <!-- Biography section -->
+                    <a id="bio"></a>
+                    <div class="p-4 bg-dark text-white rounded my-3">
                         <h1>Dr. Sathaporn "Hubert" Hu / สถาพร ฮู / 胡秀楷</h1>
                         <p class="lead">Part-Time Faculty Member and an Incoming Assistant Professor at Algoma University</p>
                         
@@ -125,10 +124,338 @@
                         </div>
                     </div>
 
-                    <a id="#education" class="px-1"></a>
-                    <h1>Education</h1>
+                    <!-- Education section -->
+                    <a id="education"></a>
+                    <h1>Education <i class="bi bi-mortarboard-fill"></i></h1>
 
-                    <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <h4>Doctor of Philosophy<span class="badge float-end">2018 - 2024</span></h4>
+                            <p class="lead">Dalhousie University</p>
+
+                            <ul>
+                                <li><b>Program:</b> Computer Science</li>
+                                <li><b>Funding:</b> Mitacs, Dalhousie University Travel Grant, Default Funding Package</li>
+                                <li><b>Dissertation Title:</b> A Tablet + Augmented Reality Interface for Interactive Multiple Linear Regression with Geospatial Data</li>
+                                <li><b>Examiners:</b> Prof. Derek Reilly (Supervisor), Prof. Joseph Malloch, Prof. Fernando Paulovich, Prof. Jamie Blustein, Prof. Pourange Irani (External)</li>
+                                <li><b>Additional Certificates:</b> Certificate of University Teaching and Learning, GradPD</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <h4>Master of Science<span class="badge float-end">2015 - 2017</span></h4>
+                            <p class="lead">University of Calgary</p>
+
+                            <ul>
+                                <li><b>Program:</b> Computer Science</li>
+                                <li><b>Funding:</b> Transformative Talent Internships, Default Funding Package</li>
+                                <li><b>Dissertation Title:</b> Designing and Evaluating a Lightweight Video Player for Language Learning</li>
+                                <li><b>Examiners:</b> Prof. Wesley Willett (Supervisor), Prof. Usman Alim, Prof. Parmit Chilana (External)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <h4> Honour Bachelor of Science Science <span class="badge"><i class="bi bi-star-fill"></i> Distiction</span> <span class="badge float-end">2011 - 2015</span></h4>
+                            <p class="lead">University of Toronto (St. George Campus, Innis College)</p>
+
+                            <ul>
+                                <li><b>Program 1:</b> Specialist in Computer Science</li>
+                                <li><b>Program 2:</b> Major in Cognitive Science (Computational Cognition Stream)</li>
+                                <li><b>Program 3:</b> Minor in French as a Second Language</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Research section -->
+                    <a id="research"></a>
+                    <h1>Research <i class="fa fa-flask"></i></h1>
+
+                    <h2>Research Interests</h2>
+                    <p>I am a multidisciplinary researcher with interests in immersive analytics and artificial intelligence (AI). Specifically, my goals
+                        are to explore how mixed reality technologies can help the user with better understanding AI models, and how AI can help researcher
+                        in understanding mixed reality data.
+                    </p>
+
+                    <h2 class="mt-3">Research Experience</h2>
+
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <h4>Part-Time Professor<span class="badge float-end">2024 - Present</span></h4>
+                            <p class="lead">Algoma University</p>
+
+                            <p>Completing works that began during my Ph.D. program.</p>
+                        </div>
+                    </div>
+
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <h4>Ph.D. Researcher<span class="badge float-end">2018 - 2024</span></h4>
+                            <p class="lead">Dalhousie University</p>
+
+                            <p>I developed and evaluated Gander, an augmented reality (AR) + tablet interface for geospatial analysis with
+                                multiple linear regression.
+                                Additionally, I was involved with AR exhibition projects at Dalhousie University and 
+                                Virginia Polytechnic Institute and State University.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <h4>M.Sc. Researcher<span class="badge float-end">2015 - 2017</span></h4>
+                            <p class="lead">University of Calgary</p>
+
+                            <p>I developed and evaluated Kalgan, a web-based video player designed for langauge learning.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <h4>H.B.Sc. Researcher<span class="badge float-end">2011 - 2015</span></h4>
+                            <p class="lead">University of Toronto</p>
+
+                            <p>I completed a reading course in cognitive science with Prof. Vervaeke. I also worked with
+                                TAGLab, a computer science laboratory with a focus designing software for seniors. I helped with
+                                development with research software. I worked on: Tangra, an online research platform;
+                                InTouch, a mobile software for communication with seniors; ALLT, an eReader with a voice synthesizer for seniors.
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Teaching -->
+
+                    <a id="teaching"></a>
+                    <h1>Teaching <i class="bi bi-easel3-fill"></i></h1>
+
+                    <div class="alert alert-primary d-none-print p-2">Full teaching dossier can be downaloded <a href="hu_teaching_dossier.pdf">here</a>.</div>
+
+                    <h2>Algoma University (Sault Ste. Marie)</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><span class="badge">Lecturer</span> <b>COSC2006:</b> Data Structure I <span class="float-end"> <span class="badge"> Spring 24</span></span></li>
+                        <li class="list-group-item"><span class="badge">Lecturer</span> <b>COSC3117:</b> Artificial Ingelligence <span class="float-end"> <span class="badge"> Winter 23</span></span></li>
+                        <li class="list-group-item"><span class="badge">Lecturer</span> <b>COSC2836:</b> Computer Software for Sciences <span class="float-end"><span class="badge"> Winter 23</span></span></li>
+                    </ul>
+
+                    <h2>Dalhousie University</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><span class="badge">TA</span> <b>CSCI5061:</b> Designing for UX <span class="float-end"> <span class="badge"> Fall 22</span></span></li>
+                        <li class="list-group-item"><span class="badge">Lecturer</span> <b>CSCI4169/6307:</b> Human-Computer Interaction <span class="float-end"> <span class="badge"> Winter 22</span></span></li>
+                        <li class="list-group-item"><span class="badge">Lecturer</span> <b>CSCI6055:</b> Research Methods and Statistics <span class="float-end"> <span class="badge"> Summer 21</span></span></li>
+                        <li class="list-group-item"><span class="badge">TA</span> <b>CSCI3160:</b> Designing User Interfaces <span class="float-end"> <span class="badge"> Winter 21</span></span></li>
+                        <li class="list-group-item"><span class="badge">TA</span> <b>SCIE4702:</b> Science and Technology Innovation, Commercialization, and Entrepreneurship II <span class="float-end"> <span class="badge"> Winter 21</span></span></li>
+                        <li class="list-group-item"><span class="badge">Course Builder</span> <b>PHYC 3010:</b> Experimental Physics II <span class="float-end"> <span class="badge"> Winter 21</span></span></li>
+                        <li class="list-group-item"><span class="badge">TA</span> <b>SCIE4701:</b> Science and Technology Innovation, Commercialization, and Entrepreneurship I <span class="float-end"> <span class="badge"> Fall 20</span></span></li>
+                        <li class="list-group-item"><span class="badge">Course Builder</span> <b>PHYC 3000 & PHYC 3340:</b> Experimental Physics I & Electronics <span class="float-end"> <span class="badge"> Fall 20</span></span></li>
+                        <li class="list-group-item"><span class="badge">Lecturer</span> <b>CSCI6055:</b> Research Methods and Statistics <span class="float-end"> <span class="badge"> Summer 20</span></span></li>
+                        <li class="list-group-item"><span class="badge">TA</span> <b>CSCI4169/6307:</b> Usable Privacy and Security <span class="float-end"> <span class="badge"> Fall 19</span></span></li>
+                        <li class="list-group-item"><span class="badge">TA</span> <b>CSCI4163/6610:</b> Human-Computer Interaction <span class="float-end"> <span class="badge"> Fall 19</span></span></li>
+                        <li class="list-group-item"><span class="badge">TA</span> <b>CSCI6055:</b> Research Methods and Statistics <span class="float-end"> <span class="badge"> Summer 19</span></span></li>
+                        <li class="list-group-item"><span class="badge">TA</span> <b>CSCI4163/6610:</b> Human-Computer Interaction <span class="float-end"> <span class="badge"> Winter 19</span></span></li>
+                        <li class="list-group-item"><span class="badge">TA</span> <b>CSCI4163/6610:</b> Human-Computer Interaction <span class="float-end"> <span class="badge"> Fall 18</span></span></li>
+                        <li class="list-group-item"><span class="badge">TA</span> <b>CSCI1101:</b> Computer Science II <span class="float-end"> <span class="badge"> Winter 18</span></span></li>
+                    </ul>
+
+                    <h2>University of Calgary</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><span class="badge">TA</span> <b>CPSC203:</b> Introduction to Problem Solving using Application Software <span class="float-end"> <span class="badge"> Fall 17</span></span></li>
+                        <li class="list-group-item"><span class="badge">TA</span> <b>SENG513:</b> Web-based Systems <span class="float-end"> <span class="badge"> Winter 17</span></span></li>
+                        <li class="list-group-item"><span class="badge">TA</span> <b>SENG513:</b> Web-based Systems <span class="float-end"> <span class="badge"> Winter 16</span></span></li>
+                        <li class="list-group-item"><span class="badge">TA</span> <b>SENG217:</b> Introduction to Computer Science for Multidisciplinary Studies I <span class="float-end"> <span class="badge"> Fall 15</span></span></li>
+                    </ul>
+
+                    <h2>University of Toronto</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><span class="badge">TA</span> <b>CSC108:</b> Introduction to Programming <span class="float-end"> <span class="badge"> Fall 13</span></span></li>
+                    </ul>
+
+                    <hr>
+
+                    <!-- Work Experience -->
+
+                    <a id="work"></a>
+                    <h1>Work Experience <i class="fa fa-briefcase" aria-hidden="true"></i></h1>
+
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <h4>MITACS Ph.D. Intern<span class="badge float-end">Jan 2021 - Jun 2022</span></h4>
+                            <p class="lead">Global Artificial Intelligence Accelerator, Ericsson, Montreal, Canada</p>
+
+                            <p>Developed and evaluated Gander, an AR+tablet system for geospatial analysis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <h4>Contract Data Analyst <span class="badge float-end">Dec 2019 - Jan 2020</span></h4>
+                            <p class="lead">Windsor/West Hants Together Survey Analysis, West Hants, Canada</p>
+
+                            <p>Analyzed online survey results for the local governments of Windsor and West Hants, Nova Scotia.
+                                The results of the analysis guided the amalgamation of both settlements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <h4>Graduate Research Assistant <span class="badge float-end">May 2019 - Aug 2019</span></h4>
+                            <p class="lead">Dalhousie University, Truro, Canada</p>
+
+                            <p>Surveyed classrooms at Dalhousie University (Truro Campus) and analyzed their suitability for
+                            teaching and learning.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <h4>Graduate Research Assistant <span class="badge float-end">May 2018 - Aug 2018</span></h4>
+                            <p class="lead">Dalhousie University, Halifax, Canada</p>
+
+                            <p>Surveyed classrooms at Dalhousie University (Sexton and Carleton Campuses) and analyzed their suitability for
+                            teaching and learning.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <h4>Research Intern <span class="badge float-end">Sep 2016 - Dec 2016</span></h4>
+                            <p class="lead">Lenovo, Beijing, China</p>
+
+                            <p>Performed an AR study.</p>
+                        </div>
+                    </div>
+
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <h4>Information Technology Intern <span class="badge float-end">Sep 2016 - Dec 2016</span></h4>
+                            <p class="lead">JetAsia Airways, Bangkok, Thailand</p>
+
+                            <p>Assisted with the implementation of Microsoft Office 365.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Publications -->
+                    
+                    <a id="papers"></a>
+                    <h1>Publications and Patent <i class="bi bi-file-earmark-text-fill"></i></h1>
+
+                    <div class="alert alert-primary d-none-print p-2">Some documents can be downloaded <a href="papers.html">here</a>.</div>
+
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <span class="badge badge-primary">Presented at ICAT-EGVE'23</span>
+                            <b>Hu, S.</b> & Reily, D. (2023). Comparative Glyph-Field Trajectory Analyses with an AR+Tablet
+                            Hybrid User Interface for Geospatial Analysis Tasks. In J.-M. Normand, M. Sugimoto & V. Sundstedt (Eds.),
+                            <em>International Conference on Artificial Reality and Telexistence
+                            Eurographics Symposium on Virtual Environments</em>. The European Association for Computer Graphics. URL: https://doi.org/10.2312/egve.20231320
+                        </div>
+                    </div>
+    
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <span class="badge badge-primary">Poster at ICAT-EGVE'23</span>
+                            <b>Hu, S.</b> & Reily, D. (2023). International Conference on Artificial Reality and Telexistence
+                            Eurographics Symposium on Virtual Environments. In A. Campbell, C. Krogmeier, & G. Young (Eds.),
+                            <em>International Conference on Artificial Reality and Telexistence
+                            Eurographics Symposium on Virtual Environments - Posters</em>. The European Association for Computer Graphics.
+                            URL: https://doi.org/10.2312/egve.20231342.
+                        </div>
+                    </div>
+    
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <span class="badge badge-primary">Patent Pending</span>
+                            <b>Hu, S.</b>, Reilly, D., Bashbaghi, S. (2022). 
+                            Augmented Reality + Tablet Interface for Multiple Linear Regression Model Creation. Ericsson. [Patent no. PCT/IB2022/052779]
+                        </div>
+                    </div>
+    
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <span class="badge badge-primary">Presented at GI'21</span>
+                            <b>Hu, S.</b>, Malloch J. & Reily, D. (2021). A Comparative Evaluation of Techniques for Locating Out of View Targets in Virtual Reality.
+                            <em>Proceedings of Graphics Interface 2021</em>. Canadian Human-Computer Communications Society.
+                            URL: https://graphicsinterface.org/proceedings/gi2021/gi2021-32/
+                        </div>
+                    </div>
+    
+                    <div class="card my-1">
+                        <div class="card-body">
+                            <span class="badge badge-primary">Poster at CHI'18</span>
+                            <b>Hu, S.</b>, Willet, W. (2018). Kalgan: Video Player for Casual Language Learning.
+                            <em>CHI EA '18: Extended Abstracts of the 2018 CHI Conference on Human Factors in Computing Systems</em>. 
+                            Association of Computing Machinery. URL: https://doi.org/10.1145/3170427.3188498
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Services -->
+
+                    <a id="services"></a>
+                    <h1>Services <i class="fa fa-hand-paper-o" aria-hidden="true"></i></h1>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <b>Member of the Graduate Research Committee</b> for ARDIN 
+                            <span class="float-end"><span class="badge">Jun 2024 - Present</span></span>
+                        </li>
+                        <li class="list-group-item">
+                            <b>Emergency Reviewer</b> for ACM SUI 
+                            <span class="float-end"><span class="badge">2024</span></span>
+                        </li>
+                        <li class="list-group-item"><b>Reviwer</b> for IEEE ISMAR <span class="badge float-end">2020, 2022, 2022, 2024</span></li>
+                        <li class="list-group-item"><b>Reviwer</b> for ACM SIGCHI <span class="badge float-end">2019, 2023</span></li>
+                        <li class="list-group-item"><b>Reviwer</b> for IEEE VIS <span class="badge float-end">2023</span></li>
+                        <li class="list-group-item"><b>Organizer</b> for Dalhousie Computer Science In-house Conference <span class="badge float-end">May 2021 - Jul 2021</span></li>
+                        <li class="list-group-item"><b>Mentor</b> for Dalhousie Computer Science In-house Conference <span class="badge float-end">Jan 2020</span></li>
+                        <li class="list-group-item"><b>Student Volunteer</b> for ACM SIGCHI <span class="badge float-end">May 2018</span></li>
+                        <li class="list-group-item"><b>Session Chair and Judge</b> for Dalhousie Computer Science In-house Conference <span class="badge float-end">Jan 2018</span></li>
+                        <li class="list-group-item"><b>Vice-President - Finance</b> for Computer Science Graduate Society, University of Calgary <span class="badge float-end">May 2016 – Aug 2016</span></li>
+                    </ul>
+
+                    <hr>
+
+                    <!-- Skills -->
+
+                    <a id="skills"></a>
+                    <h1>Skills <i class="bi bi-tools"></i></h1>
+
+                    <h2>Technical Skills</h2>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">Data Analytics with R, Python, Tableau, and Excel</li>
+                        <li class="list-group-item">Mixed Reality Development with Unity and MRTK</li>
+                        <li class="list-group-item">Cognitive Science and AI with NLTK</li>
+                        <li class="list-group-item">Web Development with HTML/CSS, JavaScript, NodeJS</li>
+                        <li class="list-group-item">UX and User Interface Design</li>
+                        <li class="list-group-item">Scientific Writing with LaTex</li>
+                        <li class="list-group-item">Other Programming Languages: Java, Visual Basic, and etc.</li>
+                    </ul>
+
+                    <h2>Languages</h2>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">Thai (Native)</li>
+                        <li class="list-group-item">English (Advanced)</li>
+                        <li class="list-group-item">French (Intermediate)</li>
+                        <li class="list-group-item">Mandarin (Intermediate)</li>
+                        <li class="list-group-item">Japanese (Beginner)</li>
+                    </ul>
+
                 </main>
             </div>
         </div>

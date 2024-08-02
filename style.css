@@ -38,7 +38,7 @@ h1 {
 
 #cv_menu {
     text-decoration: none;
-    font-size: x-large;
+    font-size: larger;
     text-align: right; 
     overflow: scroll; 
     height:90vh;
