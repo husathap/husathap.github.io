@@ -83,7 +83,14 @@ nav {
 section {
     margin:auto;
     max-width:1000px;
-    border-bottom:#77777A 0.2rem solid;
+    border-bottom:black 0.2rem solid;
+    border-top:#B3282D 0.5rem solid;
+    background:white;
+    color:black;
+}
+
+section h1 {
+    color:#B3282D;
 }
 
 section > div {
@@ -107,26 +114,28 @@ section > div {
     max-width: 500px;
     float:right;
     background-color:  rgba(179, 40, 15, 0.85);
+    color:white;
 }
 
 .return-top {
-    background-color: white;
+    background-color: darkslategray;
     float:right;
     padding:0.5rem;
     text-decoration: none;
-    color:#B3282D;
+    color:white;
     font-weight: bold;
-    border: #77777A 0.2rem solid;
+    border: black 0.2rem solid;
 }
 
 .return-top:hover {
-    border: #77777A 0.2rem dashed;
-    border-top: #77777A 0.2rem solid;
+    border: black 0.2rem dashed;
+    border-top: black 0.2rem solid;
 }
 
 /* Paper list */
 .paper-list {
     list-style-type: none;
+    color:white;
 }
 
 .paper-list > li {
