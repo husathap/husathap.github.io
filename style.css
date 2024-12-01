@@ -83,7 +83,7 @@ nav {
 section {
     margin:auto;
     max-width:1000px;
-    border-bottom:black 0.2rem solid;
+    border-bottom:#77777A 0.2rem solid;
     border-top:#B3282D 0.5rem solid;
     background:white;
     color:black;
@@ -124,18 +124,18 @@ section > div {
     text-decoration: none;
     color:white;
     font-weight: bold;
-    border: black 0.2rem solid;
+    border: #77777A 0.2rem solid;
 }
 
 .return-top:hover {
-    border: black 0.2rem dashed;
-    border-top: black 0.2rem solid;
+    border: #77777A 0.2rem dashed;
+    border-top: #77777A 0.2rem solid;
+    background:#B3282D;
 }
 
 /* Paper list */
 .paper-list {
     list-style-type: none;
-    color:white;
 }
 
 .paper-list > li {
@@ -143,11 +143,11 @@ section > div {
 }
 
 .paper-list > li:nth-child(odd) {
-    background: rgb(189, 50, 25);
+    background: rgb(245, 245, 245);
 }
 
 .paper-list > li:nth-child(even) {
-    background: rgb(169, 30, 5);
+    background: rgb(220, 220, 220);
 }
 
 .paper-button {
@@ -157,17 +157,27 @@ section > div {
     color:darkslategray;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 3px;
+    border:darkslategray 2px solid; 
 }
 
 .paper-button:hover {
-    background-color: darkslategray;
     padding:0.25rem;
     display: inline-block;
-    color:white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 3px;
+    border:darkslategray 2px dashed;
+    background: #B3282D;
+    color:white;
+}
+
+.paper-presentation {
+    background-color: goldenrod;
+    color:black;
+    margin-top:0.5rem;
+    padding:0.2rem;
+    display:inline-block;
+    font-weight: bold;
 }
 
 /* Footer */
