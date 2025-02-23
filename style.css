@@ -5,8 +5,9 @@ html {
 }
 
 body {
-    background-color: #B3282D;
-    color:white;
+    border-top: #B3282D 1rem solid;
+    background-color: white;
+    color:black;
     padding:0;
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,7 +16,7 @@ body {
 /* Header Style */
 
 header {
-    border-top: #77777A 1rem solid;
+    
     padding:none;
     max-width: 1000px;
     margin:auto;
@@ -36,7 +37,7 @@ header > .subtitle {
 
 header > hr {
     width:10rem;
-    border:white solid 0.2rem;
+    border:black solid 0.2rem;
     margin-left:1.5rem;
     margin-top:1rem;
     margin-bottom:1rem;
@@ -60,7 +61,7 @@ nav {
 /* Button */
 .button {
     font-size: large;
-    background-color: darkslategray;
+    background-color: black;
     color:white;
     padding:0.5rem;
     margin-right:1rem;
@@ -82,14 +83,13 @@ nav {
 section {
     margin:auto;
     max-width:1000px;
-    border-bottom:#77777A 0.2rem solid;
-    border-top:#B3282D 0.5rem solid;
+    border-bottom:black 0.2rem solid;
     background:white;
     color:black;
 }
 
 section h1 {
-    color:#B3282D;
+    color:black;
 }
 
 section > div {
@@ -100,6 +100,7 @@ section > div {
     background-color: goldenrod;
     color:black;
     border:none;
+    margin-bottom:0.5rem;
 }
 
 .notice > div {
@@ -112,35 +113,34 @@ section > div {
     padding:1.5rem;
     max-width: 500px;
     float:right;
-    background-color:  rgba(179, 40, 15, 0.85);
+    background-color:  rgba(0, 0, 0, 0.85);
     color:white;
 }
 
 .return-top {
-    background-color: darkslategray;
+    background-color: black;
     float:right;
     padding:0.5rem;
     text-decoration: none;
     color:white;
     font-weight: bold;
-    border: #77777A 0.2rem solid;
 }
 
 .return-top:hover {
-    border: #77777A 0.2rem dashed;
-    border-top: #77777A 0.2rem solid;
     background:#B3282D;
 }
 
 /* Paper list */
 .paper-list {
     list-style-type: none;
-    border:#B3282D 0.2rem solid;
+    border:black 0.2rem solid;
     padding-left:0;
+    box-shadow: 0px 0px 5px #888888;
 }
 
 .paper-list > li {
     padding:1rem;
+    
 }
 
 .paper-list > li:nth-child(odd) {
@@ -173,7 +173,7 @@ section > div {
 }
 
 .paper-presentation {
-    background-color: #B3282D;
+    background-color: darkslateblue;
     color:white;
     margin-top:0.5rem;
     padding:0.2rem;
