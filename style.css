@@ -6,6 +6,7 @@ html {
 
 body {
     border-top: #B3282D 1rem solid;
+    border-bottom: #B3282D 1rem solid;
     background-color: white;
     color:black;
     padding:0;
