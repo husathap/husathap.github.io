@@ -17,12 +17,11 @@ body {
 /* Header Style */
 
 header {
-    padding:none;
+    padding:0px;
     margin:auto;
-    margin-top:none;
-    border-top: black 1rem solid;
     background-color: #B3282D;
     box-shadow: 0px 0px 5px black;
+    border-top: 1px #B3282D solid;
 }
 
 header h1 {
