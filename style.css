@@ -19,24 +19,12 @@ body {
 header {
     padding:0px;
     margin:auto;
-    background-color: #B3282D;
-    box-shadow: 0px 0px 5px black;
-    border-top: 1px #B3282D solid;
+    color:black;
 }
 
 header h1 {
     margin:1.5rem;
     margin-bottom:0.5rem;
-    color:white;
-}
-
-.name {
-    color:white;
-    border:none;
-}
-
-.name h1 {
-    color:white;
 }
 
 .name .subtitle {
@@ -44,6 +32,8 @@ header h1 {
     margin-left:1.5rem;
     font-size: larger;
     margin-bottom:1rem;
+    color:darkslategrey;
+    font-weight: bold;
 }
 
 header > .title {
@@ -55,10 +45,16 @@ header > .title {
 /* Navigator Style */
 
 nav {
-    margin:auto;
-    max-width:1000px;
     text-align: center;
-    margin-top:1.5rem;
+    background-color: black;
+    padding:1rem;
+}
+
+nav .button {
+    padding:0.25rem;
+    margin:0px;
+    margin-left:0.25rem;
+    margin-right:0.25rem;
 }
 
 /* Button */
@@ -102,6 +98,7 @@ section > div {
     font-size: x-large;
     color:white;
     padding-bottom: none;
+    border:none;
 }
 
 .notice {
@@ -117,11 +114,10 @@ section > div {
     padding-bottom:0.5rem;
 }
 
-.bio {
+#bio {
     padding:1.5rem;
-    max-width: 500px;
-    float:right;
-    background-color:  rgba(0, 0, 0, 0.85);
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.85);
     color:white;
 }
 
@@ -143,7 +139,6 @@ section > div {
     list-style-type: none;
     border:black 0.2rem solid;
     padding-left:0;
-    box-shadow: 0px 0px 5px #888888;
 }
 
 .paper-list > li {
@@ -181,7 +176,7 @@ section > div {
 }
 
 .paper-presentation {
-    background-color: darkslateblue;
+    background-color: gray;
     color:white;
     margin-top:0.5rem;
     padding:0.2rem;
