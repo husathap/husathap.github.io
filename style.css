@@ -13,8 +13,8 @@ body {
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
 
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6bbab4+0,b8c7d3+39,e5e5e5+100 */
-background: linear-gradient(to bottom, #6bbab4 0%,#b8c7d3 39%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3ffc6+0,b8c7d3+52,e5e5e5+100 */
+background: linear-gradient(135deg, #f3ffc6 0%,#b8c7d3 52%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* Header Style */
