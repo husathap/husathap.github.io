@@ -21,14 +21,17 @@ body {
 header {
     padding:0px;
     margin:auto;
-    padding-bottom:1.5rem;
-    color:black;
+    margin-top:0 !important;
+    padding:1.5rem;
+    
     border-bottom: none;
+    background: linear-gradient(45deg,rgba(8, 57, 59, 1) 0%, rgba(92, 68, 16, 1) 100%);
 }
 
 header h1 {
     margin:1.5rem;
     margin-bottom:0.5rem;
+    color:white;
 }
 
 .name .subtitle {
@@ -36,7 +39,7 @@ header h1 {
     margin-left:1.5rem;
     font-size: larger;
     margin-bottom:1rem;
-    color:darkslategrey;
+    color:beige;
     font-weight: bold;
 }
 
@@ -91,10 +94,6 @@ section {
     color:black;
 }
 
-section h1 {
-    color:black;
-}
-
 section > div {
     padding:1.5rem;
 }
@@ -122,10 +121,7 @@ section > div {
 #bio {
     padding:2rem;
     font-size: large;
-    background: #08393b;
-    background: linear-gradient(45deg,rgba(8, 57, 59, 1) 0%, rgba(92, 68, 16, 1) 100%);
-    color:white;
-    border:none;
+    color: #08393b;
 }
 
 .return-top {
