@@ -81,8 +81,8 @@ nav .button {
 }
 
 .button:hover {
-    background-color: #B3282D;
-    border:#77777A 0.2rem dashed;
+    background-color: teal;
+    border:#77777A 0.2rem solid;
 }
 
 /* Section Style */
@@ -173,8 +173,8 @@ section > div {
     text-decoration: none;
     font-weight: bold;
     border-radius: 3px;
-    border:darkslategray 2px dashed;
-    background: #B3282D;
+    border:darkslategray 2px solid;
+    background: teal;
     color:white;
 }
 
