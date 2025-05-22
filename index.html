@@ -10,6 +10,8 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
     </head>
 
     <body>
@@ -19,6 +21,16 @@
             <a class="button" href="#cv"><i class="ph ph-user-square"></i> Documents</a>
             <a class="button" href="#papers"><i class="ph ph-file"></i> Papers</a>
             <a class="button" href="#contact"><i class="ph ph-envelope"></i> Contact</a>
+            <a class="button" href="lab.html"><i class="ph ph-flask"></i> Lab</a>
+
+            <span id="mobile-brand" style="color:white; font-size: x-large">Menu: </span>
+            <select name="mobile-links" id="mobile-links">
+                <option value="#top">Bio</option>
+                <option value="#cv">Documents</option>
+                <option value="#papers">Papers</option>
+                <option value="#contact">Contact</option>
+                <option value="lab.html">Lab</option>
+            </select>
         </nav>
         
         <header>
@@ -34,6 +46,12 @@
             M.Sc. degree from the University of Calgary, and obtained his H.B.Sc. from the University of Toronto. His area of
             focus is on immersive analytics - i.e., using mixed reality technologies to visualize and enhance understanding
             of data and statistical information. He is also keenly interested in applying AI to extended reality.
+
+            <p style="background: black; padding:0.5em; margin-bottom:0; color:white">Algoma University is currently launching a new research-based Master's degree program in computer science. If your interests
+            align with Dr. Hu's, he may be able to co-supervise your work. For more information about the program, please visit:
+            <a href="https://algomau.ca/academics/graduate-programs/master-of-science-in-cs/"
+                style="color:yellow">https://algomau.ca/academics/graduate-programs/master-of-science-in-cs/</a> 
+            </p>
         </section>
 
         <section id="cv">
@@ -145,5 +163,15 @@
 
 
         <script src="email.js"></script>
+
+        <script>
+            var mobile_links = document.querySelector("#mobile-links");
+
+            mobile_links.addEventListener("change", (e) => {
+                window.location.href = e.target.value;
+                e.target.value = "#top";
+                e.target.text = "Bio";
+            });
+        </script>
     </body>
 </html> 

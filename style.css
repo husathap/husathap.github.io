@@ -195,3 +195,39 @@ footer{
     margin:auto;
     height:3rem;
 }
+
+/* Select */
+#mobile-links {
+    background-color: teal;
+    color:white;
+    font-size: x-large;
+    border:solid gray 2px;
+}
+
+@media screen and (max-width: 992px) {
+  #top a {
+    display:none;
+  }
+  
+  #mobile-links {
+    display:inline-block;
+  }
+
+  #mobile-brand {
+    display:inline-block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #top a {
+    display:inline-block;
+  }
+  
+  #mobile-links {
+    display:none;
+  }
+
+  #mobile-brand {
+    display:none;
+  }
+}
