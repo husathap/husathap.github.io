@@ -14,6 +14,8 @@ placeEntropy = function(entropyObject) {
 
     let mask = document.querySelector("#mask");
 
+    let h_sum = 0;
+
     for (i = 0; i < size; i++) {
         let angle = 2 * Math.PI / (size+1) * i;
         let x = r * Math.cos(angle);
@@ -29,10 +31,17 @@ placeEntropy = function(entropyObject) {
         //entroBalls[i].setAttribute("color", `rgb(${0}, ${0}, ${0})`);
 
         //console.log(`rgb(${probKeys[i] * 255}, 127, 255)`);
+        h_sum -= entropyObject.hs[probKeys[i]];
 
         mask.appendChild(entroBalls[i]);
+
     }
 
+    h_mean = h_sum / size;
+    h_color = Math.ceil(h_mean / entropyObject.H * 255);
+    
+    console.log(`Mean entropy color: ${h_color}`);
+
     let particle_effect = document.getElementById("rain");
-    particle_effect.setAttribute("particle-system", `preset: snow; color: #ff0000, #00ffff; particleCount: ${entropyObject * 1000})`);
+    particle_effect.setAttribute("particle-system", `preset: snow; color: rgb(${255-h_color}, 255, ${h_color}); particleCount: ${entropyObject * 2500})`);
 }
