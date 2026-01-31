@@ -10,7 +10,7 @@
     <body>
         
         <div>
-            <a-scene embedded environment>
+            <a-scene embedded environment="preset: starry">
 
                 <a-assets>
                     <a-asset-item id="titanic" src="resources/titanic_obj_textured.glb"></a-asset-item>
@@ -21,7 +21,7 @@
                 <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
                 <a-sky color="#ECECEC"></a-sky>-->
 
-                <a-entity gltf-model="#titanic" position="0 0 -5"></a-entity>
+                <a-entity gltf-model="#titanic" position="0 0 -10"></a-entity>
 
                 <a-camera>
                     <!-- Entropy Generator -->
