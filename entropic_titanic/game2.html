@@ -15,8 +15,6 @@
                     <img id="woman" src="resources/ducreux.jpg">
                 </a-assets>
 
-                <a-entity id="rain" particle-system="preset: rain; color: #24CAFF; particleCount: 5000"></a-entity>
-
                 <a-sphere position="0 1.25 -5" radius="1.25" material="src: #woman"></a-sphere>
                 <a-sky color="#ECECEC"></a-sky>
 
@@ -27,6 +25,8 @@
 
                         </a-entity>-->
                     </a-entity>
+
+                    <a-entity id="rain" position="0 6 -5" particle-system="preset: rain; color: #24CAFF, #000000; particleCount: 10000"></a-entity>
 
                     <a-cursor color="#FAFAFA"></a-cursor>
                 </a-camera>

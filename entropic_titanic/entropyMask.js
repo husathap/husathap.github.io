@@ -33,10 +33,6 @@ placeEntropy = function(entropyObject) {
         mask.appendChild(entroBalls[i]);
     }
 
-    /*let scene = document.querySelector("a-scene");
-    let particle_effect = document.createElement("a-entity");
-    particle_effect.setAttribute("position", "0 2.24 -15");
-    particle_effect.setAttribute("particle-system", "preset: dust");
-    scene.prepend(particle_effect);
-    particle_effect.setAttribute("enabled", "true");*/
+    let particle_effect = document.getElementById("rain");
+    particle_effect.setAttribute("particle-system", `preset: snow; color: #ff0000, #00ffff; particleCount: ${entropyObject * 1000})`);
 }
