@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-environment-component@1.5.x/dist/aframe-environment-component.min.js"></script>
+        <script src="https://unpkg.com/@c-frame/aframe-particle-system-component@1.2.x/dist/aframe-particle-system-component.min.js"></script>
+        <script src="data.js"></script>
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        
+        <div>
+            <a-scene embedded environment>
+                <a-entity id="rain" particle-system="preset: rain; color: #24CAFF; particleCount: 5000"></a-entity>
+
+                <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+                <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+                <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+                <a-sky color="#ECECEC"></a-sky>
+
+                <a-camera>
+                    <!-- Entropy Generator -->
+                    <a-entity id="mask">
+                        <!--<a-entity text="value:Abstract Titanic Experience; color: #000000; width: 5; anchor:align" position="-1 0 -1" scale="0.5 0.5 0.5">
+
+                        </a-entity>-->
+                    </a-entity>
+
+                    <a-cursor color="#FAFAFA"></a-cursor>
+                </a-camera>
+            </a-scene>
+        </div>
+
+        <script src="entropyMask.js"></script>
+        <script>
+            placeEntropy(SibSpH);
+        </script>
+  </body>
+</html>
