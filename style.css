@@ -47,6 +47,9 @@ nav a {
     text-align: center;
     border-bottom: 2px solid black;
     font-size: large;
+    background:yellow;
+    background: radial-gradient(circle,rgba(255, 255, 0, 0.51) 0%, rgba(0, 255, 255, 0.5) 100%);
+    padding:0.75rem;
 }
 
 .alert {
