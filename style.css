@@ -1,233 +1,60 @@
 html {
-    padding:0;
-    margin:0;
-    scroll-behavior: smooth;
+    font-family: sans-serif;
+    margin:none;
 }
 
 body {
-    
-    border-bottom: black 1rem solid;
-    color:black;
-    padding:0;
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-
-    background: #fff5f5;
-    background: linear-gradient(135deg,rgba(255, 245, 245, 1) 0%, rgba(212, 255, 228, 1) 50%, rgba(255, 246, 176, 1) 100%);
 }
-
-/* Header Style */
-
-header {
-    padding:0px;
-    margin:auto;
-    margin-top:0 !important;
-    padding:1.5rem;
-    
-    border-bottom: none;
-    background: linear-gradient(45deg,rgba(8, 57, 59, 1) 0%, rgba(92, 68, 16, 1) 100%);
-}
-
-header h1 {
-    margin:1.5rem;
-    margin-bottom:0.5rem;
-    color:white;
-}
-
-.name .subtitle {
-    margin-top:0.5rem;
-    margin-left:1.5rem;
-    font-size: larger;
-    margin-bottom:1rem;
-    color:beige;
-    font-weight: bold;
-}
-
-header > .title {
-    margin-top:0.5rem;
-    margin-left:1.5rem;
-    font-size: medium;
-}
-
-/* Navigator Style */
 
 nav {
-    text-align: center;
-    background-color: black;
-    padding:1rem;
-}
-
-nav .button {
-    padding:0.25rem;
-    margin:0px;
-    margin-left:0.25rem;
-    margin-right:0.25rem;
-    border-color:black;
-}
-
-/* Button */
-.button {
-    font-size: large;
-    background-color: black;
+    margin:0;
+    padding:10px;
+    background-color: teal;
     color:white;
-    padding:0.5rem;
+    text-align: center;
+}
+
+nav a {
+    color:white;
+    margin-left:1rem;
     margin-right:1rem;
-    margin-bottom:1rem;
-    min-width:5rem !important;
-    border:#77777A 0.2rem solid;
-    text-decoration: none;
-    display:inline-block;
-    text-align: center;
-}
-
-.button:hover {
-    background-color: teal;
-    border:#77777A 0.2rem solid;
-}
-
-/* Section Style */
-
-section {
-    margin:auto;
-    max-width:1000px;
-    border-bottom:black 0.2rem solid;
-    color:black;
-}
-
-section > div {
-    padding:1.5rem;
-}
-
-.name {
     font-size: x-large;
+}
+
+#contact-info {
+    border:2px solid teal; 
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center; 
+    color:white; 
+    background-color: teal;
+    margin:auto;
+    margin-bottom: 0;
+}
+
+#contact-info a {
     color:white;
-    padding-bottom: none;
-    border:none;
+    padding: 0.5rem;
 }
 
-.notice {
-    background-color: goldenrod;
-    color:black;
-    border:none;
-    margin-bottom:0.5rem;
-}
-
-.notice > div {
-    padding:1.5rem;
-    padding-top:0.5rem;
-    padding-bottom:0.5rem;
-}
-
-#bio {
-    padding:2rem;
-    font-size: large;
-    color: #08393b;
-}
-
-.return-top {
-    background-color: black;
-    float:right;
+.content {
+    max-width: 800px;
+    margin:auto;
     padding:0.5rem;
-    text-decoration: none;
-    color:white;
-    font-weight: bold;
 }
 
-.return-top:hover {
-    background:#B3282D;
+.hero {
+    text-align: center;
+    border-bottom: 2px solid black;
+    font-size: large;
 }
 
-/* Paper list */
-.paper-list {
-    list-style-type: none;
-    border:black 0.2rem solid;
-    padding-left:0;
+.alert {
+    background-color: pink;
+    padding: 1rem;
 }
 
-.paper-list > li {
-    padding:1rem;
-    
-}
-
-.paper-list > li:nth-child(odd) {
-    background: rgb(245, 245, 245);
-}
-
-.paper-list > li:nth-child(even) {
-    background: rgb(220, 220, 220);
-}
-
-.paper-button {
-    background-color: white;
-    padding:0.25rem;
-    display: inline-block;
-    color:darkslategray;
-    text-decoration: none;
-    font-weight: bold;
-    border:#77777A 2px solid; 
-}
-
-.paper-button:hover {
-    padding:0.25rem;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 3px;
-    border:darkslategray 2px solid;
-    background: teal;
-    color:white;
-}
-
-.paper-presentation {
-    background-color: gray;
-    color:white;
-    margin-top:0.5rem;
-    padding:0.2rem;
-    display:inline-block;
-    font-weight: bold;
-}
-
-/* Footer */
-footer{
-    background-color:transparent;
-    color:black;
-    max-width: 1000px;
+.alert-content {
+    max-width: 800px;
     margin:auto;
-    height:3rem;
-}
-
-/* Select */
-#mobile-links {
-    background-color: teal;
-    color:white;
-    font-size: x-large;
-    border:solid gray 2px;
-}
-
-@media screen and (max-width: 992px) {
-  #top a {
-    display:none;
-  }
-  
-  #mobile-links {
-    display:inline-block;
-  }
-
-  #mobile-brand {
-    display:inline-block;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #top a {
-    display:inline-block;
-  }
-  
-  #mobile-links {
-    display:none;
-  }
-
-  #mobile-brand {
-    display:none;
-  }
 }

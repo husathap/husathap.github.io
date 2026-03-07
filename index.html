@@ -1,114 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Prof. Hu's Site</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://husathap.github.io/">
-                <img height="160" src="uni_logo.png"/>
-            </a>
-
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="index.html">
-                    Home
-                </a>
-
-                <a class="navbar-item" href="contact.html">
-                    Contact
-                </a>
-
-                <a class="navbar-item" href="dossiers.html">
-                    Dossiers
-                </a>
-
-                <a class="navbar-item" href="publication.html">
-                    Publications
-                </a>
-
-                <a class="navbar-item" href="lab.html">
-                    <strong>Lab and Prospective Students</strong>
-                </a>
-            </div>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="publication.html">Publication</a> 
+            <a href="students.html">For Students</a>
         </div>
     </nav>
 
-    <section class="hero is-medium is-primary" style="background-image: url(polyline.png); background-position: center; background-size: cover;">
-        <div class="hero-body has-text-centered" >
-            <!--<p class="title" style="color: white;">Prof. Sathaporn "Hubert" Hu</p>
-            <p class="subtitle" style="color: white;">A.k.a. สถาพร ฮู, 胡秀楷</p>-->
-        </div>
+    <h1 style="text-align: center; font-size: xx-large;">Prof. Sathaporn "Hubert" Hu<br>ชื่อไทย: สถาพร ฮู<br>中文名字：胡秀楷</h1>
+
+
+    <section style="justify-content: center; display:flex; margin-bottom:2rem">
+        <img src="self_2026.JPG" style="width:20%; max-width: 1000px; min-width:500px; margin:auto">
     </section>
 
-    <section class="section">
-        <div class="container">
-            <h1 class="title">
-                Prof. Sathaporn "Hubert" Hu (A.k.a. สถาพร ฮู, 胡秀楷)
-            </h1>
-            <p class="subtitle">
-                Assistant Professor in Extended Reality, Algoma University (Sault Ste. Marie), Faculty of Computer Science & Technology
-            </p>
+    <section style="display: flexbox; margin:auto; justify-content: center; max-width: 800px;">
+        <p id="contact-info">
+            <a href="https://www.linkedin.com/in/sathaporn-hubert-hu-phd-3b8ab463/">LinkedIn</a>
+            <a href="https://github.com/husathap">GitHub</a>
+            <a href="https://www.tumblr.com/blog/s-hubert-kai">Tumblr [Rarely Updated]</a> 
+            <a href="mailto:hus@algomau.ca">Email</a>
+        </p>
 
-            <p class="notification is-danger">
-                Currently, I am <strong>not</strong> looking for research-based Master's degree student due to funding constraints. Algoma University
-                does <strong>not</strong> allow research-based student to self-fund. Still, if the student is interested in collaborating with me,
-                please visit <a href="lab.html">Lab and Propspective Students</a> page.
-            </p>
-
-            <p>
-                I am an assistant professor in Extended Reality (XR) at Algoma University currently afflicated with <a href="https://immxrsive.com/">Immxrsive</a>. I specialize in immersive analytics - i.e.,
-                using XR technologies to make data easier to understand. I received my Ph.D. degree from
-                Dalhousie University. As a Ph.D. student, I was supervised by Prof. Derek Reilly and received funding from Ericsson through
-                Mitacs Accelerates. For my MSc. program at the University of Calgary, I was supervised by Prof. Wesley Willett. I obtained
-                my H.B.Sc. from the University of Toronto, which was Specialist in Computer Science, Major in Cognitive Science (Computational Stream),
-                and French as a Second Language Minor.
-            </p>
-
-            <br>
-
-            <p>
-                As an instructor, I primarily specializes in teaching human-computer interaction courses and research methodology classes for graduate students.
-                In the past, I taught courses in data structure, and artificial intelligence (AI).
-            </p>
-        </div>
+        <p style="margin:auto; border:2px solid teal; padding:1rem; background: white;">
+            Prof. Hu is an assistant professor in extended reality (XR) at Algoma University.
+            His area of research involves using XR technologies to visualize data, and using AI
+            to better data being generated within XR. Currently, he is looking at the expand his
+            research area. He obtained his PhD from Dalhousie University under supervision of
+            Prof. Derek Reilly in the area of immersive analytics. He was a MSc from the University
+            of Calgary under the supervision of Prof. Wesley Willett. His area of specialization was
+            computer-assisted langauge learning. He was an undergraduate student at the University
+            of Toronto, St. George.
+            <br><br>
+            Prof. Hu has experience teaching courses in human-computer interaction, research methodology,
+            data science, artificial intelligence, and lower-year data structure courses. <b>He is not
+            teaching this semester.</b>
+        </p>
     </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-
-        // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-        // Add a click event on each of them
-        $navbarBurgers.forEach( el => {
-            el.addEventListener('click', () => {
-
-            // Get the target from the "data-target" attribute
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
-
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-
-            });
-        });
-
-        });
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>

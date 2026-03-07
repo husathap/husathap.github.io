@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prof. Hu's Site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  </head>
+  <body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://husathap.github.io/">
+                <img height="160" src="uni_logo.png"/>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="contact.html">
+                    Contact
+                </a>
+
+                <a class="navbar-item" href="dossiers.html">
+                    Dossiers
+                </a>
+
+                <a class="navbar-item" href="publication.html">
+                    Publications
+                </a>
+
+                <a class="navbar-item" href="lab.html">
+                    <strong>Lab and Prospective Students</strong>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-medium is-primary" style="background-image: url(polyline.png); background-position: center; background-size: cover;">
+        <div class="hero-body has-text-centered" >
+            <!--<p class="title" style="color: white;">Prof. Sathaporn "Hubert" Hu</p>
+            <p class="subtitle" style="color: white;">A.k.a. สถาพร ฮู, 胡秀楷</p>-->
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Prof. Sathaporn "Hubert" Hu (A.k.a. สถาพร ฮู, 胡秀楷)
+            </h1>
+            <p class="subtitle">
+                Assistant Professor in Extended Reality, Algoma University (Sault Ste. Marie), Faculty of Computer Science & Technology
+            </p>
+
+            <p class="notification is-danger">
+                Currently, I am <strong>not</strong> looking for research-based Master's degree student due to funding constraints. Algoma University
+                does <strong>not</strong> allow research-based student to self-fund. Still, if the student is interested in collaborating with me,
+                please visit <a href="lab.html">Lab and Propspective Students</a> page.
+            </p>
+
+            <p>
+                I am an assistant professor in Extended Reality (XR) at Algoma University currently afflicated with <a href="https://immxrsive.com/">Immxrsive</a>. I specialize in immersive analytics - i.e.,
+                using XR technologies to make data easier to understand. I received my Ph.D. degree from
+                Dalhousie University. As a Ph.D. student, I was supervised by Prof. Derek Reilly and received funding from Ericsson through
+                Mitacs Accelerates. For my MSc. program at the University of Calgary, I was supervised by Prof. Wesley Willett. I obtained
+                my H.B.Sc. from the University of Toronto, which was Specialist in Computer Science, Major in Cognitive Science (Computational Stream),
+                and French as a Second Language Minor.
+            </p>
+
+            <br>
+
+            <p>
+                As an instructor, I primarily specializes in teaching human-computer interaction courses and research methodology classes for graduate students.
+                In the past, I taught courses in data structure, and artificial intelligence (AI).
+            </p>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+            });
+        });
+
+        });
+    </script>
+  </body>
+</html>
