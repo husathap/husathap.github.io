@@ -14,26 +14,30 @@ body {
 
 nav {
     margin:0;
-    padding:1rem;
-    padding-top:0.75rem;
+    padding:0.5rem;
+    padding-top:0px;
     background-color: teal;
     color:white;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav a {
     color:white;
     margin:0.25rem;
-    margin-left:1.5rem;
-    margin-right:1.5rem;
     font-size: large;
     border-top: 0.25rem solid white;
     padding:0.5rem;
     text-decoration: none;
+    display:inline-block;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 nav a:hover {
-    border-top: 0.5rem solid yellow;
+    border-top: 0.25rem solid yellow;
 }
 
 .name {
@@ -176,6 +180,7 @@ footer li a {
     padding-bottom:0.5rem;
     text-decoration: none;
     padding-top:1rem;
+    display: inline-block;
 }
 
 footer li a:hover {
