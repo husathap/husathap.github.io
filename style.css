@@ -147,7 +147,6 @@ footer {
 footer a {
     color:white;
     font-weight: bold;
-    font-size: larger;
 }
 
 footer ul {
@@ -164,7 +163,6 @@ footer ul {
     justify-content: center;
     padding-bottom:1rem;
     row-gap: 1rem;
-
 }
 
 footer li {
