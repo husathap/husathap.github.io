@@ -27,7 +27,7 @@ nav a {
     color:white;
     margin:0.25rem;
     font-size: large;
-    border-top: 0.25rem solid white;
+    border-bottom: 0.25rem solid white;
     padding:0.5rem;
     text-decoration: none;
     display:inline-block;
@@ -37,7 +37,11 @@ nav a {
 }
 
 nav a:hover {
-    border-top: 0.25rem solid yellow;
+   border-bottom: 0.25rem solid yellow; 
+}
+
+.focused {
+    border-bottom: 0.25rem solid orange; 
 }
 
 .name {
