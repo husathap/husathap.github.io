@@ -115,6 +115,10 @@ nav a:hover {
     border-bottom: black 2px solid;
 }
 
+.content h1 {
+    text-align: center;
+}
+
 .hero {
     text-align: center;
     font-size: large;
@@ -133,6 +137,41 @@ nav a:hover {
 .alert-content {
     max-width: 800px;
     margin:auto;
+}
+
+.alert a {
+    color:black;
+    margin:0.25rem;
+    font-size: large;
+    border-bottom: 0.25rem solid black;
+    padding:0.5rem;
+    text-decoration: none;
+    display:inline-block;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.alert a:hover {
+    border-bottom: 0.25rem solid gray;
+}
+
+.major_a {
+    color:white;
+    margin:0.25rem;
+    font-size: large;
+    border-bottom: 0.25rem solid yellow;
+    padding:0.5rem;
+    text-decoration: none;
+    display:inline-block;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: teal;
+}
+
+.major_a:hover {
+    border-bottom: 0.25rem solid orange;
 }
 
 li {
