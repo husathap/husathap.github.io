@@ -160,7 +160,7 @@ nav a:hover {
     color:white;
     margin:0.25rem;
     font-size: large;
-    border-bottom: 0.25rem solid yellow;
+    border-bottom: 0.25rem solid black;
     padding:0.5rem;
     text-decoration: none;
     display:inline-block;
@@ -172,6 +172,7 @@ nav a:hover {
 
 .major_a:hover {
     border-bottom: 0.25rem solid orange;
+    background-color: #005A8C;
 }
 
 li {
