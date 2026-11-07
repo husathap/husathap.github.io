@@ -172,7 +172,8 @@ nav a:hover {
 
 .major_a:hover {
     border-bottom: 0.25rem solid orange;
-    background-color: #005A8C;
+    background-color: white;
+    color:black;
 }
 
 li {
