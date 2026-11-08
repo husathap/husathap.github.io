@@ -21,6 +21,7 @@ nav {
     text-align: center;
     display: flex;
     justify-content: center;
+    flex-wrap:wrap;
 }
 
 nav a {
@@ -30,7 +31,6 @@ nav a {
     border-bottom: 0.25rem solid white;
     padding:0.5rem;
     text-decoration: none;
-    display:inline-block;
     justify-content: center;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -174,6 +174,26 @@ nav a:hover {
     border-bottom: 0.25rem solid orange;
     background-color: white;
     color:black;
+}
+
+.current_teaching {
+    background-color: orange;
+    margin: 0px;
+    padding: 1rem;
+    color: black;
+}
+
+.current_teaching h1 {
+    max-width: 800px;
+    margin:auto;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.current_teaching ul {
+    max-width: 800px;
+    margin:auto;
+    font-size: x-large;
 }
 
 li {
