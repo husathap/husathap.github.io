@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira_Sans:wght@400&display=swap');
 
 html {
     font-family: sans-serif;
@@ -51,24 +50,24 @@ nav a:hover {
     margin-bottom:3rem;
     padding:0;
     border-bottom: gray 1px solid;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .name div {
     font-size: xx-large;
     font-weight: bold;
     color:teal;
-    
 }
 
 .name .title {
     font-size: x-large;
-    font-weight:400;
+    font-weight:bold;
     color:darkred;
 }
 
 .name .location {
     font-size: x-large;
-    font-weight:400;
+    font-weight:bold;
     color:darkblue;
     padding-bottom: 1rem;
 }
