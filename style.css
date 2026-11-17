@@ -45,10 +45,12 @@ nav a:hover {
 
 .name {
     text-align: center;
-    background-color: white;
-    margin:2rem;
+    background-color: #005A8C;
+    background:url("banner.png");
+    background-position: center;
+    background-size: cover;
     margin-bottom:3rem;
-    padding:0;
+    padding:1.5rem;
     border-bottom: gray 1px solid;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -56,20 +58,19 @@ nav a:hover {
 .name div {
     font-size: xx-large;
     font-weight: bold;
-    color:teal;
+    color:white;
 }
 
 .name .title {
     font-size: x-large;
     font-weight:bold;
-    color:darkred;
+    color:yellow;
 }
 
 .name .location {
     font-size: x-large;
     font-weight:bold;
-    color:darkblue;
-    padding-bottom: 1rem;
+    color:cyan;
 }
 
 .bio {
@@ -196,6 +197,31 @@ nav a:hover {
 
 li {
     padding-bottom: 0.5rem;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member_card {
+    border: #005A8C solid 2px;
+    width:25%;
+    margin:0.5rem;
+    min-width: 300px;
+}
+
+.member_card > img {
+    width:100%;
+}
+
+.member_card > h1 {
+    font-size:large;
+}
+
+.member_card > p {
+    margin:0.5rem;
 }
 
 footer {
