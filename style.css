@@ -206,7 +206,10 @@ li {
     padding-bottom: 0.5rem;
     text-align: left;
     color:white;
+}
 
+.infobox a {
+    color:white;
 }
 
 .members {
