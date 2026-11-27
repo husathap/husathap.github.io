@@ -257,13 +257,13 @@ footer ul {
     flex-direction: row;
     list-style: none;
     margin: auto;
-    margin-bottom:2rem;
+    margin-bottom:0.5rem;
     padding-left:1rem;
     padding-right:1rem;
     max-width: 800px;
     text-align: center;
     justify-content: center;
-    padding-bottom:1rem;
+    padding-bottom:0.5rem;
     row-gap: 1rem;
 }
 
