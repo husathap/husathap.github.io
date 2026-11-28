@@ -46,9 +46,7 @@ nav a:hover {
 .name {
     text-align: center;
     background-color: #005A8C;
-    background:url("banner.png");
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(to bottom, #005A8C, teal);
     margin-bottom:3rem;
     padding:1.5rem;
     border-bottom: gray 1px solid;
@@ -70,7 +68,7 @@ nav a:hover {
 .name .location {
     font-size: x-large;
     font-weight:bold;
-    color:cyan;
+    color:beig;
 }
 
 .bio {
